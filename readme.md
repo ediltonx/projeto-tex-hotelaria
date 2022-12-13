@@ -7,7 +7,7 @@
 - [José Edmar]()
 - [Edilton Silva Junior]()
 - [Habacuque Cavalcante]()
-- [Renato de Sousa Rodrigues]()
+- [Renato de Sousa Rodrigues](https://github.com/Notare)
 - [Gustavo da Silva Nobrega]()
 - [Marcos Medeiros]()
 - [Lucas da Silva Bernardo]()
