@@ -1,31 +1,64 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Reservas</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <h1>Faça sua reserva conosco!</h1>
-        <hr>
+      <div>
+        <img src="../public/assets/images/logo.jpeg" alt="logo" width="300" />
+        <!-- <span style="font-size: 3em">Chloe Gran Hotel</span> -->
+      </div>
     </header>
+    <nav>
+      <ul>
+        <li>
+          <a href="../index.html">Home</a>
+        </li>
+        <li>
+          <a href="about.html">O Hotel</a>
+        </li>
+        <li>
+          <a href="acomodacoes.html">Acomodações</a>
+        </li>
+        <li>
+          <a href="reservas.html">Reservas</a>
+        </li>
+        <li>
+          <a href="contato.html">Contato</a>
+        </li>
+        <li>
+          <a href="login.html">Login</a>
+        </li>
+        <li>
+          <a href="login.html">Área Administrativa</a>
+        </li>
+      </ul>
+    </nav>
+    <hr />
     <section>
-        <article>
-            <form action="">
-                <label for="fcheckin">Data do checkin</label>
-                <input type="date" name="fcheckin" id=""> <br> <br>
-                <label for="fcheckout">Data do checkout</label>
-                <input type="date" name="fcheckout" id=""> <br> <br>
-                <label for="fadult">Quantidade de adultos:</label>
-                <input type="number" min="0" name="fadult" id=""> <br> <br>
-                <label for="fchild">Quantidade de crianças</label>
-                <input type="number" min="0" name="fchild" id="">
-            </form>
-        </article>
+      <h1>Faça sua reserva conosco!</h1>
+      <article>
+        <form action="">
+          <label for="fcheckin">Data do checkin</label>
+          <input type="date" name="fcheckin" id="" /> <br />
+          <br />
+          <label for="fcheckout">Data do checkout</label>
+          <input type="date" name="fcheckout" id="" /> <br />
+          <br />
+          <label for="fadult">Quantidade de adultos:</label>
+          <input type="number" min="0" name="fadult" id="" /> <br />
+          <br />
+          <label for="fchild">Quantidade de crianças</label>
+          <input type="number" min="0" name="fchild" id="" /><br /><br />
+          <input type="submit" value="Fazer reserva" />
+        </form>
+      </article>
     </section>
-    <hr>
+    <hr />
     <footer>&copy; 2022 Texies - Todos os Direitos reservados</footer>
-</body>
+  </body>
 </html>
