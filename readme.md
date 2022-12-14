@@ -9,5 +9,5 @@
 - [Habacuque Cavalcante]()
 - [Renato de Sousa Rodrigues](https://github.com/Notare)
 - [Gustavo da Silva Nobrega]()
-- [Marcos Medeiros]()
+- [Marcos Medeiros](https://github.com/mrmedeiro)
 - [Lucas da Silva Bernardo]()
