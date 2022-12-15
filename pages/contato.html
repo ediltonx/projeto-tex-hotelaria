@@ -1,42 +1,99 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contato</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <h1>Entre em contato conosco!</h1>
-        <hr>
+      <img src="../public/assets/images/logo.jpeg" alt="logo" width="300" />
     </header>
+    <nav>
+      <ul>
+        <li>
+          <a href="../index.html">Home</a>
+        </li>
+        <li>
+          <a href="about.html">O Hotel</a>
+        </li>
+        <li>
+          <a href="acomodacoes.html">Acomodações</a>
+        </li>
+        <li>
+          <a href="reservas.html">Reservas</a>
+        </li>
+        <li>
+          <a href="contato.html">Contato</a>
+        </li>
+        <li>
+          <a href="login.html">Login</a>
+        </li>
+        <li>
+          <a href="../admin/login.html">Área Administrativa</a>
+        </li>
+      </ul>
+    </nav>
+    <hr />
     <main>
-        <section>
-            <article>
-                <p>
-                    Preencha os seguintes dados que entraremos em contato com você!
-                </p>
-                <form action="">
-                    <label for="fname"> Nome: </label>
-                    <input type="text" name="fname"> <br> <br>
-                    <label for="femail"> Email: </label>
-                    <input type="email" name="femail"> <br> <br>
-                    <label for="fphone"> Telefone: </label>
-                    <input type="text" name="fphone"> <br> <br>
-                    <select name="assunto" id="">
-                        <option value="cancelamento">Cancelamento de reserva</option>
-                        <option value="ouvidoria">Ouvidoria</option>
-                        <option value="departamento">Departamento Financeiro</option>
-                    </select> <br> <br>
-                    <textarea name="mensagem" id="" cols="30" rows="10"></textarea>
+      <section>
+        <article>
+          <p>Preencha os seguintes dados que entraremos em contato com você!</p>
+          <form action="../index.html" id="form" method="get">
+            <label for="fname"> Nome: </label>
+            <input type="text" name="fname" /> <br />
+            <br />
+            <label for="femail"> Email: </label>
+            <input type="email" name="femail" /> <br />
+            <br />
+            <label for="fphone"> Telefone: </label>
+            <input type="text" name="fphone" /> <br />
+            <br />
+            <select name="assunto">
+              <option value="cancelamento">Cancelamento de reserva</option>
+              <option value="ouvidoria">Ouvidoria</option>
+              <option value="departamento">Departamento Financeiro</option>
+            </select>
+            <br />
+            <br />
+            <textarea name="mensagem" cols="30" rows="10"></textarea>
 
-                    <input type="submit" value="enviar">
-                </form>
-            </article>
-        </section>
+            <input type="submit" value="enviar" />
+          </form>
+        </article>
+      </section>
     </main>
-    <hr>
-    <footer>&copy; 2022 Texies - Todos os Direitos reservados</footer>
-</body>
+    <hr />
+    <footer>
+<footer>
+      <p>&copy; 2022 -Todos os direitos reservado</p>
+      <ul>
+        <li>
+          <img
+            src="../public/assets/images/facebook.png"
+            alt="Facebook"
+            width="40"
+          />
+          <a href="#">Facebook</a>
+        </li>
+        <li>
+          <img
+            src="../public/assets/images/instagram.jpeg"
+            alt="Instagran"
+            width="40"
+          />
+          <a href="#">Instagram</a>
+        </li>
+        <li>
+          <img
+            src="../public/assets/images/whats.jpeg"
+            alt="Whatsapp"
+            width="40"
+          />
+          <a href="#">Whatsapp</a>
+        </li>
+      </ul>
+    </footer>
+  </body>
 </html>
