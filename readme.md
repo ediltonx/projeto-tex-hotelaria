@@ -1,4 +1,10 @@
-## Time 01 - Time 01 - Hotelaria TEX
+## Time 01 - Projeto - Hotelaria TEX
+
+## Chloe Gran Hotel
+
+Sistema WEB de gerenciamento de um hotel, monitorando o fluxo de hospedes, os serviços prestados nos apartamentos, a entrada e saída dos funcionários e seus rodízios de trabalho, as reservas, o checkin e checkout. O sistema contempla a lógica pela visão do usuário e do administrador.
+
+![Chloe Gran Hotel](https://i.imgur.com/L6sUJBx.png)
 
 ## Equipe
 
@@ -11,3 +17,11 @@
 - [Gustavo da Silva Nobrega]()
 - [Marcos Medeiros](https://github.com/mrmedeiro)
 - [Lucas da Silva Bernardo]()
+
+## Stack utilizada
+
+**Front-end:** Estrutura HTML
+
+## Gerenciamento do Projeto
+
+[**Trello**](https://trello.com/b/r2J6ImFp/projeto-hotelaria)
