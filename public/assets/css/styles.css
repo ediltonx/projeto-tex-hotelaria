@@ -1,0 +1,36 @@
+span {
+  font-size: 1.5em;
+  font-weight: 300;
+}
+
+header {
+  padding-left: 5%;
+}
+
+.forms_simples {
+  margin-right: 60%;
+  padding-left: 5%;
+}
+
+input {
+  border-style: solid;
+  box-shadow: 0px 0px 2px 0px;
+  height: 25px;
+  width: 300px;
+}
+
+.submit {
+  border-style: solid;
+  box-shadow: 0px 0px 2px 0px;
+  height: 30px;
+  width: 100px;
+  background-color: #bfbfbf;
+}
+
+body {
+  margin: auto;
+  font-size: 1.3rem;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  margin-left: 1%;
+  text-align: left;
+}

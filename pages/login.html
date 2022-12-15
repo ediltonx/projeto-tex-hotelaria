@@ -5,81 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Entrar</title>
+    <link rel="stylesheet" href="../public/assets/css/styles.css" />
   </head>
   <body>
     <header>
-      <img src="../public/assets/images/logo.jpeg" alt="logo" width="300" />
+      <img
+        src="../public/assets/images/logo.png"
+        alt="logo sem slogan"
+        width="300"
+      />
+      <span>aqui o seu bem estar é coisa séria!</span>
     </header>
-    <nav>
-      <ul>
-        <li>
-          <a href="../index.html">Home</a>
-        </li>
-        <li>
-          <a href="about.html">O Hotel</a>
-        </li>
-        <li>
-          <a href="acomodacoes.html">Acomodações</a>
-        </li>
-        <li>
-          <a href="reservas.html">Reservas</a>
-        </li>
-        <li>
-          <a href="contato.html">Contato</a>
-        </li>
-        <li>
-          <a href="login.html">Login</a>
-        </li>
-        <li>
-          <a href="../admin/login.html">Área Administrativa</a>
-        </li>
-      </ul>
-    </nav>
-    <hr />
-    <h2>Entre com sua conta!</h2>
+    <br />
     <form action="../index.html" method="get"></form>
-    <fieldset>
+    <fieldset class="forms_simples">
+      <h2>Login</h2>
       <label for="nome">Endereço de Email</label> <br />
-      <br />
       <input type="email" name="login" id="login" required /> <br />
       <br />
       <label for="senha">Senha</label> <br />
-      <br />
       <input type="password" name="senha" id="senha" required /> <br />
       <br />
-      <input type="submit" value="Entrar" id="entrar" />
+      <input type="submit" value="Confirmar" class="submit" />
     </fieldset>
+    <!-- inserir link de página de recuperação aqui!-->
+    <a href="recuperacao.html">Esqueceu sua senha?</a>
+    <hr />
     <h3>Não possui conta?</h3>
     <a href="register.html">Criar uma nova conta</a> <br />
-    <hr />
-    <footer>
-      <p>&copy; 2022 -Todos os direitos reservado</p>
-      <ul>
-        <li>
-          <img
-            src="../public/assets/images/facebook.png"
-            alt="Facebook"
-            width="40"
-          />
-          <a href="#">Facebook</a>
-        </li>
-        <li>
-          <img
-            src="../public/assets/images/instagram.jpeg"
-            alt="Instagran"
-            width="40"
-          />
-          <a href="#">Instagram</a>
-        </li>
-        <li>
-          <img
-            src="../public/assets/images/whats.jpeg"
-            alt="Whatsapp"
-            width="40"
-          />
-          <a href="#">Whatsapp</a>
-        </li>
-      </ul>
-    </footer>
   </body>
 </html>
