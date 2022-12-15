@@ -21,3 +21,7 @@ Sistema WEB de gerenciamento de um hotel, monitorando o fluxo de hospedes, os se
 ## Stack utilizada
 
 **Front-end:** Estrutura HTML
+
+## Gerenciamento do Projeto
+
+[**Trello**](https://trello.com/b/r2J6ImFp/projeto-hotelaria)
