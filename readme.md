@@ -4,7 +4,7 @@
 
 Sistema WEB de gerenciamento de um hotel, monitorando o fluxo de hospedes, os serviços prestados nos apartamentos, a entrada e saída dos funcionários e seus rodízios de trabalho, as reservas, o checkin e checkout. O sistema contempla a lógica pela visão do usuário e do administrador.
 
-![Chloe Gran Hotel](./chloe-gran-hotel.png)
+![Chloe Gran Hotel](https://i.imgur.com/L6sUJBx.png)
 
 ## Equipe
 
