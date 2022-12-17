@@ -1,4 +1,4 @@
-@import url('./reset.css');
+@import url("./reset.css");
 
 /* Guia de cores */
 
@@ -17,7 +17,6 @@
 
 /* Tamanho do container principal */
 /* 1090px */
-
 
 span {
   font-size: 1.5em;
@@ -54,4 +53,31 @@ body {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   margin-left: 1%;
   text-align: left;
+}
+
+/* Tela Home - Sessão Gastronomia */
+div.gastronomia {
+  display: flex;
+  text-align: center;
+  margin: 2rem 0;
+}
+
+div.gastronomia h2 {
+  font-size: 48px;
+  color: #242222;
+}
+
+div.gastronomia h3 {
+  font-size: 32px;
+  color: #242222;
+  margin-top: 1rem;
+}
+div.gastronomia img {
+  margin: 0 1rem;
+}
+
+div.gastronomia p {
+  font-size: 24px;
+  color: #686b68;
+  margin-top: 1rem;
 }
