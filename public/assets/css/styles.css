@@ -1,5 +1,24 @@
 @import url('./reset.css');
 
+/* Guia de cores */
+
+/* verde #016956 */
+/* verde-claro #0EFF5F0 */
+/* cinza #E1E6E1 */
+/* dourado #B9AD81 */
+
+/* cores e tamanhos das fontes */
+/* links-navbar #fff tamanho 20px */
+/* texto-footer #686B68 tamanho 16px */
+/* subtitulos-footer #242222 tamanho 24px */
+/* titulos #242222 tamanho 48px */
+/* subtitulos #242222 tamanho 32px */
+/* paragrafo #686B68 tamanho 24px */
+
+/* Tamanho do container principal */
+/* 1090px */
+
+
 span {
   font-size: 1.5em;
   font-weight: 300;
