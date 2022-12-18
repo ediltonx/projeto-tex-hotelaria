@@ -152,6 +152,36 @@ body {
 }
 /* end Navbar */
 
+/* Página Home Sessão HERO */
+.home-hero{
+  background:url('../images/background-home.png') no-repeat;
+  background-size: cover;
+  padding: 164px;
+  width: 100%;
+  height: 634px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  object-fit: contain;
+}
+
+.home-hero h1{
+font-size: 86px;
+font-weight: 700;
+line-height: 104px;
+letter-spacing: 0em;
+text-align: center;
+color: #fff;
+}
+
+.home-hero-container{
+  
+}
+
+/* end Sessão HERO */
+
+
+
 /* CSS - ACOMODAÇÕES */
 
 main section article div.flex-color {
