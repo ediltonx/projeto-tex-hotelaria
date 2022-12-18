@@ -39,25 +39,38 @@
       </ul>
     </nav>
     <hr />
-    <section id="reserve">
-      <h1>Faça sua reserva conosco!</h1>
-      <article>
-        <form action="../index.html" id="form-reserve" method="get">
-          <label for="fcheckin">Data do check-in</label>
-          <input type="date" name="fcheckin" /> <br />
-          <br />
-          <label for="fcheckout">Data do check-out</label>
-          <input type="date" name="fcheckout" /> <br />
-          <br />
-          <label for="fadult">Quantidade de adultos:</label>
-          <input type="number" min="0" name="fadult" /> <br />
-          <br />
-          <label for="fchild">Quantidade de crianças</label>
-          <input type="number" min="0" name="fchild" /><br /><br />
-          <input type="submit" value="Fazer reserva" />
-        </form>
-      </article>
-    </section>
+    <main>
+      <section id="reserve">
+        <h1>Faça sua reserva conosco!</h1>
+        <article>
+          <form action="../index.html" id="form-reserve" method="get">
+            <label for="fcheckin">Data do check-in</label>
+            <input type="date" name="fcheckin" required /> <br />
+            <br />
+            <label for="fcheckout">Data do check-out</label>
+            <input type="date" name="fcheckout" /> <br />
+            <br />
+            <label for="fadult">Quantidade de adultos:</label>
+            <input type="number" min="0" max="10" name="fadult" /> <br />
+            <br />
+            <label for="fchild">Quantidade de crianças</label>
+            <input type="number" min="0" max="10" maxlength="2" name="fchild" /><br />
+            <br />
+
+            <label for="room">Escolha o seu quarto</label>
+            <select name="room" id="room">
+              <option value="..."></option>
+              <option value="Standard">Quarto Standard</option>
+              <option value="Master">Quarto Master</option>
+              <option value="Deluxe">Quarto Deluxe</option>
+            </select>
+            <br /><br />
+            <input type="submit" value="Reservar" />
+          </form>
+        </article>
+      </section>
+    </main>
+
     <hr />
     <footer>
       <p>&copy; 2022 -Todos os direitos reservado</p>
