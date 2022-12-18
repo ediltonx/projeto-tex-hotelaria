@@ -30,9 +30,9 @@ span {
   font-weight: 300;
 }
 
-header {
-  /* padding-left: 5%; */
-}
+/* header {
+  padding-left: 5%;
+} */
 
 .forms_simples {
   margin-right: 60%;
@@ -55,12 +55,12 @@ input {
   background-color: #bfbfbf;
 }
 
-body {
+/* body { */
   /* margin: auto; */
   /* font-size: 1.3rem; */
   /* margin-left: 1%; */
   /* text-align: left; */
-}
+/* } */
 
 /* Header */
 .header{
@@ -174,9 +174,9 @@ text-align: center;
 color: #fff;
 }
 
-.home-hero-container{
+/* .home-hero-container{
   
-}
+} */
 
 /* end Sessão HERO */
 
@@ -214,11 +214,11 @@ main section article div.containerAcomodacoes {
   flex-direction: row;
   flex-wrap: wrap;
   column-gap: 10px;
-  row-gap: 1px;
+  row-gap: 10px;
   justify-content: center;
 }
 main section article div.containerAcomodacoes div {
-  width: 30%;
+  width: 500px;
   padding: 5px;
 }
 
