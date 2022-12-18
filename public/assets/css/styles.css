@@ -152,9 +152,29 @@ input {
 }
 /* end Navbar */
 
-/* Página Home Sessão HERO */
-.home-hero{
-  background:url('../images/background-home.png') no-repeat;
+/* Titulos */
+.title{
+  font-size: 48px;
+  color:#242222;
+  font-weight: 700;
+  /* position: absolute; */
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.title::after{
+  content: "";
+  width: 268px;
+  height: 12px;
+  background-color: #B9AD81;
+  margin-top: 100px;
+}
+/* end Titulos */
+
+/* Página Home Seção HERO */
+.home-hero, .about-hero{
   background-size: cover;
   padding: 164px;
   width: 100%;
@@ -165,7 +185,12 @@ input {
   object-fit: contain;
 }
 
-.home-hero h1{
+.home-hero{
+  background:url('../images/background-home.png') no-repeat;
+  
+}
+
+.home-hero h1, .about-hero h1{
 font-size: 86px;
 font-weight: 700;
 line-height: 104px;
@@ -174,7 +199,7 @@ text-align: center;
 color: #fff;
 }
 
-/* end Sessão HERO */
+/* end Seção HERO */
 
 
 
@@ -302,3 +327,63 @@ div.gastronomia p {
   color: #686b68;
   margin-top: 1rem;
 }
+
+
+/* Seção Sobre */
+.about-hero{
+    background:url('../images/background-about.png') no-repeat;
+}
+
+.about{
+  display: flex;
+  justify-content: center;
+  background-color: #fff;
+  padding: 68px 0px;
+  margin: 0 32px;
+}
+
+.about-container{
+  display: flex;
+  justify-content: flex-start;
+  gap: 48px;
+  align-items: center;
+  width: 100%;
+  max-width: 1090px;
+ }
+ 
+ .about-room{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+ }
+ 
+ .about-room_image img{
+  border-radius: 15px;
+ }
+ 
+ .about-room_description{
+  display: flex;
+  gap: 15px;
+  align-items: center;
+ }
+ 
+ .about-room_description h3{
+  font-size: 32px;
+  font-weight: 700;
+  
+ }
+ 
+  .about-room_description img{
+    width: 48px;
+    height: auto;
+  }
+  
+   
+  .about-room p{
+    font-size: 24px;
+    color: #686B68;
+    line-height: 41px;
+    font-weight: 400px;
+  }
+
+/* end Seção Sobre */
