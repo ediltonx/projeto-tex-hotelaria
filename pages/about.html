@@ -9,35 +9,61 @@
     <title>Nosso Hotel</title>
   </head>
   <body>
-    <header>
-      <img src="../public/assets/images/logo.jpeg" alt="logo" width="300" />
+    <header class="header">
+      <div class="header-container">
+        <div class="logo">
+           <a href="/">
+             <img src="../public/assets/images/logo.svg" alt="Chloe Gran Hotel"/>
+          </a>
+        </div>
+          <nav class="navbar">
+            <ul class="menu">
+              <li>
+                <a href="./about.html">O Hotel</a>
+              </li>
+              <li>
+                <a href="./acomodacoes.html">Acomodações</a>
+              </li>
+              <li>
+                <a href="./reservas.html">Reservas</a>
+              </li>
+              <li>
+                <a href="./contato.html">Contato</a>
+              </li>
+              <li>
+                <form action="../pages/login.html" method="get">
+                  <input class="menu-btn_signin" type="submit" value="Cadastrar">
+                </form>
+              </li>
+              <li>
+                 <form action="pages/login.html" method="get">
+                  <input class="menu-btn_login" type="submit" value="Acessar">
+               </form>
+              </li>
+            </ul>
+              <ul class="menu-mobile">
+              <li>
+                <a href="pages/about.html">O Hotel</a>
+              </li>
+              <li>
+                <a href="pages/acomodacoes.html">Acomodações</a>
+              </li>
+              <li>
+                <a href="pages/reservas.html">Reservas</a>
+              </li>
+              <li>
+                <a href="pages/contato.html">Contato</a>
+              </li>
+              <li>
+                <a href="pages/login.html">Login</a>
+              </li>
+              <li>
+                <a href="admin/login.html">Área Administrativa</a>
+              </li>
+            </ul>
+      </nav>
+      </div>
     </header>
-    <nav>
-      <ul>
-        <li>
-          <a href="../index.html">Home</a>
-        </li>
-        <li>
-          <a href="about.html">O Hotel</a>
-        </li>
-        <li>
-          <a href="acomodacoes.html">Acomodações</a>
-        </li>
-        <li>
-          <a href="reservas.html">Reservas</a>
-        </li>
-        <li>
-          <a href="contato.html">Contato</a>
-        </li>
-        <li>
-          <a href="login.html">Login</a>
-        </li>
-        <li>
-          <a href="../admin/login.html">Área Administrativa</a>
-        </li>
-      </ul>
-    </nav>
-    <hr />
     <main>
       <div>
           <section class="about-hero">
@@ -57,58 +83,43 @@
                 <h3>As melhores acomodações</h3>
               </div>
               <p>Colocamos você no centro de tudo, com hotéis projetados em destinos icônicos, vistas impressionantes e experiências inigualáveis, para que aproveite nada menos do que extraordinários momentos.</p>
-              <button class="about-btn">Saibas mais</button>
             </div>
           </div>
           </article>
           <section>
-            <h1>Sobre o App</h1>
-          <p>
-            O app hotelaria foi criado com o propósito de ser um gerenciador de
-            serviços ideal para pequenos e grandes hotéis, com Lorem ipsum dolor
-            sit amet consectetur adipisicing elit. Incidunt unde officia harum
-            facere facilis autem quis possimus, excepturi nostrum. Nobis
-            delectus quo laboriosam molestiae repudiandae sint modi magnam
-            repellat. Repudiandae suscipit similique, in at recusandae odio
-            cumque consequatur quam, ipsa ea blanditiis modi perferendis dolor
-            numquam sapiente aliquam sequi. Perferendis sed similique, eveniet
-            repellendus error repellat nam magnam hic doloribus, reprehenderit
-            tempore adipisci, voluptas assumenda. Quidem praesentium, corporis a
-            expedita quia omnis odio officia alias ullam cum ab reiciendis
-            ratione?
-          </p>
-          <p>
-            Vitae assumenda molestiae necessitatibus sunt delectus in odio
-            quaerat, fugit nam at ea amet modi, iure quisquam quam? Earum error
-            cum velit magni inventore aspernatur cumque odit adipisci veniam
-            neque libero, ratione et a aliquid non. Aperiam porro magnam
-            mollitia earum iste expedita omnis voluptatum deserunt accusamus
-            veniam.
-          </p>
-        </article>
-        <img
-          src="../public/assets/images/fachada-hotel.jpg"
-          alt="Fachada de Hotel"
-          width="15%"
-        />
-        <article id="hoteis"></article>
-        <h1>Hotéis e redes que usam o app</h1>
-        <ul>
-          <li>Everaldo Hostels</li>
-          <li>Edmaris</li>
-          <li>Hospedagens Online Habacuque</li>
-          <li>Rodrigo Apartments</li>
-          <li>Rede Renato Souza de Posadas</li>
-        </ul>
-      </div>
-      <section>
-        <!-- colocar link para a página de contato!-->
-        <a href="./contato.html">Contate-nos! </a> <br />
-        <br />
-        <a href="./reservas.html"> Faça a sua reserva conosco!</a>
-          </section>
+            <h2 class="sobreNos">Sobre Nós</h2>
           
-      </section>
+              <p class="descricao">
+                Nós oferecemos serviços de alta qualidade, com atendimento personalizado e estilo próprio.
+                A cada dia buscamos criar um ambiente agradável e seguro para quem se hospeda conosco. 
+                Priorizamos capacitação de nossos colaboradores e a atenção com o atendimento, para aprimorar continuamente os nossos serviços.
+                Além disso, nossa preocupação é também trazer benefícios para a sociedade, por meio da conscientização e ações pró-sustentabilidade. 
+                Nosso objetivo é fazer deste Hotel, uma extensão de sua casa!
+              </p> 
+              <br />
+              <br />
+          </section>
+        </div>
+        <section>
+          <div class="containerImagem">
+            <div class="imagem">
+              <img 
+                src="../public/assets/images/pscina.jpg"
+                alt="Piscina do Hotel"
+                />
+            </div>
+          </div>
+        </section>
+        <h2 class="parceiros">Hotéis e redes que usam o app</h2>
+          <ul class="listaParceiros">
+            <li>Everaldo Hostels</li> 
+            <li>Edmaris Hotek</li> 
+            <li>Hospedagens Online Habacuque</li>
+            <li>Rodrigo Apartments</li>
+            <li>Rede Renato Souza de Posadas</li>
+            <li>Gustavo Nóbrega Pousadas</li>
+          </ul>
+          <br> <br>
      </main>
         <footer class="footer">
       <div class="footer-container">
