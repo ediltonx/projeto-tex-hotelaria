@@ -30,9 +30,7 @@ span {
   font-weight: 300;
 }
 
-/* header {
-  padding-left: 5%;
-} */
+
 
 .forms_simples {
   margin-right: 60%;
@@ -203,6 +201,451 @@ color: #fff;
 }
 
 /* end Seção HERO */
+
+
+@import url("./reset.css");
+
+/* Guia de cores */
+
+/* verde #016956 */
+/* verde-claro #0EFF5F0 */
+/* cinza #E1E6E1 */
+/* dourado #B9AD81 */
+
+/* cores e tamanhos das fontes */
+/* Vamos usar a fonte Inter copiar e colar o link para seu arquivo no head */
+/* <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet"> */
+
+/* links-navbar #242222 tamanho 20px */
+/* texto-footer #686B68 tamanho 16px */
+/* subtitulos-footer #242222 tamanho 24px */
+/* titulos #242222 tamanho 48px */
+/* subtitulos #242222 tamanho 32px */
+/* paragrafo #686B68 tamanho 24px */
+
+/* Tamanho do container principal */
+/* 1090px */
+
+html{
+ font-family: 'Inter', sans-serif;
+}
+
+span {
+  font-size: 1.5em;
+  font-weight: 300;
+}
+
+header{
+  /* padding-left: 5%; */
+}
+
+.forms_simples {
+  margin-right: 60%;
+  padding-left: 5%;
+  margin-bottom: 1%;
+}
+
+input {
+  border-style: solid;
+  box-shadow: 0px 0px 2px 0px;
+  height: 25px;
+  width: 300px;
+}
+
+.submit {
+  border-style: solid;
+  box-shadow: 0px 0px 2px 0px;
+  height: 30px;
+  width: 100px;
+  background-color: #bfbfbf;
+}
+
+body {
+  /* margin: auto; */
+  /* font-size: 1.3rem; */
+  /* margin-left: 1%; */
+  /* text-align: left; */
+}
+
+/* Header */
+.header{
+  display: flex;
+  justify-content: center;
+  background-color: #fff;
+  padding: 68px 0px;
+  margin: 0 32px;
+}
+
+.header-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+ }
+/* end Header */
+
+/* Navbar */
+.logo{
+  width: 217px;
+  
+}
+
+.navbar{
+  font-size: 20px;
+}
+
+.menu{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 42px;
+  
+}
+
+.menu a{
+  color: #242222;
+  padding: 28px 0;
+  position: relative;
+}
+
+.menu a:hover::before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  background-color: #B9AD81;
+  bottom: 0;
+}
+
+.menu-btn_signin, .menu-btn_login{
+  width: 140px;
+  height: auto;
+  border-radius: 9px;
+  border: none;
+  box-shadow: none;
+  font-size: 20px;
+  padding: 12px 22px;
+  color: #016956;
+}
+
+.menu-btn_login{
+  background-color: #E1E6E1;
+}
+
+.menu-btn_login{
+  background-color: #fff;
+  border: 1px solid #016956;
+}
+
+
+.menu-btn_signin:hover{
+  background-color: #016956;
+  color: #fff;
+  opacity: 0.5;
+  transition: ease 0.2s;
+  cursor: pointer;
+}
+.menu-btn_login:hover{
+  cursor: pointer;
+  background-color: #E1E6E1;
+  transition: ease 0.2s;
+  cursor: pointer;
+}
+
+.menu-mobile{
+  display: none;
+}
+/* end Navbar */
+
+/* Página Home Sessão HERO */
+.home-hero{
+  background:url('../images/background-home.png') no-repeat;
+  background-size: cover;
+  padding: 164px;
+  width: 100%;
+  height: 634px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  object-fit: contain;
+}
+
+.home-hero h1{
+font-size: 86px;
+font-weight: 700;
+line-height: 104px;
+letter-spacing: 0em;
+text-align: center;
+color: #fff;
+}
+
+/* end Sessão HERO */
+
+
+/* CSS - SOBRE HOTEL-PISCINA */
+
+.sobre-hotel{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  background-color: #1D9371;
+  margin-top: 40px;
+  color: #1D9371;
+}
+
+
+.section-titulo{
+  padding-top: 50px;
+}
+.section-titulo h1 em{
+  color: #050505;
+}
+.section-titulo,
+.section-desc{
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #fff;
+}
+.section-desc{
+  font-size: 12px;
+  margin-top: 10px;
+  margin-bottom: 40px;
+  padding-bottom: 50px;
+  }
+  .section-body{
+      max-width: 1140px;
+      margin: auto;
+      padding-bottom: 40px;
+      display: flex;
+  }
+  .section-sobre{
+      display: flex;
+  }
+  .section--esquerda{
+      flex: 1;
+  
+      margin-left: 20px;
+  }
+  .section--esquerda p{
+      color: #fff;
+      font-size: 15px;
+  }
+  .section--direita{
+      width: 500px;
+      text-align: center;
+  }
+  .section--direita img{
+      width: 480px;
+      box-shadow: 0px 5px 10px #333;
+  }
+  .botao{
+    display:inline-block;
+    background-color: #000;
+    font-weight: 600;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 12px;
+    text-decoration: none;
+    padding: 10px 30px;
+    margin-top: 30px;
+    border-radius: 20px;
+}
+
+
+/* CSS - GASTRONOMIA */
+.sobre-gastronomia
+
+.areaback-gastronomia{
+    width: 100vw;
+    height: 100%;
+    padding: 0%;
+    margin-top: 0%;
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.section-titulo-gastronomia{
+padding-top: 50px;
+}
+.section-titulo-gastronomia h3 em{
+color: #050505;
+}
+.section-titulo,
+.section-desc-gastronomia{
+text-align: center;
+text-transform: uppercase;
+font-weight: 600;
+color: #242222;
+}
+.section-desc-gastronomia{
+font-size: 12px;
+margin-top: 10px;
+margin-bottom: 40px;
+padding-bottom: 50px;
+}
+.section-body-gastronomia{
+    max-width: 1140px;
+    margin: auto;
+    padding-bottom: 40px;
+    display: flex;
+}
+.section-sobre-gastronomia{
+    display: flex;
+}
+.section--esquerda-gastronomia{
+    flex: 1;
+
+    margin-left: 20px;
+}
+.section--esquerda-gastronomia p{
+    color: #050505;
+    font-size: 15px;
+}
+.section--direita-gastronomia{
+    width: 500px;
+    text-align: center;
+}
+.section--direita-gastronomia img{
+    width: 480px;
+    box-shadow: 0px 5px 10px #333;
+}
+
+
+
+/* CSS - ACOMODAÇÕES */
+.text-acomodacoes p{
+  color:#686B68 ;
+}
+
+
+
+main section article div.flex-color {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+main section article div.flex-color > h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #242222;
+  margin: 0;
+}
+
+main section article div.flex-color div:nth-child(2) {
+  align-self: center;
+  background-color: rgb(79, 146, 119);
+  width: 10vw;
+  height: 6px;
+  margin-top: 10px;
+}
+
+main section article div.containerAcomodacoes {
+  margin-top: 60px;
+  min-height: 30vh;
+  padding: 1px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  column-gap: 10px;
+  row-gap: 1px;
+  justify-content: center;
+}
+main section article div.containerAcomodacoes div {
+  width: 30%;
+  padding: 5px;
+}
+
+main section article div.containerAcomodacoes div img {
+  width: 100%;
+  height: 40vh;
+  border-radius: 20px;
+}
+
+/* Footer */
+.footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #fff;
+}
+
+
+.footer-container{
+  display: flex;
+  gap: 68px;
+  max-width: 1090px;
+  width: 100%;
+  padding: 68px 0px;
+  margin: 0 32px;
+  border-top: 3px solid rgba(185, 173, 129, 0.3);;
+}
+
+.footer-logo{
+  width: 257px;
+}
+
+.footer-item, .footer-item > ul, .footer-menu{
+  display: flex;
+  flex-direction: column;
+  gap: 22px
+}
+
+.footer-menu a{
+  font-size: 16px;
+  color: #686B68;
+}
+
+.footer-menu a:hover{
+  color: #B9AD81;
+}
+
+.footer p{
+  text-align: center;
+  background-color: #EFF5F0;
+  padding: 23px 0;
+  width: 100%;
+}
+
+.footer-item_social{
+  display: flex;
+  gap: 15px;
+}
+/* end Footer */
+
+/* Tela Home - Sessão Gastronomia */
+div.gastronomia {
+  display: flex;
+  text-align: center;
+  margin: 2rem 0;
+}
+
+div.gastronomia h2 {
+  font-size: 48px;
+  color: #242222;
+}
+
+div.gastronomia h3 {
+  font-size: 32px;
+  color: #242222;
+  margin-top: 1rem;
+}
+div.gastronomia img {
+  margin: 0 1rem;
+}
+
+div.gastronomia p {
+  font-size: 24px;
+  color: #686b68;
+  margin-top: 1rem;
+}
+
 
 
 
