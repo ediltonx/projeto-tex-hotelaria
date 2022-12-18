@@ -7,7 +7,7 @@
     <title>Entrar</title>
     <link rel="stylesheet" href="../public/assets/css/styles.css" />
   </head>
-  <body>
+  <form>
     <header>
       <img
         src="../public/assets/images/logo.png"
@@ -17,7 +17,7 @@
       <span>aqui o seu bem estar é coisa séria!</span>
     </header>
     <br />
-    <form action="../index.html" method="get"></form>
+    <form method="get">
     <fieldset class="forms_simples">
       <h2>Login</h2>
       <label for="nome">Endereço de Email</label> <br />
@@ -26,10 +26,11 @@
       <label for="senha">Senha</label> <br />
       <input type="password" name="senha" id="senha" required /> <br />
       <br />
-      <input type="submit" value="Confirmar" class="submit" />
+      <input type="submit" formaction="../index.html" value="Confirmar" class="submit" /> <br />
     </fieldset>
-    <!-- inserir link de página de recuperação aqui!-->
-    <a href="recuperacao.html">Esqueceu sua senha?</a>
+    </form>
+    <a href="recuperacao.html">Esqueceu sua senha?</a> <br />
+    <br />
     <hr />
     <h3>Não possui conta?</h3>
     <a href="register.html">Criar uma nova conta</a> <br />
