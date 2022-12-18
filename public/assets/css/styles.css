@@ -174,10 +174,6 @@ text-align: center;
 color: #fff;
 }
 
-/* .home-hero-container{
-  
-} */
-
 /* end Sessão HERO */
 
 
@@ -279,3 +275,30 @@ main section article div.containerAcomodacoes div img {
   gap: 15px;
 }
 /* end Footer */
+
+/* Tela Home - Sessão Gastronomia */
+div.gastronomia {
+  display: flex;
+  text-align: center;
+  margin: 2rem 0;
+}
+
+div.gastronomia h2 {
+  font-size: 48px;
+  color: #242222;
+}
+
+div.gastronomia h3 {
+  font-size: 32px;
+  color: #242222;
+  margin-top: 1rem;
+}
+div.gastronomia img {
+  margin: 0 1rem;
+}
+
+div.gastronomia p {
+  font-size: 24px;
+  color: #686b68;
+  margin-top: 1rem;
+}
