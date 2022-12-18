@@ -252,6 +252,29 @@ main section article div.containerAcomodacoes div img {
   border-radius: 20px;
 }
 
+.infoFoto {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 40vh;
+  border-radius: 20px;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+.infoFoto h5 {
+  font-size: 18px;
+  font-weight: 600px;
+}
+.fotoArea:hover .infoFoto {
+  display: flex;
+  width: 490px;
+}
+
+
+/* Fim Acomodações */
+
 /* Footer */
 .footer{
   display: flex;
