@@ -1,4 +1,4 @@
-/*@import url("./reset.css");
+ @import url("./reset.css");
 
 /* Guia de cores */
 
@@ -8,7 +8,10 @@
 /* dourado #B9AD81 */
 
 /* cores e tamanhos das fontes */
-/* links-navbar #fff tamanho 20px */
+/* Vamos usar a fonte Inter copiar e colar o link para seu arquivo no head */
+/* <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet"> */
+
+/* links-navbar #242222 tamanho 20px */
 /* texto-footer #686B68 tamanho 16px */
 /* subtitulos-footer #242222 tamanho 24px */
 /* titulos #242222 tamanho 48px */
@@ -18,13 +21,17 @@
 /* Tamanho do container principal */
 /* 1090px */
 
+html{
+ font-family: 'Inter', sans-serif;
+}
+
 span {
   font-size: 1.5em;
   font-weight: 300;
 }
 
 header {
-  padding-left: 5%;
+  /* padding-left: 5%; */
 }
 
 .forms_simples {
@@ -49,9 +56,62 @@ input {
 }
 
 body {
-  margin: auto;
-  font-size: 1.3rem;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  margin-left: 1%;
-  text-align: left;
+  /* margin: auto; */
+  /* font-size: 1.3rem; */
+  /* margin-left: 1%; */
+  /* text-align: left; */
 }
+
+/* Header */
+.header{
+  display: flex;
+  justify-content: center;
+  background-color: #fff;
+  padding: 68px 32px;
+}
+
+.header-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1090px;
+}
+/* end Header */
+
+/* Navbar */
+.logo{
+  width: 271px;
+  
+}
+
+.navbar{
+  font-size: 20px;
+}
+
+.menu{
+  display: flex;
+  justify-content: space-between;
+  gap: 48px;
+  
+}
+
+.menu a{
+  color: #242222;
+  padding: 28px 0;
+  position: relative;
+}
+
+.menu a:hover::before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  background-color: #B9AD81;
+  bottom: 0;
+}
+
+.menu-mobile{
+  display: none;
+}
+/* end Navbar */
