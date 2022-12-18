@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../public/assets/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
     <title>Reservas</title>
   </head>
   <body>
@@ -39,67 +41,83 @@
       </ul>
     </nav>
     <hr />
-    <main>
-      <section id="reserve">
-        <h1>Faça sua reserva conosco!</h1>
-        <article>
-          <form action="../index.html" id="form-reserve" method="get">
-            <label for="fcheckin">Data do check-in</label>
-            <input type="date" name="fcheckin" required /> <br />
-            <br />
-            <label for="fcheckout">Data do check-out</label>
-            <input type="date" name="fcheckout" /> <br />
-            <br />
-            <label for="fadult">Quantidade de adultos:</label>
-            <input type="number" min="0" max="10" name="fadult" /> <br />
-            <br />
-            <label for="fchild">Quantidade de crianças</label>
-            <input type="number" min="0" max="10" maxlength="2" name="fchild" /><br />
-            <br />
-
-            <label for="room">Escolha o seu quarto</label>
-            <select name="room" id="room">
-              <option value="..."></option>
-              <option value="Standard">Quarto Standard</option>
-              <option value="Master">Quarto Master</option>
-              <option value="Deluxe">Quarto Deluxe</option>
-            </select>
-            <br /><br />
-            <input type="submit" value="Reservar" />
-          </form>
-        </article>
-      </section>
-    </main>
-
+    <section id="reserve">
+      <h1>Faça sua reserva conosco!</h1>
+      <article>
+        <form action="../index.html" id="form-reserve" method="get">
+          <label for="fcheckin">Data do check-in</label>
+          <input type="date" name="fcheckin" /> <br />
+          <br />
+          <label for="fcheckout">Data do check-out</label>
+          <input type="date" name="fcheckout" /> <br />
+          <br />
+          <label for="fadult">Quantidade de adultos:</label>
+          <input type="number" min="0" name="fadult" /> <br />
+          <br />
+          <label for="fchild">Quantidade de crianças</label>
+          <input type="number" min="0" name="fchild" /><br /><br />
+          <input type="submit" value="Fazer reserva" />
+        </form>
+      </article>
+    </section>
     <hr />
-    <footer>
-      <p>&copy; 2022 -Todos os direitos reservado</p>
-      <ul>
-        <li>
-          <img
-            src="../public/assets/images/facebook.png"
-            alt="Facebook"
-            width="40"
-          />
-          <a href="#">Facebook</a>
-        </li>
-        <li>
-          <img
-            src="../public/assets/images/instagram.jpeg"
-            alt="Instagran"
-            width="40"
-          />
-          <a href="#">Instagram</a>
-        </li>
-        <li>
-          <img
-            src="../public/assets/images/whats.jpeg"
-            alt="Whatsapp"
-            width="40"
-          />
-          <a href="#">Whatsapp</a>
-        </li>
-      </ul>
+   <footer class="footer">
+      <div class="footer-container">
+         <div class="footer-logo">
+        <img src="../public/assets//images/logo.svg" alt="Chloe Grand Hotel">
+      </div>
+      <div class="footer-item">
+        <h3>O Hotel</h3>
+        <ul class="footer-menu">
+              <li>
+                <a href="pages/about.html">O Hotel</a>
+              </li>
+              <li>
+                <a href="pages/acomodacoes.html">Acomodações</a>
+              </li>
+              <li>
+                <a href="pages/reservas.html">Reservas</a>
+              </li>
+              <li>
+                <a href="pages/contato.html">Contato</a>
+              </li>
+             
+            </ul>
+      </div>
+      <div class="footer-item">
+        <h3>Contato</h3>
+        <ul>
+          <li>oi@chloegrandhotel.com</li>
+          <li>81 3139-8800</li>
+        </ul>
+      </div>
+      <div class="footer-item">
+        <h3>Onde estamos</h3>
+        <ul>
+          <li>R. Barão de Santo Ângelo, 100</li>
+          <li>Recife - Pernambuco - Brasil</li>
+        </ul>
+        <h3>Nossas redes</h3>
+        <ul>
+          <div class="footer-item_social">
+            <li>
+            <a href="">
+              <img src="../public/assets/images/instagram.svg" alt="Rede Social Instagram" >
+            </a>
+          </li>
+            <a href="">
+              <img src="../public/assets/images/twitter.svg" alt="Rede Social Instagram" >
+            </a>
+          </li>
+            <a href="">
+              <img src="../public/assets/images/facebook.svg" alt="Rede Social Instagram" >
+            </a>
+          </li>
+          </div>
+        </ul>
+      </div>
+    </div>
+    <p>&copy; 2022 - Todos os direitos reservado</p>
     </footer>
   </body>
 </html>
