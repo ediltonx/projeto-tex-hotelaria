@@ -585,6 +585,48 @@ main section article div.containerAcomodacoes div img {
   width: 490px;
 }
 
+/*CSS Produto Destaque*/
+
+.section-2 {
+  padding-top: 200px;
+  padding-bottom: 300px;
+  width: 100%;
+  display: grid;
+}
+
+.grid-2 {
+  grid: 400px/ 55% 45%;
+}
+
+.foto-destaque img {
+  height: 600px;
+  width: 75%;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+.section-2 h2 {
+  padding-top: 10px;
+  font-family: inter;
+  text-align: center;
+  font-size: 32px;
+}
+
+.text-design {
+  width: 192px;
+  height: 6px;
+  background-color: #4F9277;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+}
+
+.section-2 p {
+  padding: 50px 200px 0px 210px;
+  text-align: justify;
+  font-size: 30px;
+}
+
 
 /* Fim Acomodações */
 
