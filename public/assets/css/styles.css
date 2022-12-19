@@ -30,26 +30,85 @@ span {
   font-weight: 300;
 }
 
-.forms_simples {
-  margin-right: 60%;
-  padding-left: 5%;
-  margin-bottom: 1%;
+/* tela de login */
+.sign-in{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  
+  align-items: center;
+  overflow: hidden;
 }
 
-input {
-  border-style: solid;
-  box-shadow: 0px 0px 2px 0px;
-  height: 25px;
-  width: 300px;
+.sign-in-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.submit {
-  border-style: solid;
-  box-shadow: 0px 0px 2px 0px;
-  height: 30px;
-  width: 100px;
-  background-color: #bfbfbf;
+.sign-in-cover{
+  flex: 1;
+  background: url("../images/background-login.jpg") no-repeat;
+  background-size: cover;
+  width: 75vw;
+  height: 100vh;
 }
+
+.sign-in-forms{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  flex: 1;
+  width: 100%;
+}
+
+.sign-in-forms div>img{
+  width: 257px;
+  margin-bottom: 32px;
+}
+
+.sign-in-forms form{
+  display: flex;
+  flex-direction: column;
+  gap: 18px; 
+}
+
+.sign-in-forms input[type=emal]{
+  border: solid 1px #242222;
+  background-color: #016956;
+}
+
+.btn-sign-in{
+  width: 100%;
+  height: auto;
+  border-radius: 9px;
+  border: none;
+  box-shadow: none;
+  font-size: 20px;
+  padding: 12px 22px;
+  color: #fff;
+  background-color: #016956;
+}
+
+.btn-sign-in:hover{
+  background-color: #016956;
+  color: #fff;
+  opacity: 0.5;
+  transition: ease 0.2s;
+  cursor: pointer;
+}
+
+
+.sign-in-help{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 32px;
+}
+
+
+/* end de login */
 
 /* Header */
 .header{
@@ -959,3 +1018,6 @@ left: 0;
   border-radius: 5%;
 
 }
+
+
+/*  */

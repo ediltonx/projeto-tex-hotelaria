@@ -7,32 +7,41 @@
     <title>Entrar</title>
     <link rel="stylesheet" href="../public/assets/css/styles.css" />
   </head>
-  <form>
-    <header>
-      <img
-        src="../public/assets/images/logo.png"
-        alt="logo sem slogan"
-        width="300"
-      />
-      <span>aqui o seu bem estar é coisa séria!</span>
-    </header>
-    <br />
-    <form method="get">
-    <fieldset class="forms_simples">
-      <h2>Login</h2>
-      <label for="nome">Endereço de Email</label> <br />
-      <input type="email" name="login" id="login" required /> <br />
-      <br />
-      <label for="senha">Senha</label> <br />
-      <input type="password" name="senha" id="senha" required /> <br />
-      <br />
-      <input type="submit" formaction="../index.html" value="Confirmar" class="submit" /> <br />
-    </fieldset>
-    </form>
-    <a href="recuperacao.html">Esqueceu sua senha?</a> <br />
-    <br />
-    <hr />
-    <h3>Não possui conta?</h3>
-    <a href="register.html">Criar uma nova conta</a> <br />
+  <main>
+    <section class="sign-in">
+           <div class="sign-in-container">
+        <div class="sign-in-cover"></div>
+        <div class="sign-in-forms">
+           <div>
+              <img 
+              src="../public/assets/images/logo.svg" alt="">
+           </div>
+          <form method="get">
+            <h2>Login</h2>
+            <label 
+            for="nome">Endereço de Email</label>
+            <input type="email" name="login" id="login" required />
+            <label for="senha">Senha</label>
+            <input type="password"
+            name="senha"
+            id="senha"
+            required />
+            <input 
+            class="btn-sign-in"
+            type="submit"
+            formaction="../index.html" value="Confirmar"
+            />
+        </form>
+        <div class="sign-in-help">
+        <a href="recuperacao.html">Esqueceu sua senha?</a> 
+           <h3>Não possui conta?</h3>
+           <a href="register.html">Criar uma nova conta</a></div>
+        </div>
+            </div>
+           </div>
+      </div>
+       
+    </section>
+  </main>
   </body>
 </html>
