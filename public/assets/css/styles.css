@@ -191,6 +191,17 @@ text-align: center;
 color: #fff;
 }
 
+.about-localization{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 32px 0 62px 0;
+}
+
+.about-localization-container{
+  max-width: 1090px;
+}
+
 /* end Seção HERO */
 
 .forms_simples {
