@@ -1,4 +1,4 @@
- @import url("./reset.css");
+@import url("./reset.css");
 
 /* Guia de cores */
 
@@ -21,8 +21,8 @@
 /* Tamanho do container principal */
 /* 1090px */
 
-html{
- font-family: 'Inter', sans-serif;
+html {
+  font-family: "Inter", sans-serif;
 }
 
 span {
@@ -31,22 +31,22 @@ span {
 }
 
 /* tela de login */
-.sign-in{
+.sign-in {
   width: 100vw;
   height: 100vh;
   display: flex;
-  
+
   align-items: center;
   overflow: hidden;
 }
 
-.sign-in-container{
+.sign-in-container {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.sign-in-cover{
+.sign-in-cover {
   flex: 1;
   background: url("../images/background-login.jpg") no-repeat;
   background-size: cover;
@@ -54,7 +54,7 @@ span {
   height: 100vh;
 }
 
-.sign-in-forms{
+.sign-in-forms {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -63,23 +63,23 @@ span {
   width: 100%;
 }
 
-.sign-in-forms div>img{
+.sign-in-forms div > img {
   width: 257px;
   margin-bottom: 32px;
 }
 
-.sign-in-forms form{
+.sign-in-forms form {
   display: flex;
   flex-direction: column;
-  gap: 18px; 
+  gap: 18px;
 }
 
-.sign-in-forms input[type=emal]{
+.sign-in-forms input[type="emal"] {
   border: solid 1px #242222;
   background-color: #016956;
 }
 
-.btn-sign-in{
+.btn-sign-in {
   width: 100%;
   height: auto;
   border-radius: 9px;
@@ -91,7 +91,7 @@ span {
   background-color: #016956;
 }
 
-.btn-sign-in:hover{
+.btn-sign-in:hover {
   background-color: #016956;
   color: #fff;
   opacity: 0.5;
@@ -99,19 +99,17 @@ span {
   cursor: pointer;
 }
 
-
-.sign-in-help{
+.sign-in-help {
   display: flex;
   flex-direction: column;
   gap: 8px;
   margin-top: 32px;
 }
 
-
 /* end de login */
 
 /* Header */
-.header{
+.header {
   display: flex;
   justify-content: center;
   background-color: #fff;
@@ -119,48 +117,47 @@ span {
   margin: 0 32px;
 }
 
-.header-container{
+.header-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
- }
+}
 /* end Header */
 
 /* Navbar */
-.logo{
+.logo {
   width: 217px;
-  
 }
 
-.navbar{
+.navbar {
   font-size: 20px;
 }
 
-.menu{
+.menu {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 42px;
-  
 }
 
-.menu a{
+.menu a {
   color: #242222;
   padding: 28px 0;
   position: relative;
 }
 
-.menu a:hover::before{
+.menu a:hover::before {
   content: "";
   position: absolute;
   width: 100%;
   height: 5px;
-  background-color: #B9AD81;
+  background-color: #b9ad81;
   bottom: 0;
 }
 
-.menu-btn_signin, .menu-btn_login{
+.menu-btn_signin,
+.menu-btn_login {
   width: 140px;
   height: auto;
   border-radius: 9px;
@@ -171,62 +168,61 @@ span {
   color: #016956;
 }
 
-.menu-btn_login{
-  background-color: #E1E6E1;
+.menu-btn_login {
+  background-color: #e1e6e1;
 }
 
-.menu-btn_login{
+.menu-btn_login {
   background-color: #fff;
   border: 1px solid #016956;
 }
 
-
-.menu-btn_signin:hover{
+.menu-btn_signin:hover {
   background-color: #016956;
   color: #fff;
   opacity: 0.5;
   transition: ease 0.2s;
   cursor: pointer;
 }
-.menu-btn_login:hover{
+.menu-btn_login:hover {
   cursor: pointer;
-  background-color: #E1E6E1;
+  background-color: #e1e6e1;
   transition: ease 0.2s;
   cursor: pointer;
 }
 
-.menu-mobile{
+.menu-mobile {
   display: none;
 }
 /* end Navbar */
 
-
 /* Titulos */
-.title{
+.title {
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 48px;
-  color:#242222;
+  color: #242222;
   font-weight: 700;
   padding: 28px 0;
   margin: 38px 0;
   position: relative;
 }
 
-.title::after{
+.title::after {
   content: "";
   width: 268px;
   height: 12px;
   position: absolute;
   height: 5px;
-  background-color: #B9AD81;
+  background-color: #b9ad81;
   bottom: 0;
 }
 /* end Titulos */
 
 /* Página Home Seção HERO */
-.home-hero, .about-hero{
+.home-hero,
+.about-hero {
   background-size: cover;
   padding: 164px;
   width: 100%;
@@ -237,32 +233,31 @@ span {
   object-fit: contain;
 }
 
-.home-hero{
-  background:url('../images/background-home.png') no-repeat;
+.home-hero {
+  background: url("../images/background-home.png") no-repeat;
   background-size: cover;
-  
 }
 
-.home-hero h1, .about-hero h1{
-font-size: 86px;
-font-weight: 700;
-line-height: 104px;
-letter-spacing: 0em;
-text-align: center;
-color: #fff;
+.home-hero h1,
+.about-hero h1 {
+  font-size: 86px;
+  font-weight: 700;
+  line-height: 104px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #fff;
 }
 
-.about-localization{
+.about-localization {
   display: flex;
   justify-content: center;
   width: 100%;
   padding: 32px 0 62px 0;
 }
 
-.about-localization-container{
+.about-localization-container {
   max-width: 1090px;
 }
-
 
 .forms_simples {
   margin-right: 60%;
@@ -286,55 +281,76 @@ input {
 }
 
 /* Header */
-.navbar{
-  padding-left: 20px;
-}
-.logo img{
-  size: 60px;
-}
-header{
-  height: 100px;
+.header {
+  display: flex;
+  justify-content: center;
   background-color: #fff;
-  color: #fc9500;
+  padding: 68px 0px;
+  margin: 0 32px;
 }
-.menu{
-  flex: 1;
+
+.header-container {
   display: flex;
-  justify-content: flex-end;
-  }
-  .header{
-      max-width: 1140px;
-      height: 100px;
-      margin: auto;
-      display: flex;
-      align-items: center;
-  }
-.menu ul,
-.menu li{
-  list-style: none;
-}
-.menu ul{
-  display: flex;
-}
-.menu li a{
-  color:#1D9371;
-  text-transform: uppercase;
-  font-weight: 600;
-  text-decoration: none;
-  display: flex;
-  padding-left: 10px;
-  padding-right: 10px;
-  height: 100px;
+  justify-content: space-between;
   align-items: center;
-  border-bottom: 5px solid #fff;
+  width: 100%;
 }
-.menu li a:hover{
-  color: #fc9500;
+/* end Header */
+
+/* Navbar */
+.logo {
+  width: 217px;
 }
-.botao-login{
-  background-color: #1D9371;
-  display:inline-block;
-  font-weight: 600;
+
+.navbar {
+  font-size: 20px;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 42px;
+}
+
+.menu a {
+  color: #242222;
+  padding: 28px 0;
+  position: relative;
+}
+
+.menu a:hover::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  background-color: #b9ad81;
+  bottom: 0;
+}
+
+.menu-btn_signin,
+.menu-btn_login {
+  width: 140px;
+  height: auto;
+  border-radius: 9px;
+  border: none;
+  box-shadow: none;
+  font-size: 20px;
+  padding: 12px 22px;
+  color: #016956;
+}
+
+.menu-btn_login {
+  background-color: #e1e6e1;
+}
+
+.menu-btn_login {
+  background-color: #fff;
+  border: 1px solid #016956;
+}
+
+.menu-btn_signin:hover {
+  background-color: #016956;
   color: #fff;
   text-transform: uppercase;
   font-size: 12px;
@@ -345,19 +361,21 @@ header{
   height: 35px;
   margin-left: 50px;
 }
-.botao-login:hover{
-  color: #fc9500;
+.menu-btn_login:hover {
+  cursor: pointer;
+  background-color: #e1e6e1;
+  transition: ease 0.2s;
+  cursor: pointer;
 }
-.botao-login li a{
-  color: #fff;
-  height: auto;
-  border-bottom: none;
+
+.menu-mobile {
+  display: none;
 }
 /* end Navbar */
 
 /* Página Home Sessão HERO */
-.home-hero{
-  background:url('../images/background-home.png') no-repeat;
+.home-hero {
+  background: url("../images/background-home.png") no-repeat;
   background-size: cover;
   padding: 164px;
   width: 100%;
@@ -368,155 +386,187 @@ header{
   object-fit: contain;
 }
 
-.home-hero h1{
-font-size: 86px;
-font-weight: 700;
-line-height: 104px;
-letter-spacing: 0em;
-text-align: center;
-color: #fff;
+.home-hero h1 {
+  font-size: 86px;
+  font-weight: 700;
+  line-height: 104px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #fff;
 }
 
 /* end Sessão HERO */
 
 /* CSS - SOBRE HOTEL-PISCINA */
 
-.sobre-hotel{
+.sobre-hotel {
   display: flex;
   flex-direction: column;
   height: 100%;
   align-items: center;
   justify-content: center;
   padding: 30px;
-  background-color: #1D9371;
+  background-color: #1d9371;
   margin-top: 40px;
-  color: #1D9371;
+  color: #1d9371;
 }
 
-
-.section-titulo{
+.section-titulo {
   padding-top: 50px;
 }
-.section-titulo h1 em{
+.section-titulo h1 em {
   color: #050505;
 }
 .section-titulo,
-.section-desc{
+.section-desc {
   text-align: center;
   text-transform: uppercase;
   font-weight: 600;
   color: #fff;
 }
-.section-desc{
+.section-desc {
   font-size: 12px;
   margin-top: 10px;
   margin-bottom: 40px;
   padding-bottom: 50px;
-  }
-  .section-body{
-      max-width: 1140px;
-      margin: auto;
-      padding-bottom: 40px;
-      display: flex;
-  }
-  .section-sobre{
-      display: flex;
-  }
-  .section--esquerda{
-      flex: 1;
-  
-      margin-left: 20px;
-  }
-  .section--esquerda p{
-      color: #fff;
-      font-size: 15px;
-  }
-  .section--direita{
-      width: 500px;
-      text-align: center;
-      padding-left: 20px;
-  }
-  .section--direita img{
-      width: 480px;
-      box-shadow: 0px 5px 10px #333;
-  }
-  .botao{
-    display:inline-block;
-    background-color: #000;
-    font-weight: 600;
-    color: #fff;
-    text-transform: uppercase;
-    font-size: 12px;
-    text-decoration: none;
-    padding: 10px 30px;
-    margin-top: 30px;
-    border-radius: 20px;
 }
+.section-body {
+  max-width: 1140px;
+  margin: auto;
+  padding-bottom: 40px;
+  display: flex;
+}
+.section-sobre {
+  display: flex;
+}
+.section--esquerda {
+  flex: 1;
 
+  margin-left: 20px;
+}
+.section--esquerda p {
+  color: #fff;
+  font-size: 15px;
+}
+.section--direita {
+  width: 500px;
+  text-align: center;
+  padding-left: 20px;
+}
+.section--direita img {
+  width: 480px;
+  box-shadow: 0px 5px 10px #333;
+}
+.botao {
+  display: inline-block;
+  background-color: #000;
+  font-weight: 600;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 12px;
+  text-decoration: none;
+  padding: 10px 30px;
+  margin-top: 30px;
+  border-radius: 20px;
+}
+.section-body {
+  max-width: 1140px;
+  margin: auto;
+  padding-bottom: 40px;
+  display: flex;
+}
+.section-sobre {
+  display: flex;
+}
+.section--esquerda {
+  flex: 1;
+
+  margin-left: 20px;
+}
+.section--esquerda p {
+  color: #fff;
+  font-size: 15px;
+}
+.section--direita {
+  width: 500px;
+  text-align: center;
+}
+.section--direita img {
+  width: 480px;
+  box-shadow: 0px 5px 10px #333;
+}
+.botao {
+  display: inline-block;
+  background-color: #000;
+  font-weight: 600;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 12px;
+  text-decoration: none;
+  padding: 10px 30px;
+  margin-top: 30px;
+  border-radius: 20px;
+}
 
 /* CSS - GASTRONOMIA */
-.sobre-gastronomia
-
-.areaback-gastronomia{
-    width: 100vw;
-    height: 100%;
-    padding: 0%;
-    margin-top: 0%;
-    display: inline-block;
-    background-color: rgba(0, 0, 0, 0);
+.sobre-gastronomia .areaback-gastronomia {
+  width: 100vw;
+  height: 100%;
+  padding: 0%;
+  margin-top: 0%;
+  display: inline-block;
+  background-color: rgba(0, 0, 0, 0);
 }
 
-.section-titulo-gastronomia{
-padding-top: 50px;
+.section-titulo-gastronomia {
+  padding-top: 50px;
 }
-.section-titulo-gastronomia h3 em{
-color: #686B68;
+.section-titulo-gastronomia h3 em {
+  color: #686b68;
 }
 .section-titulo,
-.section-desc-gastronomia{
-text-align: center;
-text-transform: uppercase;
-font-weight: 600;
-color: #242222;
+.section-desc-gastronomia {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #242222;
 }
-.section-desc-gastronomia{
-font-size: 12px;
-margin-top: 10px;
-margin-bottom: 40px;
-padding-bottom: 50px;
+.section-desc-gastronomia {
+  font-size: 12px;
+  margin-top: 10px;
+  margin-bottom: 40px;
+  padding-bottom: 50px;
 }
-.section-body-gastronomia{
-    max-width: 1140px;
-    margin: auto;
-    padding-bottom: 40px;
-    display: flex;
+.section-body-gastronomia {
+  max-width: 1140px;
+  margin: auto;
+  padding-bottom: 40px;
+  display: flex;
 }
-.section-sobre-gastronomia{
-    display: flex;
+.section-sobre-gastronomia {
+  display: flex;
 }
-.section--esquerda-gastronomia{
-    flex: 1;
+.section--esquerda-gastronomia {
+  flex: 1;
 
-    margin-left: 20px;
+  margin-left: 20px;
 }
-.section--esquerda-gastronomia p{
-    color: #686B68;
-    font-size: 15px;
+.section--esquerda-gastronomia p {
+  color: #686b68;
+  font-size: 15px;
 }
-.section--direita-gastronomia{
-    width: 500px;
-    text-align: center;
+.section--direita-gastronomia {
+  width: 500px;
+  text-align: center;
 }
-.section--direita-gastronomia img{
-    width: 480px;
-    box-shadow: 0px 5px 10px #333;
+.section--direita-gastronomia img {
+  width: 480px;
+  box-shadow: 0px 5px 10px #333;
 }
-
-
 
 /* CSS - ACOMODAÇÕES */
-.text-acomodacoes p{
-  color:#686B68 ;
+.text-acomodacoes p {
+  color: #686b68;
 }
 
 main section article div.flex-color {
@@ -541,7 +591,6 @@ main section article div.flex-color div:nth-child(2) {
   margin-top: 10px;
 }
 
-
 main section article div.containerAcomodacoes {
   margin: 60px 0 60px 0;
   min-height: 30vh;
@@ -563,7 +612,6 @@ main section article div.containerAcomodacoes div img {
   height: 40vh;
   border-radius: 20px;
 }
-
 
 .infoFoto {
   position: absolute;
@@ -615,7 +663,7 @@ main section article div.containerAcomodacoes div img {
 .text-design {
   width: 192px;
   height: 6px;
-  background-color: #4F9277;
+  background-color: #4f9277;
   margin-left: auto;
   margin-right: auto;
   margin-top: 10px;
@@ -627,56 +675,53 @@ main section article div.containerAcomodacoes div img {
   font-size: 30px;
 }
 
-
 /* Fim Acomodações */
-
-
 
 /* CSS - DEPOIMENTOS */
 
-.depoimentos{
-  background-color: #1D9371;
+.depoimentos {
+  background-color: #1d9371;
 }
 
-.area-depoimentos{
+.area-depoimentos {
   display: flex;
   flex-direction: column;
   height: 100%;
   align-items: center;
-  color: #686B68;
+  color: #686b68;
   justify-content: center;
   padding: 30px;
 }
 
-.section-avatar{
+.section-avatar {
   width: 130px;
   height: auto;
   border-radius: 65px;
 }
-.section-nome{
+.section-nome {
   text-transform: uppercase;
   font-weight: 600;
   font-size: 12px;
   margin-top: 25px;
   margin-bottom: 10px;
 }
-.comentario{
+.comentario {
   font-size: 14px;
   margin-top: 6px;
-  color: #686B68;
+  color: #686b68;
   text-transform: uppercase;
 }
-.caixa-depoimento{
+.caixa-depoimento {
   width: 280px;
   min-height: 300px;
   height: 100%;
   display: inline-block;
-  background-color:#fff;
+  background-color: #fff;
   margin-right: 30px;
 }
 
 /* Footer */
-.footer{
+.footer {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -684,44 +729,45 @@ main section article div.containerAcomodacoes div img {
   background-color: #fff;
 }
 
-
-.footer-container{
+.footer-container {
   display: flex;
   gap: 68px;
   max-width: 1090px;
   width: 100%;
   padding: 68px 0px;
   margin: 0 32px;
-  border-top: 3px solid rgba(185, 173, 129, 0.3);;
+  border-top: 3px solid rgba(185, 173, 129, 0.3);
 }
 
-.footer-logo{
+.footer-logo {
   width: 257px;
 }
 
-.footer-item, .footer-item > ul, .footer-menu{
+.footer-item,
+.footer-item > ul,
+.footer-menu {
   display: flex;
   flex-direction: column;
-  gap: 22px
+  gap: 22px;
 }
 
-.footer-menu a{
+.footer-menu a {
   font-size: 16px;
-  color: #686B68;
+  color: #686b68;
 }
 
-.footer-menu a:hover{
-  color: #B9AD81;
+.footer-menu a:hover {
+  color: #b9ad81;
 }
 
-.footer p{
+.footer p {
   text-align: center;
-  background-color: #EFF5F0;
+  background-color: #eff5f0;
   padding: 23px 0;
   width: 100%;
 }
 
-.footer-item_social{
+.footer-item_social {
   display: flex;
   gap: 15px;
 }
@@ -753,9 +799,6 @@ div.gastronomia p {
   color: #686b68;
   margin-top: 1rem;
 }
-
-
-
 
 /* CSS - ACOMODAÇÕES */
 
@@ -823,11 +866,10 @@ main section article div.containerAcomodacoes div img {
   width: 490px;
 }
 
-
 /* Fim Acomodações */
 
 /* Footer */
-.footer{
+.footer {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -835,44 +877,45 @@ main section article div.containerAcomodacoes div img {
   background-color: #fff;
 }
 
-
-.footer-container{
+.footer-container {
   display: flex;
   gap: 68px;
   max-width: 1090px;
   width: 100%;
   padding: 68px 0px;
   margin: 0 32px;
-  border-top: 3px solid rgba(185, 173, 129, 0.3);;
+  border-top: 3px solid rgba(185, 173, 129, 0.3);
 }
 
-.footer-logo{
+.footer-logo {
   width: 257px;
 }
 
-.footer-item, .footer-item > ul, .footer-menu{
+.footer-item,
+.footer-item > ul,
+.footer-menu {
   display: flex;
   flex-direction: column;
-  gap: 22px
+  gap: 22px;
 }
 
-.footer-menu a{
+.footer-menu a {
   font-size: 16px;
-  color: #686B68;
+  color: #686b68;
 }
 
-.footer-menu a:hover{
-  color: #B9AD81;
+.footer-menu a:hover {
+  color: #b9ad81;
 }
 
-.footer p{
+.footer p {
   text-align: center;
-  background-color: #EFF5F0;
+  background-color: #eff5f0;
   padding: 23px 0;
   width: 100%;
 }
 
-.footer-item_social{
+.footer-item_social {
   display: flex;
   gap: 15px;
 }
@@ -905,19 +948,14 @@ div.gastronomia p {
   margin-top: 1rem;
 }
 
-
 /* Seção Depoimentos */
 
-
-
-
-
 /* Seção Sobre */
-.about-hero{
-    background:url('../images/background-about.png') no-repeat;
+.about-hero {
+  background: url("../images/background-about.png") no-repeat;
 }
 
-.about{
+.about {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -926,58 +964,57 @@ div.gastronomia p {
   margin: 0 32px;
 }
 
-.about-container{
+.about-container {
   display: flex;
   justify-content: center;
   gap: 48px;
   width: 100%;
   max-width: 1090px;
- }
- 
- .about-room-content{
+}
+
+.about-room-content {
   flex: 1;
   display: flex;
   flex-direction: column;
   gap: 58px;
- }
- 
- .about-room_image{
+}
+
+.about-room_image {
   flex: 1;
   width: 100%;
- }
- 
- .about-room_image img{
+}
+
+.about-room_image img {
   border-radius: 15px;
   height: 530px;
   object-fit: cover;
- }
- 
- .about-room_icon{
+}
+
+.about-room_icon {
   display: flex;
   gap: 18px;
   align-items: center;
- }
- 
- .about-room-content h3{
+}
+
+.about-room-content h3 {
   font-size: 32px;
   font-weight: 700;
-  color:#242222;
- }
- 
-  .about-room_icon img{
-    width: 48px;
-    height: auto;
-  }
-  
-   
-  .about-room-content p{
-    font-size: 24px;
-    color: #686B68;
-    line-height: 36px;
-    font-weight: 400px;
-  }
-  
-  .about-btn{
+  color: #242222;
+}
+
+.about-room_icon img {
+  width: 48px;
+  height: auto;
+}
+
+.about-room-content p {
+  font-size: 24px;
+  color: #686b68;
+  line-height: 36px;
+  font-weight: 400px;
+}
+
+.about-btn {
   width: 288px;
   height: auto;
   border-radius: 9px;
@@ -991,29 +1028,27 @@ div.gastronomia p {
   cursor: pointer;
 }
 
-.menu-btn_login{
+.menu-btn_login {
   background-color: #fff;
   border: 1px solid #016956;
 }
 
-
-.about-btn:hover{
+.about-btn:hover {
   opacity: 0.8;
   transition: ease 0.2s;
 }
-
 
 /* end Seção Sobre */
 
 /* ajuste do Sobre nos */
 
-.about-us{
+.about-us {
   display: flex;
   justify-content: center;
   width: 100%;
 }
 
-.about-us-container{
+.about-us-container {
   display: flex;
   justify-content: center;
   max-width: 1090px;
@@ -1027,88 +1062,57 @@ div.gastronomia p {
   align-items: center;
   justify-content: center;
   font-size: 48px;
-  color:#242222;
+  color: #242222;
   font-weight: 700;
   padding: 28px 0;
   margin: 68px 0;
   position: relative;
 }
 
-.sobreNos::after{
+.sobreNos::after {
   content: "";
   width: 268px;
   height: 12px;
   position: absolute;
   height: 5px;
-  background-color: #B9AD81;
+  background-color: #b9ad81;
   bottom: 0;
 }
 
 .descricao {
   font-size: 1.5rem;
-  color: #686B68;
+  color: #686b68;
   text-indent: 1.2rem;
   text-align: center;
 }
-
 
 .image {
   text-align: center;
 }
 
-
-
-
-
 .containerImagem {
-
   display: flex;
-
   justify-content: center;
-
 }
-
-
-
 
 .imagem {
-
-width: 800px;
-
-margin: 10px;
-
-position: relative;
-
-text-align: center;
-
+  width: 800px;
+  margin: 10px;
+  position: relative;
+  text-align: center;
 }
-
-
-
 
 .imagem::after {
-
-content: attr(data-title); /* estilo que coloco a legenda no lugar */
-
-position: absolute;
-
-width: 100%;
-
-bottom: -20px;
-
-left: 0;
-
+  content: attr(data-title); /* estilo que coloco a legenda no lugar */
+  position: absolute;
+  width: 100%;
+  bottom: -20px;
+  left: 0;
 }
-
-
-
 
 .imagem img {
-
   border-radius: 5%;
-
 }
-
 
 /*  */
 
