@@ -862,3 +862,184 @@ div.gastronomia p {
 
 
 /* end Seção Sobre */
+
+.sobreNos {
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  font-size: 48px;
+
+  color:#242222;
+
+  font-weight: 700;
+
+  padding: 28px 0;
+
+  margin: 68px 0;
+
+  position: relative;
+
+}
+
+
+
+
+.sobreNos::after{
+
+  content: "";
+
+  width: 268px;
+
+  height: 12px;
+
+  position: absolute;
+
+  height: 5px;
+
+  background-color: #B9AD81;
+
+  bottom: 0;
+
+}
+
+
+
+
+.descricao {
+
+  font-size: 1.5rem;
+
+  color: #686B68;
+
+  text-indent: 1.2rem;
+
+  text-align: center;
+
+}
+
+
+
+
+.image {
+
+  text-align: center;
+
+
+}
+
+
+
+
+.parceiros {
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  font-size: 48px;
+
+  color:#242222;
+
+  font-weight: 700;
+
+  padding: 28px 0;
+
+  margin: 68px 0;
+
+  position: relative;
+
+}
+
+
+
+
+.parceiros::after{
+
+  content: "";
+
+  width: 268px;
+
+  height: 12px;
+
+  position: absolute;
+
+  height: 5px;
+
+  background-color: #B9AD81;
+
+  bottom: 0;
+
+}
+
+
+
+
+.listaParceiros { 
+
+  font-size: 1.5rem;
+
+  color: #686B68;
+
+  text-indent: 1.2rem;
+
+  text-align: center;
+
+}
+
+
+
+
+.containerImagem {
+
+  display: flex;
+
+  justify-content: center;
+
+}
+
+
+
+
+.imagem {
+
+width: 800px;
+
+margin: 10px;
+
+position: relative;
+
+text-align: center;
+
+}
+
+
+
+
+.imagem::after {
+
+content: attr(data-title); /* estilo que coloco a legenda no lugar */
+
+position: absolute;
+
+width: 100%;
+
+bottom: -20px;
+
+left: 0;
+
+}
+
+
+
+
+.imagem img {
+
+  border-radius: 5%;
+
+}
