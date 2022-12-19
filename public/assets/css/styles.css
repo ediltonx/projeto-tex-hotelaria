@@ -35,7 +35,6 @@ span {
   width: 100vw;
   height: 100vh;
   display: flex;
-  
   align-items: center;
   overflow: hidden;
 }
@@ -285,12 +284,6 @@ input {
   background-color: #bfbfbf;
 }
 
-body {
-  /* margin: auto; */
-  /* font-size: 1.3rem; */
-  /* margin-left: 1%; */
-  /* text-align: left; */
-}
 
 /* Header */
 .header{
@@ -538,14 +531,10 @@ padding-bottom: 50px;
     box-shadow: 0px 5px 10px #333;
 }
 
-
-
 /* CSS - ACOMODAÇÕES */
 .text-acomodacoes p{
   color:#686B68 ;
 }
-
-
 
 main section article div.flex-color {
   display: flex;
@@ -627,7 +616,7 @@ h2 {
   margin-top: 10px;
 }
 
-p {
+.texto-section-2 p {
   padding: 50px 200px 0px 210px;
   text-align: justify;
   font-size: 30px;
