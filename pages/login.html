@@ -5,50 +5,63 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Entrar</title>
-    <link rel="stylesheet" href="/public/assets/css/styles.css" />
+    <link rel="stylesheet" href="../public/assets/css/styles.css" />
   </head>
   <form>
-    <header>
-      <header>
-        <div class="header">
+    <header class="header">
+      <div class="header-container">
         <div class="logo">
-          <img src="../public/assets/images/logo.svg" alt="logo" width="300" />
+           <a href="../index.html">
+             <img src="../public/assets/images/logo.svg" alt="Chloe Gran Hotel"/>
+          </a>
         </div>
-  
-  
-        
-  <div class="menu">
-        <nav >
-            <ul>
+          <nav class="navbar">
+            <ul class="menu">
               <li>
-                <a href="pages/about.html">O Hotel</a>
+                <a href="about.html"> Hotel</a>
               </li>
               <li>
-                <a href="pages/acomodacoes.html">Acomodações</a>
+                <a href="acomodacoes.html">Acomodações</a>
               </li>
               <li>
-                <a href="pages/reservas.html">Reservas</a>
+                <a href="reservas.html">Reservas</a>
               </li>
               <li>
-                <a href="pages/contato.html">Contato</a>
+                <a href="contato.html">Contato</a>
               </li>
-             
               <li>
-                <a href="admin/login.html">Área Administrativa</a>
-              </li> 
-              
-              <div  class="botao-login">
-              <li>
-                <a href="pages/login.html">Login</a>
+                <form action="../pages/register.html" method="get">
+                  <input class="menu-btn_signin" type="submit" value="Cadastrar">
+                </form>
               </li>
-              </div>
-              
+              <li>
+                 <form action="../pages/login.html" method="get">
+                  <input class="menu-btn_login" type="submit" value="Acessar">
+               </form>
+              </li>
             </ul>
-          </nav>
-        </div>
-        
-        </div>
-        </header>
+              <ul class="menu-mobile">
+              <li>
+                <a href="about.html">O Hotel</a>
+              </li>
+              <li>
+                <a href="acomodacoes.html">Acomodações</a>
+              </li>
+              <li>
+                <a href="reservas.html">Reservas</a>
+              </li>
+              <li>
+                <a href="contato.html">Contato</a>
+              </li>
+              <li>
+                <a href="login.html">Login</a>
+              </li>
+              <li>
+                <a href="../admin/login.html">Área Administrativa</a>
+              </li>
+            </ul>
+      </nav>
+      </div>
     </header>
     <br />
     <form method="get">
