@@ -1021,3 +1021,104 @@ left: 0;
 
 
 /*  */
+
+/* reservas */
+.main-reserva {
+  width: 100vw;
+  height: 100vh;
+  background: rgb(34, 193, 195);
+  background: linear-gradient(
+    0deg,
+    rgba(34, 193, 195, 1) 25%,
+    rgba(253, 187, 45, 1) 100%
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left-reserva {
+  width: 50vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.left-reserva > h1 {
+  color: antiquewhite;
+}
+
+.rigth-reserva {
+  width: 50vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-inputs {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 30px 35px;
+  background: rgb(34, 193, 195);
+  background: linear-gradient(
+    0deg,
+    rgba(34, 193, 195, 1) 25%,
+    rgba(253, 187, 45, 1) 100%
+  );
+  border-radius: 20px;
+  box-shadow: 0px 10px 40px #00000056;
+}
+
+.card-inputs > h1 {
+  color: antiquewhite;
+  font-weight: 800;
+  margin: 0;
+}
+
+.textfield {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 10px 0px;
+}
+
+.textfield > input {
+  width: 100%;
+  border: nome;
+  border-radius: 10px;
+  padding: 15px;
+
+  font-size: 12pt;
+  box-shadow: 0px 10px 40px #00000056;
+}
+
+.textfield > label {
+  color: antiquewhite;
+  margin-bottom: 10px;
+}
+
+.btn-reserva {
+  width: 100%;
+  padding: 16px 0px;
+  margin: 25px;
+  border-radius: 8px;
+  font-weight: 800;
+  color: black;
+  background: antiquewhite;
+  cursor: pointer;
+  box-shadow: 0px 10px 40px -12px #0000;
+}
+
+.left-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* end reservas */
