@@ -224,13 +224,6 @@ input {
   background-color: #bfbfbf;
 }
 
-body {
-  /* margin: auto; */
-  /* font-size: 1.3rem; */
-  /* margin-left: 1%; */
-  /* text-align: left; */
-}
-
 /* Header */
 .navbar{
   padding-left: 20px;
@@ -465,8 +458,6 @@ padding-bottom: 50px;
   color:#686B68 ;
 }
 
-
-
 main section article div.flex-color {
   display: flex;
   flex-direction: column;
@@ -489,19 +480,20 @@ main section article div.flex-color div:nth-child(2) {
   margin-top: 10px;
 }
 
+
 main section article div.containerAcomodacoes {
-  margin-top: 60px;
+  margin: 60px 0 60px 0;
   min-height: 30vh;
   padding: 1px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   column-gap: 10px;
-  row-gap: 1px;
+  row-gap: 10px;
   justify-content: center;
 }
 main section article div.containerAcomodacoes div {
-  width: 30%;
+  width: 500px;
   padding: 5px;
 }
 
@@ -510,6 +502,31 @@ main section article div.containerAcomodacoes div img {
   height: 40vh;
   border-radius: 20px;
 }
+
+
+.infoFoto {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 40vh;
+  border-radius: 20px;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+.infoFoto h5 {
+  font-size: 18px;
+  font-weight: 600px;
+}
+.fotoArea:hover .infoFoto {
+  display: flex;
+  width: 490px;
+}
+
+
+/* Fim Acomodações */
+
 
 
 /* CSS - DEPOIMENTOS */
