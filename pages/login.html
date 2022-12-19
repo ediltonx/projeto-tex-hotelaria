@@ -8,13 +8,60 @@
     <link rel="stylesheet" href="../public/assets/css/styles.css" />
   </head>
   <form>
-    <header>
-      <img
-        src="../public/assets/images/logo.png"
-        alt="logo sem slogan"
-        width="300"
-      />
-      <span>aqui o seu bem estar é coisa séria!</span>
+    <header class="header">
+      <div class="header-container">
+        <div class="logo">
+           <a href="../index.html">
+             <img src="../public/assets/images/logo.svg" alt="Chloe Gran Hotel"/>
+          </a>
+        </div>
+          <nav class="navbar">
+            <ul class="menu">
+              <li>
+                <a href="about.html"> Hotel</a>
+              </li>
+              <li>
+                <a href="acomodacoes.html">Acomodações</a>
+              </li>
+              <li>
+                <a href="reservas.html">Reservas</a>
+              </li>
+              <li>
+                <a href="contato.html">Contato</a>
+              </li>
+              <li>
+                <form action="../pages/register.html" method="get">
+                  <input class="menu-btn_signin" type="submit" value="Cadastrar">
+                </form>
+              </li>
+              <li>
+                 <form action="../pages/login.html" method="get">
+                  <input class="menu-btn_login" type="submit" value="Acessar">
+               </form>
+              </li>
+            </ul>
+              <ul class="menu-mobile">
+              <li>
+                <a href="about.html">O Hotel</a>
+              </li>
+              <li>
+                <a href="acomodacoes.html">Acomodações</a>
+              </li>
+              <li>
+                <a href="reservas.html">Reservas</a>
+              </li>
+              <li>
+                <a href="contato.html">Contato</a>
+              </li>
+              <li>
+                <a href="login.html">Login</a>
+              </li>
+              <li>
+                <a href="../admin/login.html">Área Administrativa</a>
+              </li>
+            </ul>
+      </nav>
+      </div>
     </header>
     <br />
     <form method="get">
