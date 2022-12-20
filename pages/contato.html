@@ -4,7 +4,7 @@
    <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../public/assets/css/styles.css">
+    <link rel="stylesheet" href="../public/assets/css/contato.css">
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
     <title>Contato</title>
   </head>
@@ -62,34 +62,71 @@
       </nav>
       </div>
     </header>
-    <main>
-      <section>
-        <article>
-          <p>Preencha os seguintes dados que entraremos em contato com você!</p>
-          <form action="../index.html" id="form" method="get">
-            <label for="fname"> Nome: </label>
-            <input type="text" name="fname" /> <br />
-            <br />
-            <label for="femail"> Email: </label>
-            <input type="email" name="femail" /> <br />
-            <br />
-            <label for="fphone"> Telefone: </label>
-            <input type="text" name="fphone" /> <br />
-            <br />
-            <select name="assunto">
+      <div class="form-contato">
+      <div class="left-contato">
+        <img class="left-image" src="../public/assets/images/background-contato.jpg" />
+      </div>
+      <div class="rigth-contato">
+        <div class="card-inputs">
+          <h1>Reserve agora!</h1>
+          <div class="textfield">
+            <label for="Nome">Nome: </label>
+            <input type="text" />
+          </div>
+          <div class="textfield">
+            <label for="email">E-Mail: </label>
+            <input type="email" />
+          </div>
+          <div class="textfield">
+            <label for="Telefone">Telefone: </label>
+            <input type="number" />
+          </div>
+          <div class="textfield">
+            <label for="assunto">Assunto:</label>
+            <select name="assunto" id="assunto">
               <option value="cancelamento">Cancelamento de reserva</option>
               <option value="ouvidoria">Ouvidoria</option>
               <option value="departamento">Departamento Financeiro</option>
             </select>
-            <br />
-            <br />
-            <textarea name="mensagem" cols="30" rows="10"></textarea>
+          </div>
+          <input class="btn-contato" type="submit" value="enviar" />
+        </div>
+      </div>
+    </div>
+    </body>
+    <!-- <body>
+      <div class="form_contato"></div>
+          <div class="left-contato">
+            <img class="left-image" src="../public/assets/images/background-contato.jpg" />
+      </div>
+      <div class="rigth-contato">
+        <div class="card-inputs">
+          <h1>Preencha os campos abaixo para entrar em contato conosco!</h1>
+          <div class="textfield">
+          <form action="../index.html" class="form_contato" method="get">
+            <label for="fname"> Nome: </label>
+            <input type="text" name="fname" />
+          </div>
+          <div class="textfield">
+            <label for="femail"> Email: </label>
+            <input type="email" name="femail" /></div>
+            <div class="textfield">
+            <label for="fphone"> Telefone: </label>
+            <input type="text" name="fphone" /></div>
+            <div class="textfield">
+            <p>Selecione o assunto que gostaria de tratar:</p>
+            <select name="assunto">
+              <option value="cancelamento">Cancelamento de reserva</option>
+              <option value="ouvidoria">Ouvidoria</option>
+              <option value="departamento">Departamento Financeiro</option>
+            </select></div>
 
-            <input type="submit" value="enviar" />
+            <textarea name="mensagem" cols="30" rows="10"></textarea>
+            <br />
+            <input class="btn-contato" type="submit" value="enviar" />
           </form>
-        </article>
-      </section>
-    </main>
+         </div> 
+        </div> -->
    <footer class="footer">
       <div class="footer-container">
          <div class="footer-logo">
