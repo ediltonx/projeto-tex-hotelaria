@@ -35,7 +35,7 @@ span {
   width: 100vw;
   height: 100vh;
   display: flex;
-
+  justify-content: flex-end;
   align-items: center;
   overflow: hidden;
 }
@@ -50,7 +50,8 @@ span {
   flex: 1;
   background: url("../images/background-login.jpg") no-repeat;
   background-size: cover;
-  width: 75vw;
+  background-position: center;
+  width: 100vw;
   height: 100vh;
 }
 
@@ -953,6 +954,7 @@ div.gastronomia p {
 /* Seção Sobre */
 .about-hero {
   background: url("../images/background-about.png") no-repeat;
+  background-size: cover;
 }
 
 .about {
