@@ -1,4 +1,5 @@
 @import url("./reset.css");
+@import url('./about.css');
 
 /* Guia de cores */
 
@@ -35,10 +36,6 @@ span {
   width: 100vw;
   height: 100vh;
   display: flex;
-<<<<<<< HEAD
-=======
-
->>>>>>> 3e38f9f42ddb1b3801ebe8e84254636154b83820
   align-items: center;
   overflow: hidden;
 }
@@ -283,10 +280,6 @@ input {
   background-color: #bfbfbf;
 }
 
-<<<<<<< HEAD
-
-=======
->>>>>>> 3e38f9f42ddb1b3801ebe8e84254636154b83820
 /* Header */
 .header {
   display: flex;
@@ -620,8 +613,6 @@ main section article div.containerAcomodacoes div img {
   border-radius: 20px;
 }
 
-<<<<<<< HEAD
-=======
 .infoFoto {
   position: absolute;
   background-color: rgba(0, 0, 0, 0.5);
@@ -642,7 +633,6 @@ main section article div.containerAcomodacoes div img {
   width: 490px;
 }
 
->>>>>>> 3e38f9f42ddb1b3801ebe8e84254636154b83820
 /*CSS Produto Destaque*/
 
 .section-2 {
@@ -663,11 +653,7 @@ main section article div.containerAcomodacoes div img {
   object-fit: cover;
 }
 
-<<<<<<< HEAD
-h2 {
-=======
 .section-2 h2 {
->>>>>>> 3e38f9f42ddb1b3801ebe8e84254636154b83820
   padding-top: 10px;
   font-family: inter;
   text-align: center;
@@ -677,28 +663,18 @@ h2 {
 .text-design {
   width: 192px;
   height: 6px;
-<<<<<<< HEAD
-  background-color: #4F9277;
-=======
   background-color: #4f9277;
->>>>>>> 3e38f9f42ddb1b3801ebe8e84254636154b83820
   margin-left: auto;
   margin-right: auto;
   margin-top: 10px;
 }
 
-<<<<<<< HEAD
-.texto-section-2 p {
-=======
 .section-2 p {
->>>>>>> 3e38f9f42ddb1b3801ebe8e84254636154b83820
   padding: 50px 200px 0px 210px;
   text-align: justify;
   font-size: 30px;
 }
 
-<<<<<<< HEAD
-=======
 /* Fim Acomodações */
 
 /* CSS - DEPOIMENTOS */
@@ -744,7 +720,6 @@ h2 {
   margin-right: 30px;
 }
 
->>>>>>> 3e38f9f42ddb1b3801ebe8e84254636154b83820
 /* Footer */
 .footer {
   display: flex;
