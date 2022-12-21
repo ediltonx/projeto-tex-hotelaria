@@ -1,5 +1,5 @@
 @import url("./reset.css");
-@import url('./about.css');
+@import url("./about.css");
 
 /* Guia de cores */
 
@@ -36,10 +36,6 @@ span {
   width: 100vw;
   height: 100vh;
   display: flex;
-<<<<<<< HEAD
-  justify-content: flex-end;
-=======
->>>>>>> 9f788c46d240f2bf3b1b9bdd31a6ed37d2c5048b
   align-items: center;
   overflow: hidden;
 }
@@ -727,26 +723,43 @@ main section article div.containerAcomodacoes div img {
 }
 
 /* Footer */
+
+.navbar {
+  display: none;
+}
+
+main {
+  display: none;
+}
+
 .footer {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   background-color: #fff;
+  padding: 68px 0px;
+  margin: 0 32px;
 }
 
 .footer-container {
   display: flex;
+  flex-wrap: wrap;
   gap: 68px;
   max-width: 1090px;
   width: 100%;
   padding: 68px 0px;
-  margin: 0 32px;
   border-top: 3px solid rgba(185, 173, 129, 0.3);
 }
 
 .footer-logo {
   width: 257px;
+}
+
+.footer-item_container {
+  display: flex;
+  flex: 1;
+  gap: 42px;
 }
 
 .footer-item,
@@ -766,17 +779,49 @@ main section article div.containerAcomodacoes div img {
   color: #b9ad81;
 }
 
-.footer p {
+.copy {
   text-align: center;
   background-color: #eff5f0;
   padding: 23px 0;
   width: 100%;
+  margin: 0;
 }
 
 .footer-item_social {
   display: flex;
   gap: 15px;
 }
+
+@media (max-width: 750px) {
+  .footer {
+    padding: 22px 0px;
+  }
+  .footer-container {
+    gap: 42px;
+    padding: 42px 0px;
+    flex-direction: column;
+  }
+
+  .footer-item_container {
+    width: 100%;
+    flex-direction: column;
+  }
+  /* .footer-logo {
+    width: 100%;
+  } */
+  .footer-item {
+    width: 100%;
+    gap: 22px;
+  }
+  /* .footer-item{
+    
+  } */
+  .footer-item > ul,
+  .footer-menu {
+    gap: 12px;
+  }
+}
+
 /* end Footer */
 
 /* Tela Home - Sessão Gastronomia */
@@ -874,7 +919,7 @@ main section article div.containerAcomodacoes div img {
 
 /* Fim Acomodações */
 
-/* Footer */
+/* Footer
 .footer {
   display: flex;
   justify-content: center;
@@ -924,7 +969,7 @@ main section article div.containerAcomodacoes div img {
 .footer-item_social {
   display: flex;
   gap: 15px;
-}
+} */
 /* end Footer */
 
 /* Tela Home - Sessão Gastronomia */
