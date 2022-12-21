@@ -127,14 +127,6 @@ span {
   flex-wrap: wrap;
 }
 
-@media (max-width: 1120px) {
-  .header-container {
-    justify-content: center;
-  }
-  .menu {
-    padding-top: 32px;
-  }
-}
 /* end Header */
 
 /* Navbar */
@@ -205,18 +197,6 @@ span {
 
 .menu-mobile {
   display: none;
-}
-
-@media (max-width: 894px) {
-  .header-container {
-    justify-content: space-between;
-  }
-  .menu {
-    display: none;
-  }
-  .menu-mobile {
-    display: block;
-  }
 }
 
 /* end Navbar */
@@ -714,36 +694,6 @@ main section article div.containerAcomodacoes div img {
   gap: 15px;
 }
 
-@media (max-width: 750px) {
-  .footer {
-    padding: 22px 0px;
-  }
-  .footer-container {
-    gap: 42px;
-    padding: 42px 0px;
-    flex-direction: column;
-  }
-
-  .footer-item_container {
-    width: 100%;
-    flex-direction: column;
-  }
-  /* .footer-logo {
-    width: 100%;
-  } */
-  .footer-item {
-    width: 100%;
-    gap: 22px;
-  }
-  /* .footer-item{
-    
-  } */
-  .footer-item > ul,
-  .footer-menu {
-    gap: 12px;
-  }
-}
-
 /* end Footer */
 
 /* Tela Home - Sessão Gastronomia */
@@ -838,61 +788,6 @@ main section article div.containerAcomodacoes div img {
   display: flex;
   width: 490px;
 }
-
-/* Fim Acomodações */
-
-/* Footer
-.footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  background-color: #fff;
-}
-
-.footer-container {
-  display: flex;
-  gap: 68px;
-  max-width: 1090px;
-  width: 100%;
-  padding: 68px 0px;
-  margin: 0 32px;
-  border-top: 3px solid rgba(185, 173, 129, 0.3);
-}
-
-.footer-logo {
-  width: 257px;
-}
-
-.footer-item,
-.footer-item > ul,
-.footer-menu {
-  display: flex;
-  flex-direction: column;
-  gap: 22px;
-}
-
-.footer-menu a {
-  font-size: 16px;
-  color: #686b68;
-}
-
-.footer-menu a:hover {
-  color: #b9ad81;
-}
-
-.footer p {
-  text-align: center;
-  background-color: #eff5f0;
-  padding: 23px 0;
-  width: 100%;
-}
-
-.footer-item_social {
-  display: flex;
-  gap: 15px;
-} */
-/* end Footer */
 
 /* Tela Home - Sessão Gastronomia */
 div.gastronomia {
@@ -1191,3 +1086,56 @@ div.gastronomia p {
   object-fit: cover;
 }
 /* end reservas */
+
+/* media queries */
+
+@media (max-width: 1120px) {
+  .header-container {
+    justify-content: center;
+  }
+  .menu {
+    padding-top: 32px;
+  }
+}
+
+@media (max-width: 960px) {
+  .header-container {
+    justify-content: space-between;
+  }
+  .menu {
+    display: none;
+  }
+  .menu-mobile {
+    display: block;
+  }
+}
+
+@media (max-width: 750px) {
+  .footer {
+    padding: 22px 0px;
+  }
+  .footer-container {
+    gap: 42px;
+    padding: 42px 0px;
+    flex-direction: column;
+  }
+
+  .footer-item_container {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .footer-item {
+    width: 100%;
+    gap: 22px;
+  }
+
+  .footer-item > ul,
+  .footer-menu {
+    gap: 12px;
+  }
+}
+
+main {
+  display: none;
+}
