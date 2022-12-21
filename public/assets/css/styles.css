@@ -89,11 +89,11 @@ span {
   font-size: 20px;
   padding: 12px 22px;
   color: #fff;
-  background-color: #016956;
+  background-color: #558e60;
 }
 
 .btn-sign-in:hover {
-  background-color: #016956;
+  background-color: #558e60;
   color: #fff;
   opacity: 0.5;
   transition: ease 0.2s;
@@ -169,7 +169,7 @@ span {
   box-shadow: none;
   font-size: 20px;
   padding: 12px 22px;
-  color: #016956;
+  color: #558e60;
 }
 
 .menu-btn_login {
@@ -178,11 +178,11 @@ span {
 
 .menu-btn_login {
   background-color: #fff;
-  border: 1px solid #016956;
+  border: 1px solid #558e60;
 }
 
 .menu-btn_signin:hover {
-  background-color: #016956;
+  background-color: #558e60;
   color: #fff;
   opacity: 0.5;
   transition: ease 0.2s;
@@ -224,6 +224,32 @@ span {
   bottom: 0;
 }
 /* end Titulos */
+
+/* Estilo principal do botão */
+.btn {
+  width: 288px;
+  height: auto;
+  border-radius: 9px;
+  border: none;
+  box-shadow: none;
+  font-size: 20px;
+  padding: 12px 22px;
+  color: #fff;
+  background-color: #558e60;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  cursor: pointer;
+  text-align: center;
+}
+
+.btn:hover {
+  background-color: #558e60;
+  color: #fff;
+  opacity: 0.5;
+  transition: ease 0.2s;
+  cursor: pointer;
+}
+
+/* end estilo principal do botão */
 
 /* Página Home Seção HERO */
 .home-hero,
@@ -268,21 +294,6 @@ span {
   margin-right: 60%;
   padding-left: 5%;
   margin-bottom: 1%;
-}
-
-input {
-  border-style: solid;
-  box-shadow: 0px 0px 2px 0px;
-  height: 25px;
-  width: 300px;
-}
-
-.submit {
-  border-style: solid;
-  box-shadow: 0px 0px 2px 0px;
-  height: 30px;
-  width: 100px;
-  background-color: #bfbfbf;
 }
 
 /* Página Home Sessão HERO */
@@ -789,33 +800,6 @@ main section article div.containerAcomodacoes div img {
   width: 490px;
 }
 
-/* Tela Home - Sessão Gastronomia */
-div.gastronomia {
-  display: flex;
-  text-align: center;
-  margin: 2rem 0;
-}
-
-div.gastronomia h2 {
-  font-size: 48px;
-  color: #242222;
-}
-
-div.gastronomia h3 {
-  font-size: 32px;
-  color: #242222;
-  margin-top: 1rem;
-}
-div.gastronomia img {
-  margin: 0 1rem;
-}
-
-div.gastronomia p {
-  font-size: 24px;
-  color: #686b68;
-  margin-top: 1rem;
-}
-
 /* Seção Depoimentos */
 
 /* Seção Sobre */
@@ -824,7 +808,34 @@ div.gastronomia p {
   background-size: cover;
 }
 
-.about {
+/* Home Acomodações */
+
+.home-acomodacoes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 58px;
+  padding: 68px 0;
+  margin: 0 32px;
+}
+
+.home-acomodacoes-images {
+  display: flex;
+  max-width: 1090px;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+
+.home-acomodacoes-images img {
+  border-radius: 6px;
+  width: 30%;
+}
+
+/* end Home Acomodações */
+
+.about,
+.gastronomy {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -832,8 +843,44 @@ div.gastronomia p {
   padding: 68px 0px;
   margin: 0 32px;
 }
+.home-reserva {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #eff5f0;
+}
 
-.about-container {
+.home-reserva-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 68px;
+  max-width: 1090px;
+  width: 100%;
+}
+
+.home-reserva-content {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 52px;
+}
+
+.home-reserva-content h2 {
+  font-size: 64px;
+  font-weight: 700;
+  color: #050505;
+  line-height: 72px;
+  max-width: 10ch;
+}
+
+.home-reserva-image img {
+  border-radius: 16px;
+}
+
+.about-container,
+.gastronomy-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -842,14 +889,20 @@ div.gastronomia p {
   max-width: 1090px;
 }
 
-.about-room-content {
+.gastronomy-container {
+  flex-direction: row-reverse;
+}
+
+.about-room-content,
+.gastronomy-content {
   flex: 1 1 300px;
   display: flex;
   flex-direction: column;
   gap: 58px;
 }
 
-.about-room_image {
+.about-room_image,
+.gastronomy_image {
   flex: 1 1 300px;
   max-width: 100%;
 }
@@ -893,14 +946,14 @@ div.gastronomia p {
   font-size: 20px;
   padding: 12px 22px;
   color: #fff;
-  background-color: #016956;
+  background-color: #558e60;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   cursor: pointer;
 }
 
 .menu-btn_login {
   background-color: #fff;
-  border: 1px solid #016956;
+  border: 1px solid #558e60;
 }
 
 .about-btn:hover {
@@ -1096,6 +1149,9 @@ div.gastronomia p {
   .menu {
     padding-top: 32px;
   }
+  .home-acomodacoes-images {
+    font-size: 86rem;
+  }
 }
 
 @media (max-width: 960px) {
@@ -1107,6 +1163,16 @@ div.gastronomia p {
   }
   .menu-mobile {
     display: block;
+  }
+
+  .home-reserva-container {
+    gap: 58px;
+    flex-direction: column-reverse;
+  }
+
+  .home-reserva-content {
+    align-items: center;
+    text-align: center;
   }
 }
 
@@ -1134,8 +1200,12 @@ div.gastronomia p {
   .footer-menu {
     gap: 12px;
   }
+
+  .title {
+    font-size: 32px;
+  }
 }
 
-main {
+/* main {
   display: none;
-}
+} */
