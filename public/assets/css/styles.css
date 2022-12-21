@@ -724,14 +724,6 @@ main section article div.containerAcomodacoes div img {
 
 /* Footer */
 
-.navbar {
-  display: none;
-}
-
-main {
-  display: none;
-}
-
 .footer {
   display: flex;
   justify-content: center;
