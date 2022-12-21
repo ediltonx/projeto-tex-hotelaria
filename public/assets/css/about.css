@@ -1,0 +1,239 @@
+/* Seção Sobre */
+.about-hero {
+    background: url("../images/background-about.png") no-repeat;
+  }
+  
+  .about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    padding: 68px 0px;
+    margin: 0 32px;
+  }
+  
+  .about-container {
+    display: flex;
+    justify-content: center;
+    gap: 48px;
+    width: 100%;
+    max-width: 1090px;
+  }
+  
+  .about-room-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 58px;
+  }
+  
+  .about-room_image {
+    flex: 1;
+    width: 100%;
+  }
+  
+  .about-room_image img {
+    border-radius: 15px;
+    height: 530px;
+    object-fit: cover;
+  }
+  
+  .about-room_icon {
+    display: flex;
+    gap: 18px;
+    align-items: center;
+  }
+  
+  .about-room-content h3 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #242222;
+  }
+  
+  .about-room_icon img {
+    width: 48px;
+    height: auto;
+  }
+  
+  .about-room-content p {
+    font-size: 24px;
+    color: #686b68;
+    line-height: 36px;
+    font-weight: 400px;
+  }
+  
+  .about-btn {
+    width: 288px;
+    height: auto;
+    border-radius: 9px;
+    border: none;
+    box-shadow: none;
+    font-size: 20px;
+    padding: 12px 22px;
+    color: #fff;
+    background-color: #016956;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    cursor: pointer;
+  }
+  
+  .menu-btn_login {
+    background-color: #fff;
+    border: 1px solid #016956;
+  }
+  
+  .about-btn:hover {
+    opacity: 0.8;
+    transition: ease 0.2s;
+  }
+  
+  /* end Seção Sobre */
+  
+  /* ajuste do Sobre nos */
+  
+  .about-us {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .about-us-container {
+    display: flex;
+    justify-content: center;
+    max-width: 1090px;
+    padding: 0 38px;
+    margin: 68px 0;
+  }
+  
+  /* end ajuste do Sobre nos */
+  .sobreNos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 48px;
+    color: #242222;
+    font-weight: 700;
+    padding: 28px 0;
+    margin: 68px 0;
+    position: relative;
+  }
+  
+  .sobreNos::after {
+    content: "";
+    width: 268px;
+    height: 12px;
+    position: absolute;
+    height: 5px;
+    background-color: #b9ad81;
+    bottom: 0;
+  }
+  
+  .descricao {
+    font-size: 1.5rem;
+    color: #686b68;
+    text-indent: 1.2rem;
+    text-align: center;
+  }
+  
+  .image {
+    text-align: center;
+  }
+  
+  .containerImagem {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .imagem {
+    width: 800px;
+    margin: 10px;
+    position: relative;
+    text-align: center;
+  }
+  
+  .imagem::after {
+    content: attr(data-title); /* estilo que coloco a legenda no lugar */
+    position: absolute;
+    width: 100%;
+    bottom: -20px;
+    left: 0;
+  }
+  
+  .imagem img {
+    border-radius: 15px;
+  }
+
+  /* Precisa de ajuda */
+
+  section .about-help {
+    background-color: #EFF5F0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 58px;
+    padding: 68px 68px;
+
+  }
+
+  
+
+  .icon {
+    position: absolute;
+  }
+
+  section .about-help .help-description {
+    flex: 1;
+    align-items: center;
+    font-weight: 400;
+    font-size: 24px;
+    color: #686b68;
+  }
+
+  .container {
+    flex: 1;
+  }
+
+  section .about-help .help-description h3 {
+    color: #000;
+    margin: 10px 0 0 80px;
+    text-align: left;
+  }
+
+  .image-recepcionists {
+    border-radius: 15px;
+    margin-right: 3rem;
+  }
+
+  .bttn-help{
+    width:180px;
+    height: 60px;
+    font-size: 24px;
+    font-weight: 300;
+    left: 636px;
+    top: 3070px;
+    background: #558E60;
+    color: white;
+    box-shadow: 0px 5px 7px rgba(85, 142, 96, 0.35);
+    border: 0;
+    border-radius: 9px;
+    cursor: pointer;
+
+  }
+
+
+  /* Iframe maps */
+
+  .about-localization {
+    display: flex;
+    width: auto;
+  }
+
+  .about-localization-container > iframe{
+    width: 900px;
+    height: 500px;
+    border: 0;
+    border-radius: 15px;
+    
+  }
+
+
+  
