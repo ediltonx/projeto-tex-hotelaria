@@ -1,0 +1,265 @@
+/* Seção Sobre */
+.about-hero {
+  background: url("../images/background-about.png") no-repeat;
+}
+
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  padding: 68px 0px;
+  margin: 0 32px;
+}
+
+.about-container {
+  display: flex;
+  justify-content: center;
+  gap: 48px;
+  width: 100%;
+  max-width: 1090px;
+}
+
+.about-room-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 58px;
+}
+
+.about-room_image {
+  flex: 1;
+  width: 100%;
+}
+
+.about-room_image img {
+  border-radius: 15px;
+  height: 530px;
+  object-fit: cover;
+}
+
+.about-room_icon {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+}
+
+.about-room-content h3 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #242222;
+}
+
+.about-room_icon img {
+  width: 48px;
+  height: auto;
+}
+
+.about-room-content p {
+  font-size: 24px;
+  color: #686b68;
+  line-height: 36px;
+  font-weight: 400px;
+}
+
+.about-btn {
+  width: 288px;
+  height: auto;
+  border-radius: 9px;
+  border: none;
+  box-shadow: none;
+  font-size: 20px;
+  padding: 12px 22px;
+  color: #fff;
+  background-color: #016956;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  cursor: pointer;
+}
+
+.menu-btn_login {
+  background-color: #fff;
+  border: 1px solid #016956;
+}
+
+.about-btn:hover {
+  opacity: 0.8;
+  transition: ease 0.2s;
+}
+
+/* end Seção Sobre */
+
+/* ajuste do Sobre nos */
+
+.about-us {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.about-us-container {
+  display: flex;
+  justify-content: center;
+  max-width: 1090px;
+  padding: 0 38px;
+  margin: 68px 0;
+}
+
+/* end ajuste do Sobre nos */
+.sobreNos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 48px;
+  color: #242222;
+  font-weight: 700;
+  padding: 28px 0;
+  margin: 68px 0;
+  position: relative;
+}
+
+.sobreNos::after {
+  content: "";
+  width: 268px;
+  height: 12px;
+  position: absolute;
+  height: 5px;
+  background-color: #b9ad81;
+  bottom: 0;
+}
+
+.descricao {
+  font-size: 1.5rem;
+  color: #686b68;
+  text-indent: 1.2rem;
+  text-align: center;
+}
+
+.image {
+  text-align: center;
+}
+
+.containerImagem {
+  display: flex;
+  justify-content: center;
+}
+
+.imagem {
+  width: 800px;
+  margin: 10px;
+  position: relative;
+  text-align: center;
+}
+
+.imagem::after {
+  content: attr(data-title); /* estilo que coloco a legenda no lugar */
+  position: absolute;
+  width: 100%;
+  bottom: -20px;
+  left: 0;
+}
+
+.imagem img {
+  border-radius: 15px;
+}
+
+/* ABOUT HELP */
+
+.home-help{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #EFF5F0;
+  padding: 68px 0px;
+  margin: 50px 0 0 0 ;
+}
+
+.help-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 48px;
+  width: 100%;
+  max-width: 1090px;
+}
+
+.about-help-image {
+  flex: 1 1 300px;
+  max-width: 100%
+}
+.about-help-image img {
+  border-radius: 15px;
+}
+
+.about-help-description {
+  flex: 1 1 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 58px;
+}
+
+.about-help-description h3 {
+  font-weight: 700;
+  font-size: 32px;
+}
+
+.about-help-description p {
+  color: #686B68;
+  font-weight: 400px;
+  font-size: 24px;
+  line-height: 36px
+}
+
+.about-help-icon {
+  display: flex;
+  gap: 18px;
+  align-items: center
+}
+
+.about-help-icon img {
+  width: 48px;
+  height: auto;
+
+}
+
+.about-help-description a > button {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 400px;
+  position: absolute;
+  background-color: #558E60;
+  box-shadow: 0px 5px 7px rgba(85, 142, 96, 0.35);
+  border-radius: 9px;
+  width: 200px;
+  height: 80px;
+  border: 0;
+  cursor: pointer;
+}
+
+.bttn:hover {
+  cursor: pointer;
+  color: #fff;
+  background-color: #8dca9b;
+  transition: ease 0.5s;
+}
+
+/* ABOUT LOCALIZATION */
+
+.about-localization {
+  display: flex;
+  width: auto;
+  margin: 10px 10px;
+}
+
+.about-localization> iframe{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 900px;
+  height: 500px;
+  border: 0;
+  border-radius: 15px;
+}
+
+
+  
