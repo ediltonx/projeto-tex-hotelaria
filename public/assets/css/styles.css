@@ -1,5 +1,6 @@
 @import url("./reset.css");
-@import url('./about.css');
+@import url("./about.css");
+@import url("./contato.css");
 
 /* Guia de cores */
 
@@ -36,10 +37,7 @@ span {
   width: 100vw;
   height: 100vh;
   display: flex;
-<<<<<<< HEAD
   justify-content: flex-end;
-=======
->>>>>>> 9f788c46d240f2bf3b1b9bdd31a6ed37d2c5048b
   align-items: center;
   overflow: hidden;
 }
