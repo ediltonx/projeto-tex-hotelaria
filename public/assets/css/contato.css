@@ -230,6 +230,7 @@ span {
   padding: 16px 0px;
   margin: 25px;
   border-radius: 8px;
+  font-size: pt;
   font-weight: 800;
   color: black;
   background: antiquewhite;
