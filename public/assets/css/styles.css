@@ -1,4 +1,5 @@
 @import url("./reset.css");
+@import url('./about.css');
 
 /* Guia de cores */
 
@@ -35,7 +36,10 @@ span {
   width: 100vw;
   height: 100vh;
   display: flex;
-
+<<<<<<< HEAD
+  justify-content: flex-end;
+=======
+>>>>>>> 9f788c46d240f2bf3b1b9bdd31a6ed37d2c5048b
   align-items: center;
   overflow: hidden;
 }
@@ -50,7 +54,8 @@ span {
   flex: 1;
   background: url("../images/background-login.jpg") no-repeat;
   background-size: cover;
-  width: 75vw;
+  background-position: center;
+  width: 100vw;
   height: 100vh;
 }
 
@@ -121,7 +126,8 @@ span {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
+  max-width: 1300px;
+  /* width: 100%; */
 }
 /* end Header */
 
@@ -138,7 +144,7 @@ span {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 42px;
+  gap: 36px;
 }
 
 .menu a {
@@ -953,6 +959,7 @@ div.gastronomia p {
 /* Seção Sobre */
 .about-hero {
   background: url("../images/background-about.png") no-repeat;
+  background-size: cover;
 }
 
 .about {
@@ -966,6 +973,7 @@ div.gastronomia p {
 
 .about-container {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 48px;
   width: 100%;
@@ -973,15 +981,15 @@ div.gastronomia p {
 }
 
 .about-room-content {
-  flex: 1;
+  flex: 1 1 300px;
   display: flex;
   flex-direction: column;
   gap: 58px;
 }
 
 .about-room_image {
-  flex: 1;
-  width: 100%;
+  flex: 1 1 300px;
+  max-width: 100%;
 }
 
 .about-room_image img {
