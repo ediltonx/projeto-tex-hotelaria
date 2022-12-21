@@ -237,8 +237,16 @@ span {
   box-shadow: 0px 10px 40px -12px #0000;
 }
 
+.assunto {
+  width: 20vw;
+  height: 5vh;
+  border: 2px 2px 2px 2px solid;
+  border-radius: 8px;
+  box-shadow: 0px 10px 40px #00000056;
+}
+
 .left-image {
-  width: 80%;
+  width: 100%;
   height: 100%;
   object-fit: cover;
 }
