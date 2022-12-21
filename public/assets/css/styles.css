@@ -1,4 +1,5 @@
 @import url("./reset.css");
+@import url("./about.css");
 
 @import url(./about.css);
 /* Guia de cores */
@@ -36,7 +37,6 @@ span {
   width: 100vw;
   height: 100vh;
   display: flex;
-
   align-items: center;
   overflow: hidden;
 }
@@ -51,7 +51,8 @@ span {
   flex: 1;
   background: url("../images/background-login.jpg") no-repeat;
   background-size: cover;
-  width: 75vw;
+  background-position: center;
+  width: 100vw;
   height: 100vh;
 }
 
@@ -89,11 +90,11 @@ span {
   font-size: 20px;
   padding: 12px 22px;
   color: #fff;
-  background-color: #016956;
+  background-color: #558e60;
 }
 
 .btn-sign-in:hover {
-  background-color: #016956;
+  background-color: #558e60;
   color: #fff;
   opacity: 0.5;
   transition: ease 0.2s;
@@ -122,8 +123,11 @@ span {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  max-width: 1300px;
   width: 100%;
+  flex-wrap: wrap;
 }
+
 /* end Header */
 
 /* Navbar */
@@ -139,7 +143,7 @@ span {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 42px;
+  gap: 36px;
 }
 
 .menu a {
@@ -166,7 +170,7 @@ span {
   box-shadow: none;
   font-size: 20px;
   padding: 12px 22px;
-  color: #016956;
+  color: #558e60;
 }
 
 .menu-btn_login {
@@ -175,11 +179,11 @@ span {
 
 .menu-btn_login {
   background-color: #fff;
-  border: 1px solid #016956;
+  border: 1px solid #558e60;
 }
 
 .menu-btn_signin:hover {
-  background-color: #016956;
+  background-color: #558e60;
   color: #fff;
   opacity: 0.5;
   transition: ease 0.2s;
@@ -195,6 +199,7 @@ span {
 .menu-mobile {
   display: none;
 }
+
 /* end Navbar */
 
 /* Titulos */
@@ -220,6 +225,32 @@ span {
   bottom: 0;
 }
 /* end Titulos */
+
+/* Estilo principal do botão */
+.btn {
+  width: 288px;
+  height: auto;
+  border-radius: 9px;
+  border: none;
+  box-shadow: none;
+  font-size: 20px;
+  padding: 12px 22px;
+  color: #fff;
+  background-color: #558e60;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  cursor: pointer;
+  text-align: center;
+}
+
+.btn:hover {
+  background-color: #558e60;
+  color: #fff;
+  opacity: 0.5;
+  transition: ease 0.2s;
+  cursor: pointer;
+}
+
+/* end estilo principal do botão */
 
 /* Página Home Seção HERO */
 .home-hero,
@@ -265,114 +296,6 @@ span {
   padding-left: 5%;
   margin-bottom: 1%;
 }
-
-input {
-  border-style: solid;
-  box-shadow: 0px 0px 2px 0px;
-  height: 25px;
-  width: 300px;
-}
-
-.submit {
-  border-style: solid;
-  box-shadow: 0px 0px 2px 0px;
-  height: 30px;
-  width: 100px;
-  background-color: #bfbfbf;
-}
-
-/* Header */
-.header {
-  display: flex;
-  justify-content: center;
-  background-color: #fff;
-  padding: 68px 0px;
-  margin: 0 32px;
-}
-
-.header-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-}
-/* end Header */
-
-/* Navbar */
-.logo {
-  width: 217px;
-}
-
-.navbar {
-  font-size: 20px;
-}
-
-.menu {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 42px;
-}
-
-.menu a {
-  color: #242222;
-  padding: 28px 0;
-  position: relative;
-}
-
-.menu a:hover::before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 5px;
-  background-color: #b9ad81;
-  bottom: 0;
-}
-
-.menu-btn_signin,
-.menu-btn_login {
-  width: 140px;
-  height: auto;
-  border-radius: 9px;
-  border: none;
-  box-shadow: none;
-  font-size: 20px;
-  padding: 12px 22px;
-  color: #016956;
-}
-
-.menu-btn_login {
-  background-color: #e1e6e1;
-}
-
-.menu-btn_login {
-  background-color: #fff;
-  border: 1px solid #016956;
-}
-
-.menu-btn_signin:hover {
-  background-color: #016956;
-  color: #fff;
-  text-transform: uppercase;
-  font-size: 12px;
-  text-decoration: none;
-  padding: 10px 30px;
-  margin-top: 30px;
-  border-radius: 20px;
-  height: 35px;
-  margin-left: 50px;
-}
-.menu-btn_login:hover {
-  cursor: pointer;
-  background-color: #e1e6e1;
-  transition: ease 0.2s;
-  cursor: pointer;
-}
-
-.menu-mobile {
-  display: none;
-}
-/* end Navbar */
 
 /* Página Home Sessão HERO */
 .home-hero {
@@ -722,26 +645,35 @@ main section article div.containerAcomodacoes div img {
 }
 
 /* Footer */
+
 .footer {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   background-color: #fff;
+  padding: 68px 0px;
+  margin: 0 32px;
 }
 
 .footer-container {
   display: flex;
+  flex-wrap: wrap;
   gap: 68px;
   max-width: 1090px;
   width: 100%;
   padding: 68px 0px;
-  margin: 0 32px;
   border-top: 3px solid rgba(185, 173, 129, 0.3);
 }
 
 .footer-logo {
   width: 257px;
+}
+
+.footer-item_container {
+  display: flex;
+  flex: 1;
+  gap: 42px;
 }
 
 .footer-item,
@@ -761,17 +693,19 @@ main section article div.containerAcomodacoes div img {
   color: #b9ad81;
 }
 
-.footer p {
+.copy {
   text-align: center;
   background-color: #eff5f0;
   padding: 23px 0;
   width: 100%;
+  margin: 0;
 }
 
 .footer-item_social {
   display: flex;
   gap: 15px;
 }
+
 /* end Footer */
 
 /* Tela Home - Sessão Gastronomia */
@@ -867,92 +801,242 @@ main section article div.containerAcomodacoes div img {
   width: 490px;
 }
 
-/* Fim Acomodações */
+/* Seção Depoimentos */
 
-/* Footer */
-.footer {
+/* Seção Sobre */
+.about-hero {
+  background: url("../images/background-about.png") no-repeat;
+  background-size: cover;
+}
+
+/* Home Acomodações */
+
+.home-acomodacoes {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: #fff;
+  gap: 58px;
+  padding: 68px 0;
+  margin: 0 32px;
 }
 
-.footer-container {
+.home-acomodacoes-images {
   display: flex;
-  gap: 68px;
   max-width: 1090px;
-  width: 100%;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+
+.home-acomodacoes-images img {
+  border-radius: 6px;
+  width: 30%;
+}
+
+/* end Home Acomodações */
+
+.about,
+.gastronomy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
   padding: 68px 0px;
   margin: 0 32px;
-  border-top: 3px solid rgba(185, 173, 129, 0.3);
 }
-
-.footer-logo {
-  width: 257px;
-}
-
-.footer-item,
-.footer-item > ul,
-.footer-menu {
+.home-reserva {
   display: flex;
-  flex-direction: column;
-  gap: 22px;
-}
-
-.footer-menu a {
-  font-size: 16px;
-  color: #686b68;
-}
-
-.footer-menu a:hover {
-  color: #b9ad81;
-}
-
-.footer p {
-  text-align: center;
+  justify-content: center;
+  align-items: center;
   background-color: #eff5f0;
-  padding: 23px 0;
+}
+
+.home-reserva-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 68px;
+  max-width: 1090px;
   width: 100%;
 }
 
-.footer-item_social {
+.home-reserva-content {
   display: flex;
-  gap: 15px;
+  flex: 1;
+  flex-direction: column;
+  gap: 52px;
 }
-/* end Footer */
 
-/* Tela Home - Sessão Gastronomia */
-div.gastronomia {
+.home-reserva-content h2 {
+  font-size: 64px;
+  font-weight: 700;
+  color: #050505;
+  line-height: 72px;
+  max-width: 10ch;
+}
+
+.home-reserva-image img {
+  border-radius: 16px;
+}
+
+.about-container,
+.gastronomy-container {
   display: flex;
-  text-align: center;
-  margin: 2rem 0;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 48px;
+  width: 100%;
+  max-width: 1090px;
 }
 
-div.gastronomia h2 {
-  font-size: 48px;
-  color: #242222;
+.gastronomy-container {
+  flex-direction: row-reverse;
 }
 
-div.gastronomia h3 {
+.about-room-content,
+.gastronomy-content {
+  flex: 1 1 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 58px;
+}
+
+.about-room_image,
+.gastronomy_image {
+  flex: 1 1 300px;
+  max-width: 100%;
+}
+
+.about-room_image img {
+  border-radius: 15px;
+  height: 530px;
+  object-fit: cover;
+}
+
+.about-room_icon {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+}
+
+.about-room-content h3 {
   font-size: 32px;
+  font-weight: 700;
   color: #242222;
-  margin-top: 1rem;
-}
-div.gastronomia img {
-  margin: 0 1rem;
 }
 
-div.gastronomia p {
+.about-room_icon img {
+  width: 48px;
+  height: auto;
+}
+
+.about-room-content p {
   font-size: 24px;
   color: #686b68;
-  margin-top: 1rem;
+  line-height: 36px;
+  font-weight: 400px;
 }
 
-/* Seção Depoimentos */
+.about-btn {
+  width: 288px;
+  height: auto;
+  border-radius: 9px;
+  border: none;
+  box-shadow: none;
+  font-size: 20px;
+  padding: 12px 22px;
+  color: #fff;
+  background-color: #558e60;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  cursor: pointer;
+}
 
-/* Seção Sobre */
+.menu-btn_login {
+  background-color: #fff;
+  border: 1px solid #558e60;
+}
 
+.about-btn:hover {
+  opacity: 0.8;
+  transition: ease 0.2s;
+}
+
+/* end Seção Sobre */
+
+/* ajuste do Sobre nos */
+
+.about-us {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.about-us-container {
+  display: flex;
+  justify-content: center;
+  max-width: 1090px;
+  padding: 0 38px;
+  margin: 68px 0;
+}
+
+/* end ajuste do Sobre nos */
+.sobreNos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 48px;
+  color: #242222;
+  font-weight: 700;
+  padding: 28px 0;
+  margin: 68px 0;
+  position: relative;
+}
+
+.sobreNos::after {
+  content: "";
+  width: 268px;
+  height: 12px;
+  position: absolute;
+  height: 5px;
+  background-color: #b9ad81;
+  bottom: 0;
+}
+
+.descricao {
+  font-size: 1.5rem;
+  color: #686b68;
+  text-indent: 1.2rem;
+  text-align: center;
+}
+
+.image {
+  text-align: center;
+}
+
+.containerImagem {
+  display: flex;
+  justify-content: center;
+}
+
+.imagem {
+  width: 800px;
+  margin: 10px;
+  position: relative;
+  text-align: center;
+}
+
+.imagem::after {
+  content: attr(data-title); /* estilo que coloco a legenda no lugar */
+  position: absolute;
+  width: 100%;
+  bottom: -20px;
+  left: 0;
+}
+
+.imagem img {
+  border-radius: 5%;
+}
 
 /*  */
 
@@ -1056,3 +1140,73 @@ div.gastronomia p {
   object-fit: cover;
 }
 /* end reservas */
+
+/* media queries */
+
+@media (max-width: 1120px) {
+  .header-container {
+    justify-content: center;
+  }
+  .menu {
+    padding-top: 32px;
+  }
+  .home-acomodacoes-images {
+    font-size: 86rem;
+  }
+}
+
+@media (max-width: 960px) {
+  .header-container {
+    justify-content: space-between;
+  }
+  .menu {
+    display: none;
+  }
+  .menu-mobile {
+    display: block;
+  }
+
+  .home-reserva-container {
+    gap: 58px;
+    flex-direction: column-reverse;
+  }
+
+  .home-reserva-content {
+    align-items: center;
+    text-align: center;
+  }
+}
+
+@media (max-width: 750px) {
+  .footer {
+    padding: 22px 0px;
+  }
+  .footer-container {
+    gap: 42px;
+    padding: 42px 0px;
+    flex-direction: column;
+  }
+
+  .footer-item_container {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .footer-item {
+    width: 100%;
+    gap: 22px;
+  }
+
+  .footer-item > ul,
+  .footer-menu {
+    gap: 12px;
+  }
+
+  .title {
+    font-size: 32px;
+  }
+}
+
+/* main {
+  display: none;
+} */
