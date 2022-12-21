@@ -487,74 +487,6 @@ span {
   box-shadow: 0px 5px 10px #333;
 }
 
-/* CSS - ACOMODAÇÕES */
-.text-acomodacoes p {
-  color: #686b68;
-}
-
-main section article div.flex-color {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-main section article div.flex-color > h2 {
-  text-align: center;
-  font-size: 2rem;
-  color: #242222;
-  margin: 0;
-}
-
-main section article div.flex-color div:nth-child(2) {
-  align-self: center;
-  background-color: rgb(79, 146, 119);
-  width: 10vw;
-  height: 6px;
-  margin-top: 10px;
-}
-
-main section article div.containerAcomodacoes {
-  margin: 60px 0 60px 0;
-  min-height: 30vh;
-  padding: 1px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  column-gap: 10px;
-  row-gap: 10px;
-  justify-content: center;
-}
-main section article div.containerAcomodacoes div {
-  width: 500px;
-  padding: 5px;
-}
-
-main section article div.containerAcomodacoes div img {
-  width: 100%;
-  height: 40vh;
-  border-radius: 20px;
-}
-
-.infoFoto {
-  position: absolute;
-  background-color: rgba(0, 0, 0, 0.5);
-  height: 40vh;
-  border-radius: 20px;
-  display: none;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: #fff;
-}
-.infoFoto h5 {
-  font-size: 18px;
-  font-weight: 600px;
-}
-.fotoArea:hover .infoFoto {
-  display: flex;
-  width: 490px;
-}
 
 /*CSS Produto Destaque*/
 
@@ -597,8 +529,6 @@ main section article div.containerAcomodacoes div img {
   text-align: justify;
   font-size: 30px;
 }
-
-/* Fim Acomodações */
 
 /* CSS - DEPOIMENTOS */
 
@@ -732,72 +662,6 @@ div.gastronomia p {
   font-size: 24px;
   color: #686b68;
   margin-top: 1rem;
-}
-
-/* CSS - ACOMODAÇÕES */
-
-main section article div.flex-color {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-main section article div.flex-color > h2 {
-  text-align: center;
-  font-size: 2rem;
-  color: #242222;
-  margin: 0;
-}
-
-main section article div.flex-color div:nth-child(2) {
-  align-self: center;
-  background-color: rgb(79, 146, 119);
-  width: 10vw;
-  height: 6px;
-  margin-top: 10px;
-}
-
-main section article div.containerAcomodacoes {
-  margin-top: 60px;
-  min-height: 30vh;
-  padding: 1px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  column-gap: 10px;
-  row-gap: 10px;
-  justify-content: center;
-}
-main section article div.containerAcomodacoes div {
-  width: 500px;
-  padding: 5px;
-}
-
-main section article div.containerAcomodacoes div img {
-  width: 100%;
-  height: 40vh;
-  border-radius: 20px;
-}
-
-.infoFoto {
-  position: absolute;
-  background-color: rgba(0, 0, 0, 0.5);
-  height: 40vh;
-  border-radius: 20px;
-  display: none;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: #fff;
-}
-.infoFoto h5 {
-  font-size: 18px;
-  font-weight: 600px;
-}
-.fotoArea:hover .infoFoto {
-  display: flex;
-  width: 490px;
 }
 
 /* Seção Depoimentos */
