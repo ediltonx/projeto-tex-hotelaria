@@ -15,9 +15,8 @@
 }
 
 .contact-main {
-  background: url("../images/background-about.png") no-repeat;
+  background: url("../images/bell.png") no-repeat;
   background-size: cover;
-  border: red solid 2px;
 }
 
 .contact-main h1 {
@@ -172,8 +171,6 @@
 
 .contact-local > iframe {
   display: flex;
-  /* justify-content: center;
-  align-items: center; */
   width: 900px;
   height: 500px;
   border: 0;
