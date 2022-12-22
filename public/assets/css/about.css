@@ -255,15 +255,14 @@
 
 /* ABOUT LOCALIZATION */
 .about-localization {
-  display: flex;
   width: auto;
   margin: 10px 10px;
-}
-
-.about-localization > iframe {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.about-localization > iframe {
   width: 900px;
   height: 500px;
   border: 0;
