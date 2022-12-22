@@ -621,10 +621,12 @@ div.box-destaque-2 h3 {
 
 .footer-item,
 .footer-item > ul,
+address, a, 
 .footer-menu {
   display: flex;
   flex-direction: column;
   gap: 22px;
+  color: #000;
 }
 
 .footer-menu a {
