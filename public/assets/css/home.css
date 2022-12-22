@@ -18,7 +18,6 @@
   display: flex;
   max-width: 1090px;
   gap: 32px;
-  /* flex-wrap: wrap; */
 }
 
 .home-acomodacoes-images img {
@@ -53,12 +52,18 @@
   gap: 52px;
 }
 
+.home-reserva-content h2 {
+  font-size: 64px;
+  font-weight: 700;
+  color: #050505;
+  line-height: 72px;
+  max-width: 10ch;
+}
 .home-reserva-image img {
   border-radius: 16px;
 }
 
 /* media queries */
-
 @media (max-width: 1120px) {
   .header-container {
     justify-content: center;

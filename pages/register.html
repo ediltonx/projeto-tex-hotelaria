@@ -67,53 +67,37 @@
       </nav>
       </div>
     </header>
-    <main>
-      <form method="get">
-        <fieldset>
-          <ul>
-            <li>
-              <label for="usuario">Nome de Usuário - 3 a 8 caracteres</label>
-              <br />
-              <input
-                type="text"
-                name="usuario"
-                id="usuario"
-                minlength="3"
-                maxlength="8"
-                required
-              />
-            </li>
-            <br />
-            <li>
-              <label for="nome">Nome Completo</label>
-              <br />
-              <input type="text" name="nome" id="nome" required />
-            </li>
-            <br />
-            <li>
-              <label for="nome">Endereço de Email</label>
-              <br />
-              <input type="email" name="login" id="login" required />
-            </li>
-            <br />
-            <li>
-              <label for="senha">Senha</label>
-              <br />
-              <input type="password" name="senha" id="senha" required />
-            </li>
-            <br />
-            <li>
-              <label for="nascimento">Data de Nascimento</label>
-              <br />
-              <input type="date" name="nascimento" id="nascimento" required />
-            </li>
-            <br />
-          </ul>
-          <input type="submit" formaction="../index.html" value="Cadastrar" id="cadastro" />
-        </fieldset>
-      </form>
-    </main>
-    <hr />
+    <div class="form-register">
+      <div class="main-register">
+        <div class="card-inputs">
+          <h1>Registro de Novo Usuário</h1>
+          <div class="textfield">
+            <label for="Nome">Nome Completo: </label>
+            <input type="text" />
+          </div>
+          <div class="textfield">
+            <label for="email">E-Mail: </label>
+            <input type="email" />
+          </div>
+          <div class="textfield">
+            <label for="Telefone">Telefone: </label>
+            <input type="number" />
+          </div>
+          <div class="textfield">
+            <label for="nascimento">Data de Nascimento </label>
+            <input type="date" />
+          </div>
+          <div class="textfield">
+            <label for="senha">Senha </label>
+            <input type="password" />
+          </div>
+          <input class="btn-register" type="submit" value="Enviar" />
+          </div>
+          
+        </div>
+      </div>
+    </div>
+
 <footer class="footer">
       <div class="footer-container">
          <div class="footer-logo">
