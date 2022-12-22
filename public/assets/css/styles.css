@@ -2,6 +2,7 @@
 @import url("./about.css");
 @import url("./contato.css");
 
+/* @import url(./about.css); */
 /* Guia de cores */
 
 /* verde #016956 */
@@ -38,7 +39,6 @@ span {
   height: 100vh;
   display: flex;
   justify-content: flex-end;
-
   align-items: center;
   overflow: hidden;
 }
