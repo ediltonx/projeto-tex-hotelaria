@@ -126,9 +126,9 @@ span {
 
 /* body register */
 
-.form-register {
+.form-recuperacao {
   width: 100vw;
-  height: 100vh;
+  height: 80vh;
   background: rgb(34, 193, 195);
   background: linear-gradient(
     0deg,
@@ -137,12 +137,12 @@ span {
   );
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
 }
 
-.main-register {
+.main-recuperacao {
   width: 50vw;
-  height: 100vh;
+  height: 70vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -163,12 +163,6 @@ span {
   );
   border-radius: 20px;
   box-shadow: 0px 10px 40px #00000056;
-}
-
-.card-inputs > h1 {
-  color: antiquewhite;
-  font-weight: 800;
-  margin: 0;
 }
 
 .textfield {
@@ -195,7 +189,7 @@ span {
   margin-bottom: 10px;
 }
 
-.btn-register {
+.btn-recuperacao {
   width: 100%;
   padding: 16px 0px;
   margin: 25px;
