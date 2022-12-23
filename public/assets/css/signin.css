@@ -11,6 +11,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
 
 .sign-in-cover {
@@ -18,7 +19,6 @@
   background: url("../images/background-login.jpg") no-repeat;
   background-size: cover;
   background-position: center;
-  width: 100vw;
   height: 100vh;
 }
 
@@ -26,12 +26,17 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   flex: 1;
+  gap: 32px;
   width: 100%;
+  height: 100vh;
+  margin: 0 32px;
 }
 
-.sign-in-forms div > img {
+.sign-in-forms div > a img {
+  justify-self: flex-start;
+  margin-top: 50px;
   width: 257px;
   margin-bottom: 32px;
 }
@@ -42,36 +47,60 @@
   gap: 18px;
 }
 
-.sign-in-forms input[type="emal"] {
-  border: solid 1px #242222;
-  background-color: #016956;
+.input-text-primary {
+  border: solid 1px #bdcfbd;
+  padding: 12px 8px;
+  border-radius: 6px;
+  /* background-color: #016956; */
 }
 
-.btn-sign-in {
-  width: 100%;
-  height: auto;
-  border-radius: 9px;
-  border: none;
-  box-shadow: none;
-  font-size: 20px;
-  padding: 12px 22px;
-  color: #fff;
-  background-color: #558e60;
+.sign-in-forgot_pass a {
+  font-size: 12px;
+  color: #558e60;
+  text-align: center;
+  text-decoration: underline;
 }
 
-.btn-sign-in:hover {
-  background-color: #558e60;
-  color: #fff;
-  opacity: 0.5;
-  transition: ease 0.2s;
-  cursor: pointer;
-}
+/* verde #016956 */
+/* verde-claro #0EFF5F0 */
+/* cinza #E1E6E1 */
+/* dourado #B9AD81 */
 
 .sign-in-help {
   display: flex;
   flex-direction: column;
   gap: 8px;
-  margin-top: 32px;
+  align-items: center;
+}
+
+.sign-in-help a {
+  color: #558e60;
+  padding-top: 6px;
+  text-decoration: underline;
+}
+
+.sign-in-help a:hover,
+.sign-in-forgot_pass a:hover {
+  color: #558e60;
+  opacity: 0.8;
+  transition: ease 0.2s;
+  cursor: pointer;
+}
+
+.sign-in-help:before {
+  content: "";
+  display: block;
+  width: 250px;
+  height: 3px;
+  top: 0;
+  border-top: 3px solid rgba(185, 173, 129, 0.3);
+  margin-bottom: 15px;
 }
 
 /* end de login */
+
+@media (max-width: 750px) {
+  .sign-in-cover {
+    display: none;
+  }
+}

@@ -12,29 +12,37 @@
            <div class="sign-in-container">
         <div class="sign-in-cover"></div>
         <div class="sign-in-forms">
-           <div>
+          <span>
+            Voltar
+          </span>
+          <div>
+            <a href="../index.html">
               <img 
-              src="../public/assets/images/logo.svg" alt="">
-           </div>
+               src="../public/assets/images/logo.svg" alt="">
+            </a> 
+          </div>
+          
+          <h2>Login</h2>
           <form method="get">
-            <h2>Login</h2>
             <label 
             for="nome">Endereço de Email</label>
-            <input type="email" name="login" id="login" required />
+            <input class="input-text-primary" type="email" name="login" id="login" required />
             <label for="senha">Senha</label>
-            <input type="password"
+            <input class="input-text-primary" type="password"
             name="senha"
             id="senha"
             required />
+            <div class="sign-in-forgot_pass">
+              <a href="recuperacao.html">Esqueceu sua senha?</a> 
+            </div>
             <input 
-            class="btn-sign-in"
+            class="btn"
             type="submit"
             formaction="../index.html" value="Confirmar"
             />
         </form>
         <div class="sign-in-help">
-        <a href="recuperacao.html">Esqueceu sua senha?</a> 
-           <h3>Não possui conta?</h3>
+          <h3>Não possui conta?</h3>
            <a href="register.html">Criar uma nova conta</a></div>
         </div>
             </div>
