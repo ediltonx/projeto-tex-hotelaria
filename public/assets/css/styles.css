@@ -165,9 +165,42 @@ html {
   cursor: pointer;
 }
 
-.menu-mobile {
-  display: none;
+.drop-btn {
+  height: 30px;
+  width: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
 }
+
+.drop-btn:hover {
+  opacity: 0.5;
+}
+
+.drop-btn:active + ul {
+  display: block;
+}
+
+.drop-btn .hamburger-line {
+  display: block;
+  height: 4px;
+  border-radius: 10px;
+  background: black;
+}
+
+.drop {
+  position: relative;
+  display: none;
+  min-width: 160px;
+}
+
+.drop-content {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+}
+
 /* end Navbar */
 
 /* Titulos e paragrafo */
@@ -351,8 +384,8 @@ a,
   .menu {
     display: none;
   }
-  .menu-mobile {
-    display: block;
+  .drop {
+    display: inline-block;
   }
 
   .cover-background {
