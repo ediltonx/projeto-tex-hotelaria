@@ -247,6 +247,7 @@ html {
   color: #686b68;
   line-height: 36px;
   font-weight: 400px;
+  text-align: left;
 }
 
 /* end Titulos */
@@ -376,6 +377,7 @@ a,
   .home-acomodacoes-images {
     font-size: 86rem;
   }
+  
 }
 
 @media (max-width: 960px) {
@@ -387,6 +389,9 @@ a,
   }
   .drop {
     display: inline-block;
+  }
+  .hb {
+    display: block;
   }
 
   .cover-background {
@@ -476,3 +481,13 @@ a,
     font-size: 32px;
   }
 }
+
+@media (max-width: 375px) {
+  .logo {
+    width: 50%;
+  }
+  .hb {
+    width: 80%;
+  }
+}
+
