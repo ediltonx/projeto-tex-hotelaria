@@ -1,5 +1,13 @@
 /* CSS - ACOMODAÇÕES */
 
+.acomodacoes-hero {
+  background: url("../images/background-acomodacoes.png") no-repeat;
+}
+
+.bg-white{
+  background-color: #FFFFFF;
+}
+
 .acomodacao{
   margin-top: 50px;
 }
