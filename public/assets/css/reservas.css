@@ -1,0 +1,79 @@
+@import url("./reset.css");
+
+img {
+  max-width: 100%;
+}
+
+/* SEÇÃO TIPO DE ACOMODAÇÃO */
+.secao-tipo-acomodacao {
+  display: flex;
+  margin: 2rem 1rem;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.secao-tipo-acomodacao input {
+  accent-color: #558e60;
+}
+
+.secao-tipo-acomodacao label,
+.secao-tipo-acomodacao .preco {
+  font-weight: bold;
+  color: black;
+}
+
+.secao-tipo-acomodacao p {
+  margin: 1rem;
+  color: #686b68;
+}
+
+.container-tipo-acomodacao {
+  width: 80vw;
+}
+
+.container-titulos-acomodacao {
+  display: flex;
+  border: 1px solid #016956;
+  border-radius: 10px;
+  margin: 1rem 0;
+  padding: 1rem;
+}
+
+.container-titulos-acomodacao img {
+  width: 30%;
+  border-radius: 10px;
+}
+
+.container-resumo-reserva {
+  border: 1px solid #016956;
+  border-radius: 10px;
+  padding: 1rem;
+  width: 40%;
+  background: #eff5f0;
+  height: 50vh;
+  margin-top: 2.7rem;
+}
+
+.container-resumo-reserva .btn {
+  width: 100%;
+  margin-top: 4rem;
+}
+
+.container-resumo-reserva .container-listas {
+  font-weight: bold;
+}
+
+.container-listas li {
+  margin: 1rem 0;
+}
+
+.container-listas .preco-total {
+  text-align: right;
+}
+
+.container-listas .add-servicos {
+  border-top: 1px solid #eae6d9;
+  border-bottom: 1px solid #eae6d9;
+  padding-top: 1rem;
+  padding-bottom: 5rem;
+}
