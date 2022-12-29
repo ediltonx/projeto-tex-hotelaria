@@ -165,9 +165,42 @@ html {
   cursor: pointer;
 }
 
-.menu-mobile {
-  display: none;
+.drop-btn {
+  height: 30px;
+  width: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
 }
+
+.drop-btn:hover {
+  opacity: 0.5;
+}
+
+.drop-btn:active + ul {
+  display: block;
+}
+
+.drop-btn .hamburger-line {
+  display: block;
+  height: 4px;
+  border-radius: 10px;
+  background: black;
+}
+
+.drop {
+  position: relative;
+  display: none;
+  min-width: 160px;
+}
+
+.drop-content {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+}
+
 /* end Navbar */
 
 /* Titulos e paragrafo */
@@ -343,6 +376,7 @@ a,
   .home-acomodacoes-images {
     font-size: 86rem;
   }
+  
 }
 
 @media (max-width: 960px) {
@@ -352,9 +386,11 @@ a,
   .menu {
     display: none;
   }
-  .menu-mobile {
+  .drop {
+    display: inline-block;
+  }
+  .hb {
     display: block;
-    
   }
 
   .cover-background {
@@ -448,6 +484,9 @@ a,
 @media (max-width: 375px) {
   .logo {
     width: 50%;
+  }
+  .hb {
+    width: 80%;
   }
 }
 

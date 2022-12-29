@@ -3,6 +3,9 @@
   background: url("../images/background-about.png") no-repeat;
 }
 
+.hb {
+  display: none;
+}
 /* ABOUT HELP */
 .home-help {
   display: flex;
