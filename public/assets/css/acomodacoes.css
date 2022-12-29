@@ -4,11 +4,11 @@
   background: url("../images/background-acomodacoes.png") no-repeat;
 }
 
-.bg-white{
-  background-color: #FFFFFF;
+.bg-white {
+  background-color: #ffffff;
 }
 
-.acomodacao{
+.acomodacao {
   margin-top: 50px;
 }
 
@@ -89,12 +89,11 @@ main section article div.titulo-destaque > h2 {
 main section article div.titulo-destaque div:nth-child(2) {
   width: 268px;
   height: 12px;
-  background: #B9AD81;
+  background: #b9ad81;
   margin: 38px 0 60px 0;
 }
 
 main section article div.containerDestaque {
-
   margin: 60px 0 60px 0;
   min-height: 50vh;
   padding: 1px;
@@ -109,7 +108,7 @@ main section article div.containerDestaque div {
   padding-right: 30px;
 }
 
-div.box-destaque-1 img{
+div.box-destaque-1 img {
   width: 100%;
   height: 72vh;
   border-radius: 20px;
@@ -135,7 +134,7 @@ div.containerDestaque div p {
   font-size: 24px;
   font-weight: 400;
   line-height: 40px;
-  color: #686B68;
+  color: #686b68;
 }
 
 div.containerDestaque div button {
@@ -144,15 +143,15 @@ div.containerDestaque div button {
   width: 288px;
   height: 72px;
   font-size: 32px;
-  color: #FFFFFF;
+  color: #ffffff;
   border: none;
-  background: #558E60;
+  background: #558e60;
   box-shadow: 0px 5px 7px rgba(85, 142, 96, 0.35);
   border-radius: 9px;
 }
 
 div.box-caracteristicas {
-  background: #EFF5F0;
+  background: #eff5f0;
   margin: 148px 0 148px 0;
   width: 100%;
   height: 32.8vh;
@@ -180,7 +179,7 @@ div.box-fazer-reserva div {
 }
 
 div.box-fazer-reserva h3 {
-  width:  358px;
+  width: 358px;
   font-weight: 700;
   font-size: 64px;
 }
@@ -190,9 +189,9 @@ div.box-fazer-reserva button {
   width: 288px;
   height: 72px;
   font-size: 32px;
-  color: #FFFFFF;
+  color: #ffffff;
   border: none;
-  background: #558E60;
+  background: #558e60;
   box-shadow: 0px 5px 7px rgba(85, 142, 96, 0.35);
   border-radius: 9px;
   cursor: pointer;
