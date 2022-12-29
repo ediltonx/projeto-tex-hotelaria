@@ -71,7 +71,7 @@ html {
 }
 
 .reverse {
-  flex-direction: column-reverse;
+  flex-direction: row-reverse;
 }
 
 .content-wrapper {
