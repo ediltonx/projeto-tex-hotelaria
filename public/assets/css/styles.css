@@ -213,6 +213,7 @@ html {
   color: #686b68;
   line-height: 36px;
   font-weight: 400px;
+  text-align: left;
 }
 
 /* end Titulos */
@@ -353,6 +354,7 @@ a,
   }
   .menu-mobile {
     display: block;
+    
   }
 
   .cover-background {
@@ -442,3 +444,10 @@ a,
     font-size: 32px;
   }
 }
+
+@media (max-width: 375px) {
+  .logo {
+    width: 50%;
+  }
+}
+
