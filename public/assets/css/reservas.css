@@ -16,47 +16,93 @@ img {
   accent-color: #558e60;
 }
 
-.secao-tipo-acomodacao label,
+/* .secao-tipo-acomodacao label, */
 .secao-tipo-acomodacao .preco {
   font-weight: bold;
   color: black;
 }
 
 .secao-tipo-acomodacao p {
-  margin: 1rem;
+  margin: 1rem 0;
   color: #686b68;
 }
 
 .container-tipo-acomodacao {
-  width: 80vw;
+  /* width: 80vw; */
+  flex: 2;
 }
 
-.container-titulos-acomodacao {
+/* .container-titulos-acomodacao {
   display: flex;
   border: 1px solid #016956;
   border-radius: 10px;
   margin: 1rem 0;
   padding: 1rem;
-}
+} */
 
 .container-titulos-acomodacao img {
   width: 30%;
   border-radius: 10px;
 }
 
-.container-titulos-acomodacao input[type="radio"]:checked {
-  background-color: red;
-  color: red;
+#standard {
+  display: none;
+  padding: 5rem 0;
+}
+
+.item-label {
+  display: flex;
+  flex: 1;
+  border: 1px solid #016956;
+  border-radius: 10px;
+  padding: 1rem;
+  background: #fff;
+  margin: 1rem 0;
+  gap: 1rem;
+}
+
+.circle {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: 1px solid #016956;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.item-label img {
+  object-fit: cover;
+}
+
+#standard:checked ~ label div {
+  background-color: #eff5f0;
+  color: #016956;
+}
+
+#standard:checked ~ label .circle .checkmark {
+  position: absolute;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background-color: #016956;
 }
 
 .container-resumo-reserva {
   border: 1px solid #016956;
   border-radius: 10px;
   padding: 1rem;
-  width: 40%;
+  /* width: 40%; */
   background: #eff5f0;
-  height: 50vh;
+  /* height: 50vh; */
+  height: 50%;
   margin-top: 2.7rem;
+}
+
+.container-resumo-reserva {
+  flex: 1;
 }
 
 .container-resumo-reserva .btn {
