@@ -44,6 +44,11 @@ img {
   border-radius: 10px;
 }
 
+.container-titulos-acomodacao input[type="radio"]:checked {
+  background-color: red;
+  color: red;
+}
+
 .container-resumo-reserva {
   border: 1px solid #016956;
   border-radius: 10px;

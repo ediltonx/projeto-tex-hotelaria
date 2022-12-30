@@ -4,8 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../public/assets/css/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../public/assets/css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <title>Criar Nova Conta</title>
   </head>
   <body>
@@ -13,7 +18,10 @@
       <div class="header-container">
         <div class="logo">
           <a href="/index.html">
-            <img src="../public/assets/images/logo.svg" alt="Chloe Gran Hotel" />
+            <img
+              src="../public/assets/images/logo.svg"
+              alt="Chloe Gran Hotel"
+            />
           </a>
         </div>
         <nav class="navbar">
@@ -45,65 +53,67 @@
               </form>
             </li>
           </ul>
-          <ul class="menu-mobile">
-            <span>X</span>
-            <!-- <li>
-                <a href="pages/about.html">O Hotel</a>
+          <nav class="mobile-nav">
+            <label class="menu-mobile-icon" for="menu-toggle">&#9776;</label>
+            <input type="checkbox" id="menu-toggle" />
+            <ul class="menu-mobile">
+              <li>
+                <a href="../pages/about.html">O Hotel</a>
               </li>
               <li>
-                <a href="pages/acomodacoes.html">Acomodações</a>
+                <a href="../pages/acomodacoes.html">Acomodações</a>
               </li>
               <li>
-                <a href="pages/reservas.html">Reservas</a>
+                <a href="../pages/reservas.html">Reservas</a>
               </li>
               <li>
-                <a href="pages/contato.html">Contato</a>
+                <a href="../pages/contato.html">Contato</a>
               </li>
               <li>
-                <a href="pages/login.html">Login</a>
+                <a href="../pages/login.html">Login</a>
               </li>
-              <li>
-                <a href="admin/login.html">Área Administrativa</a>
-              </li> -->
-          </ul>
+            </ul>
+          </nav>
         </nav>
       </div>
     </header>
-      <div class="register-main cover-background">
-          <h1>Registro de Novo Usuário</h1>
+    <div class="register-main cover-background">
+      <h1>Registro de Novo Usuário</h1>
+    </div>
+    <h2 class="title">Preencha todos os campos para realizar seu cadastro</h2>
+    <article id="register" class="register">
+      <div class="itens-form">
+        <div class="cells">
+          <label for="Nome">Nome Completo: </label>
+          <input type="text" />
+        </div>
+        <div class="cells">
+          <label for="email">E-Mail: </label>
+          <input type="email" />
+        </div>
+        <div class="cells">
+          <label for="Telefone">Telefone: </label>
+          <input type="number" />
+        </div>
+        <div class="cells">
+          <label for="nascimento">Data de Nascimento </label>
+          <input type="date" />
+        </div>
+        <div class="cells">
+          <label for="senha">Senha </label>
+          <input type="password" />
+        </div>
+        <input class="btn-register" type="submit" value="Enviar" />
       </div>
-      <h2 class="title">Preencha todos os campos para realizar seu cadastro</h2>
-         <article id="register" class="register">
-          <div class="itens-form">
-          <div class="cells">
-            <label for="Nome">Nome Completo: </label>
-            <input type="text" />
-          </div>
-          <div class="cells">
-            <label for="email">E-Mail: </label>
-            <input type="email" />
-          </div>
-          <div class="cells">
-            <label for="Telefone">Telefone: </label>
-            <input type="number" />
-          </div>
-          <div class="cells">
-            <label for="nascimento">Data de Nascimento </label>
-            <input type="date" />
-          </div>
-          <div class="cells">
-            <label for="senha">Senha </label>
-            <input type="password" />
-          </div>
-          <input class="btn-register" type="submit" value="Enviar" />
-          </div>
-         </article>
-          
+    </article>
 
-<footer class="footer">
+    <footer class="footer">
       <div class="footer-container">
         <div class="footer-logo">
-          <img src="../public/assets//images/logo.svg" alt="Chloe Grand Hotel" />
+          <img
+            src="../public/assets//images/logo.svg"
+            alt="Chloe Grand Hotel"
+          />
         </div>
         <div class="footer-item_container">
           <div class="footer-item">
@@ -172,5 +182,3 @@
     <p class="copy">&copy; 2022 - Todos os direitos reservados</p>
   </body>
 </html>
-
- 
