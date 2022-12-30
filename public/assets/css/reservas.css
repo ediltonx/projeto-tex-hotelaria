@@ -45,7 +45,7 @@ img {
   border-radius: 10px;
 }
 
-#standard {
+.item-check {
   display: none;
   padding: 5rem 0;
 }
@@ -77,12 +77,12 @@ img {
   object-fit: cover;
 }
 
-#standard:checked ~ label div {
+.item-check:checked ~ label div {
   background-color: #eff5f0;
   color: #016956;
 }
 
-#standard:checked ~ label .circle .checkmark {
+.item-check:checked ~ label .circle .checkmark {
   position: absolute;
   width: 11px;
   height: 11px;
