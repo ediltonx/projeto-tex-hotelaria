@@ -186,6 +186,11 @@ html {
 
 .menu-mobile-icon {
   font-size: 28px;
+  cursor: pointer;
+}
+
+.menu-mobile-icon:hover {
+  opacity: 0.5;
 }
 
 .menu-mobile ul {
