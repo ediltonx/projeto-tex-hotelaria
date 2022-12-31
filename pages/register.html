@@ -78,34 +78,36 @@
       </div>
     </header>
     <div class="register-main cover-background">
-      <h1>Registro de Novo Usuário</h1>
+      <h1 class="hero-title">Registro de Novo Usuário</h1>
     </div>
     <h2 class="title">Preencha todos os campos para realizar seu cadastro</h2>
-    <article id="register" class="register">
-      <div class="itens-form">
-        <div class="cells">
-          <label for="Nome">Nome Completo: </label>
-          <input type="text" />
+    <section class="section">
+      <article id="register" class="container">
+        <div class="itens-form">
+          <div class="cells">
+            <label for="Nome">Nome Completo: </label>
+            <input type="text" />
+          </div>
+          <div class="cells">
+            <label for="email">E-Mail: </label>
+            <input type="email" />
+          </div>
+          <div class="cells">
+            <label for="Telefone">Telefone: </label>
+            <input type="number" />
+          </div>
+          <div class="cells">
+            <label for="nascimento">Data de Nascimento </label>
+            <input type="date" />
+          </div>
+          <div class="cells">
+            <label for="senha">Senha </label>
+            <input type="password" />
+          </div>
+          <input class="btn" type="submit" value="Enviar" />
         </div>
-        <div class="cells">
-          <label for="email">E-Mail: </label>
-          <input type="email" />
-        </div>
-        <div class="cells">
-          <label for="Telefone">Telefone: </label>
-          <input type="number" />
-        </div>
-        <div class="cells">
-          <label for="nascimento">Data de Nascimento </label>
-          <input type="date" />
-        </div>
-        <div class="cells">
-          <label for="senha">Senha </label>
-          <input type="password" />
-        </div>
-        <input class="btn-register" type="submit" value="Enviar" />
-      </div>
-    </article>
+      </article>
+    </section>
 
     <footer class="footer">
       <div class="footer-container">
