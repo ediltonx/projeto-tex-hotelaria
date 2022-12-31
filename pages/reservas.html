@@ -85,29 +85,37 @@
       </section>
       <section class="section">
         <div class="container">
-          <div class="rigth-reserva">
+          <div class="right-reserva">
             <div class="card-inputs">
-              <h1>Reserve agora!</h1>
-              <div class="textfield">
+              <div>
+                <h2>Minha reserva</h2>
+                <p>
+                  Informe a data de entrada, a saída e a quantidade de pessoas.
+                </p>
+              </div>
+              <div class="input-group">
                 <label for="datacheckin">Data check-in:</label>
-                <input type="date" />
+                <input type="date" class="input-text-primary" />
               </div>
-              <div class="textfield">
+              <div class="input-group">
                 <label for="datacheckout">Data check-out:</label>
-                <input type="date" />
+                <input type="date" class="input-text-primary" />
               </div>
-              <div class="textfield">
+              <div class="input-group">
                 <label for="qtde_adultos">Adultos:</label>
-                <input type="number" />
+                <input type="number" max="2" class="input-text-primary" />
               </div>
-              <div class="textfield">
+              <div class="input-group">
                 <label for="qtde_criancas">Crianças:</label>
-                <input type="number" />
+                <input type="number" max="2" class="input-text-primary" />
               </div>
-              <button class="btn-reserva">Reservar agora</button>
             </div>
           </div>
+        </div>
+      </section>
 
+      <section class="section">
+        <div class="container">
           <section class="secao-tipo-acomodacao">
             <div class="container-tipo-acomodacao">
               <h2>Escolha o tipo de acomodação</h2>
