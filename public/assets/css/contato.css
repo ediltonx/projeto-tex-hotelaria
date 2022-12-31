@@ -1,37 +1,13 @@
-@import url("./reset.css");
-
-/* contato títulos */
-
-.title {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 48px;
-  color: #242222;
-  font-weight: 700;
-  padding: 28px 0;
-  margin: 38px 0;
-  position: relative;
-}
-
 .contact-main {
   background: url("../images/bell.png") no-repeat;
   background-size: cover;
-}
-
-.contact-main h1 {
-  font-size: 86px;
-  font-weight: 700;
-  line-height: 104px;
-  letter-spacing: 0em;
-  text-align: center;
-  color: #fff;
 }
 
 .title ~ h3 {
   text-align: center;
   font-size: 1.2em;
   font-weight: 300;
+  margin-bottom: 2rem;
 }
 
 /* end contato títulos */
@@ -39,10 +15,16 @@
 /* contato body */
 
 .contact {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #fff;
+  background-color: #eff5f0;
+}
+
+.contact > .section {
+  background-color: transparent;
+  flex-direction: column;
+}
+
+.contact.container {
+  margin: 0 32px;
   padding: 68px 0px;
 }
 
@@ -51,15 +33,10 @@
 /* contato form */
 
 .itens-form {
-  width: 80vh;
-  background-color: #eff5f0;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 30px 35px;
-  border-radius: 20px;
-  box-shadow: 0px 10px 40px #00000056;
 }
 
 .itens-form > h1 {
@@ -68,9 +45,14 @@
   margin: 0;
 }
 
+input.btn {
+  width: 100%;
+}
+
 .nomes {
   display: flex;
   flex-direction: row;
+  gap: 1rem;
   width: 100%;
 }
 
@@ -87,12 +69,10 @@
 }
 
 .nome1 > input {
-  width: 70%;
-  height: 5vh;
-  border-radius: 10px;
-  padding: 15px;
-  font-size: 12pt;
-  box-shadow: 0px 10px 40px #00000056;
+  width: 100%;
+  border: solid 1px #bdcfbd;
+  padding: 12px 8px;
+  border-radius: 6px;
 }
 
 .nome2 {
@@ -109,12 +89,10 @@
 }
 
 .nome2 > input {
-  width: 70%;
-  height: 5vh;
-  border-radius: 10px;
-  padding: 15px;
-  font-size: 12pt;
-  box-shadow: 0px 10px 40px #00000056;
+  width: 100%;
+  border: solid 1px #bdcfbd;
+  padding: 12px 8px;
+  border-radius: 6px;
 }
 
 .cells {
@@ -126,12 +104,11 @@
 }
 
 .cells > input {
-  width: 70%;
-  height: 5vh;
-  border-radius: 10px;
-  padding: 15px;
-  font-size: 12pt;
-  box-shadow: 0px 10px 40px #00000056;
+  width: 100%;
+  border: solid 1px #bdcfbd;
+  padding: 12px 8px;
+  border-radius: 6px;
+  /* box-shadow: 0px 10px 40px #00000056; */
 }
 
 .cells > label {
@@ -139,43 +116,9 @@
   margin-bottom: 10px;
 }
 
-.btn-contact {
-  width: 40%;
-  height: auto;
-  border-radius: 9px;
-  border: none;
-  box-shadow: none;
-  margin-left: 400px;
-  font-size: 20px;
-  padding: 12px 22px;
-  color: #fff;
-  background-color: #558e60;
-}
-
 .message {
-  width: 20vw;
-  height: 20vh;
-  padding: 2px 2px 2px 2px;
-  border: 2px 2px 2px 2px solid;
-  border-radius: 8px;
-  box-shadow: 0px 10px 40px #00000056;
+  width: 100%;
+  border: solid 1px #bdcfbd;
+  padding: 12px 8px;
+  border-radius: 6px;
 }
-
-/* localização */
-
-.contact-local {
-  display: flex;
-  width: auto;
-  justify-content: center;
-}
-
-.contact-local > iframe {
-  display: flex;
-  width: 900px;
-  height: 500px;
-  border: 0;
-  border-radius: 15px;
-  max-width: 1090px;
-}
-
-/*END localização */
