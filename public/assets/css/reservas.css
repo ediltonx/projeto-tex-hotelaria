@@ -85,7 +85,8 @@
   border-radius: 10px;
   padding: 1rem;
   background: #eff5f0;
-  height: 52%;
+  /* height: 52%; */
+  height: auto;
   margin-top: 2.7rem;
 }
 
@@ -174,6 +175,12 @@
   }
 
   .container-titulos-acomodacao img {
-    display: none;
+    width: 100%;
   }
+  .input-group {
+    width: 100%;
+  }
+  /* .container-resumo-reserva {
+    height: auto;
+  } */
 }
