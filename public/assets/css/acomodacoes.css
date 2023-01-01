@@ -7,9 +7,6 @@
   background: url("../images/background-acomodacoes.png") no-repeat;
 }
 
-.bg-white {
-  background-color: #ffffff;
-}
 .acomodacao {
   margin-top: 50px;
 }
@@ -21,7 +18,8 @@
   align-items: center;
 }
 div.flex-color > h2 {
-  font-size: 2rem;
+  font-size: 3rem;
+  text-align: center;
   color: #242222;
   margin: 0;
 }
@@ -203,7 +201,6 @@ div.flex-img {
     column-gap: 10px;
     row-gap: 10px;
     justify-content: center;
-    width: 680px;
     margin-bottom: 20px;
   }
 
@@ -408,15 +405,20 @@ div.containerDestaque div button {
 
 div.box-caracteristicas {
   background: #eff5f0;
-  margin: 148px 0 148px 0;
+  margin: 148px 0;
+  padding: 32px 0;
   width: 100%;
-  height: 32.8vh;
+  /* height: 32.8vh; */
   display: flex;
   justify-content: center;
 }
 
 div.box-caracteristicas img {
-  width: 70%;
+  /* width: 70%; */
+}
+
+.home-reserva {
+  background-color: #fff;
 }
 
 div.box-fazer-reserva {
@@ -541,13 +543,13 @@ div.box-fazer-reserva button {
     background: #eff5f0;
     margin: 20px 0;
     width: 100%;
-    height: 10vh;
+    /* height: 10vh; */
     display: flex;
     justify-content: center;
   }
 
   div.box-caracteristicas img {
-    width: 70%;
+    /* width: 70%; */
   }
 
   .box-fazer-reserva-container {
@@ -672,7 +674,6 @@ div.box-fazer-reserva button {
     background: #eff5f0;
     margin: 0;
     width: 100%;
-    height: 10vh;
     display: flex;
     justify-content: center;
   }
@@ -747,7 +748,6 @@ div.box-fazer-reserva button {
 
   div.containerDestaque div {
     width: 43vw;
-    /* height: 10vh; */
   }
   div.box-destaque-1 img {
     width: 100%;
@@ -770,7 +770,6 @@ div.box-fazer-reserva button {
     font-size: 1.5em;
     min-width: 90px;
     font-weight: 700px;
-    /* white-space: nowrap; */
   }
 
   div.box-destaque-acaomodacao {
@@ -808,7 +807,6 @@ div.box-fazer-reserva button {
     background: #eff5f0;
     margin: 0;
     width: 100%;
-    height: 10vh;
     display: flex;
     justify-content: center;
   }
@@ -827,7 +825,6 @@ div.box-fazer-reserva button {
   }
 
   .box-fazer-reserva-image {
-    /* width: 50vw; */
     margin: 0 100px 0 10px;
   }
   .box-fazer-reserva-image > img {
@@ -850,7 +847,7 @@ div.box-fazer-reserva button {
   }
 }
 
-@media (min-width: 981px) and (max-width: 1220px) and (orientation: portrait){
+@media (min-width: 981px) and (max-width: 1220px) and (orientation: portrait) {
   div.titulo-destaque {
     margin-top: 30px;
     padding-top: 10px;
@@ -885,7 +882,6 @@ div.box-fazer-reserva button {
 
   div.containerDestaque div {
     width: 43vw;
-    /* height: 10vh; */
   }
   div.box-destaque-1 img {
     width: 100%;
@@ -908,7 +904,6 @@ div.box-fazer-reserva button {
     font-size: 1.5em;
     min-width: 90px;
     font-weight: 700px;
-    /* white-space: nowrap; */
   }
 
   div.box-destaque-acaomodacao {
@@ -944,7 +939,6 @@ div.box-fazer-reserva button {
     background: #eff5f0;
     margin: 0;
     width: 100%;
-    height: 10vh;
     display: flex;
     justify-content: center;
   }
@@ -963,7 +957,6 @@ div.box-fazer-reserva button {
   }
 
   .box-fazer-reserva-image {
-    /* width: 50vw; */
     margin: 0 100px 0 10px;
   }
   .box-fazer-reserva-image > img {
@@ -986,7 +979,7 @@ div.box-fazer-reserva button {
   }
 }
 
-@media screen and (min-width: 1200px) and (orientation: landscape){
+@media screen and (min-width: 1200px) and (orientation: landscape) {
   div.titulo-destaque {
     margin-top: 30px;
     padding-top: 10px;
@@ -1078,7 +1071,6 @@ div.box-fazer-reserva button {
     background: #eff5f0;
     margin: 0;
     width: 100%;
-    height: 10vh;
     display: flex;
     justify-content: center;
   }
@@ -1118,5 +1110,4 @@ div.box-fazer-reserva button {
     width: 200px;
     margin: 20px 0 20px 10px;
   }
-
 }
