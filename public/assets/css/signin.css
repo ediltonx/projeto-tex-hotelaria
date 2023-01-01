@@ -2,11 +2,10 @@
 
 .sign-in {
   width: 100vw;
-  /* height: 100vh; */
+  height: 100vh;
   height: auto;
   display: flex;
   align-items: center;
-  /* overflow: hidden; */
 }
 
 .sign-in-container {
@@ -34,7 +33,7 @@
   flex: 1;
   gap: 32px;
   width: 100%;
-  height: 100vh;
+  /* height: 100vh; */
   margin: 0 32px;
   padding-top: 42px;
 }
@@ -53,13 +52,13 @@
   display: flex;
   flex-direction: column;
   gap: 18px;
+  width: 50%;
 }
 
 .input-text-primary {
   border: solid 1px #bdcfbd;
   padding: 12px 8px;
   border-radius: 6px;
-  /* background-color: #016956; */
 }
 
 .sign-in-forgot_pass a {
@@ -68,11 +67,6 @@
   text-align: center;
   text-decoration: underline;
 }
-
-/* verde #016956 */
-/* verde-claro #0EFF5F0 */
-/* cinza #E1E6E1 */
-/* dourado #B9AD81 */
 
 .sign-in-help {
   display: flex;
