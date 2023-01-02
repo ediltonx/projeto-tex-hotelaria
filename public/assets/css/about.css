@@ -46,40 +46,12 @@
   font-size: 32px;
 }
 
-/* .about-help-description p {
-  color: #686b68;
-  font-weight: 400px;
-  font-size: 24px;
-  line-height: 36px;
-  
-} */
-
 .about-help-icon {
   display: flex;
   gap: 18px;
   align-items: center;
 }
 
-/* .about-help-description a > button {
-  color: #fff;
-  font-size: 20px;
-  font-weight: 400px;
-  position: absolute;
-  background-color: #558e60;
-  box-shadow: 0px 5px 7px rgba(85, 142, 96, 0.35);
-  border-radius: 9px;
-  width: 200px;
-  height: 80px;
-  border: 0;
-  cursor: pointer;
-}
-
-.bttn:hover {
-  cursor: pointer;
-  color: #fff;
-  background-color: #8dca9b;
-  transition: ease 0.5s;
-} */
 
 /* ABOUT LOCALIZATION */
 .about-localization {
@@ -114,4 +86,5 @@
 .about-help-description{
   align-items: center;
 }
+
 }
