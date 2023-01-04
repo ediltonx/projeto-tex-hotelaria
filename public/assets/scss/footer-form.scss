@@ -1,0 +1,103 @@
+// vars
+
+$df: flex;
+$color1: #eff5f0;
+$color2: #000;
+$h1: (
+  "col": #000,
+  "fw": 800,
+  "mg": 0,
+);
+$w1: 100%;
+
+//end vars
+
+.contact {
+  background-color: $color1;
+  & > .section {
+    background-color: transparent;
+    flex-direction: column;
+  }
+  & > .container {
+    margin: 0 32px;
+    padding: 68px 0px;
+  }
+}
+
+.itens-form {
+  display: $df;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  & > h1 {
+    color: "col";
+    font-weight: "fw";
+    margin: "mg";
+  }
+}
+
+input {
+  &.btn {
+    width: 60%;
+  }
+}
+
+.nomes {
+  display: $df;
+  flex-direction: row;
+  gap: 1rem;
+  width: $w1;
+}
+
+.nome1 {
+  width: $w1;
+  display: $df;
+  flex-direction: column;
+  justify-items: center;
+  & > label {
+    color: $color2;
+    margin-bottom: 10px;
+  }
+  & > input {
+    width: $w1;
+    border: solid 1px $color1;
+    padding: 12px 8px;
+    border-radius: 6px;
+  }
+}
+
+.nome2 {
+  width: $w1;
+  display: $df;
+  flex-direction: column;
+  justify-items: center;
+  margin: 0;
+  & > label {
+    color: $color2;
+    margin-bottom: 10px;
+  }
+  & > input {
+    width: $w1;
+    border: solid 1px $color1;
+    padding: 12px 8px;
+    border-radius: 6px;
+  }
+}
+
+.cells {
+  width: $w1;
+  display: $df;
+  flex-direction: column;
+  justify-content: center;
+  margin: 15px 0px;
+  & > input {
+    width: $w1;
+    border: solid 1px $color1;
+    padding: 12px 8px;
+    border-radius: 6px;
+  }
+  & > label {
+    color: $color2;
+    margin-bottom: 10px;
+  }
+}
