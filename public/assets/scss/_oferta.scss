@@ -1,0 +1,71 @@
+/*Start CSS Oferta*/
+@use "base";
+
+$pad-oferta: 0;
+$width-oferta: 90%;
+$margin-oferta: 0 auto;
+$video-width: 100%;
+$video-height: 100%;
+
+section.oferta {
+  padding: $pad-oferta;
+  width: $width-oferta;
+  margin: $margin-oferta;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+//   background-color: aqua;
+}
+div.oferta-relogio {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 20px;
+}
+
+div.oferta-relogio > img{
+    width: 10vh;
+}
+
+div.oferta-relogio > h3{
+    color: base.$titles-gray;
+    font-size: 3.5em;
+}
+
+div.oferta-detalhe{
+    background-color: base.$primary-gold;
+    width: 620px;
+    height: 7px;
+    margin: 10px 0 70px 10px;
+}
+
+div.oferta-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    // background-color: beige;
+}
+div.oferta-video{
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+}
+div.oferta-iframe{
+    width: 60vw;
+    height: 600px;
+}
+div.oferta-iframe > iframe{
+    width: $video-width;
+    height: $video-height;
+    border-radius: 20px;
+}
+
+div.oferta-info{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 30vw;
+}
+
+
+/*End CSS Oferta*/

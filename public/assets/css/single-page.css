@@ -156,6 +156,70 @@ li {
 }
 
 /* end Header */
+/*Start CSS Oferta*/
+section.oferta {
+  padding: 0;
+  width: 90%;
+  margin: 0 auto;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+div.oferta-relogio {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 20px;
+}
+
+div.oferta-relogio > img {
+  width: 10vh;
+}
+
+div.oferta-relogio > h3 {
+  color: #242222;
+  font-size: 3.5em;
+}
+
+div.oferta-detalhe {
+  background-color: #b9ad81;
+  width: 620px;
+  height: 7px;
+  margin: 10px 0 70px 10px;
+}
+
+div.oferta-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+div.oferta-video {
+  display: flex;
+  flex-direction: row;
+  column-gap: 20px;
+}
+
+div.oferta-iframe {
+  width: 60vw;
+  height: 600px;
+}
+
+div.oferta-iframe > iframe {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+
+div.oferta-info {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 30vw;
+}
+
+/*End CSS Oferta*/
 .interesse-main {
   display: flex;
   flex-direction: row;
