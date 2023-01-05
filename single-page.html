@@ -42,32 +42,37 @@
     </div>
     <main>
       <!-- oferta -->
-      <section>
-        <div class="oferta-relogio">
-          <!-- imagem relogio aqui -->
-          <h3>Oferta Disponivel</h3>
-        </div>
-        <div class="oferta-video">
-          <iframe
-            width="660"
-            height="415"
-            src="https://www.youtube.com/embed/BgXkYxz0dwc"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen
-          ></iframe>
-          <h3>Lorem, ipsum dolor sit amet consectetur.</h3>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis,
-            ducimus ea. Reprehenderit illum aliquam neque eum, qui doloribus
-            laborum assumenda necessitatibus non rem ab officia natus
-            exercitationem quasi libero quibusdam inventore odio itaque optio
-            quaerat quas nam porro! Voluptates culpa cumque, quae cupiditate
-            excepturi repellat quam maxime laboriosam quia soluta.
-          </p>
-          <p>De: <span>R$600,00</span> por <span>R$260,00</span></p>
-          <button type="submit">Reservar</button>
+      <section class="oferta">
+        <div class="oferta-container">
+          <div class="oferta-relogio">
+            <img src="public/assets/images/time.svg" alt="imagem relógio" />
+            <h3>Oferta Disponivel</h3>
+          </div>
+          <div class="oferta-detalhe"></div>
+          <div class="oferta-video">
+            <div class="oferta-iframe">
+              <iframe
+              src="https://www.youtube.com/embed/BgXkYxz0dwc"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+              ></iframe>
+            </div>
+            <div class="oferta-info">
+              <h3>Lorem, ipsum dolor sit amet consectetur.</h3>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Officiis, ducimus ea. Reprehenderit illum aliquam neque eum, qui
+                doloribus laborum assumenda necessitatibus non rem ab officia
+                natus exercitationem quasi libero quibusdam inventore odio itaque
+                optio quaerat quas nam porro! Voluptates culpa cumque, quae
+                cupiditate excepturi repellat quam maxime laboriosam quia soluta.
+              </p>
+              <p>De: <span>R$600,00</span> por <span>R$260,00</span></p>
+              <button type="submit">Reservar</button>
+            </div>
+          </div>
         </div>
       </section>
       <!-- end oferta -->
