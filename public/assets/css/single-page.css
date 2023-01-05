@@ -13,6 +13,7 @@
   margin-left: 20vh;
 }
 .interesse-left .container {
+  display: flex;
   margin: 0 32px;
   padding: 68px 0px;
 }
