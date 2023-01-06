@@ -5,7 +5,20 @@ $primary-gold: #b9ad81;
 $titles-gray: #242222;
 $paragraf-gray: #686b68;
 
-@function rem($pixel, $context: 16) {
+@function toRem($pixel) {
+  $remValue: calc($pixel / 16) + rem;
+  @return $remValue;
+}
+
+@mixin font-type($size) {
+  @if $size == 24 {
+    font-size: toRem(24);
+    line-height: toRem(37);
+    font-weight: 400;
+  } @else if $size == 32 {
+    font-size: toRem(32);
+    font-weight: 700;
+  }
 }
 
 //textos
@@ -33,15 +46,12 @@ $paragraf-gray: #686b68;
 }
 
 .subtitle {
-  font-size: 32px;
-  font-weight: 700;
+  @include font-type(32);
   color: #242222;
 }
 
 .paragraf {
   color: $paragraf-gray;
-  font-size: 24px;
-  line-height: 36px;
-  font-weight: 400;
+  @include font-type(24);
   text-align: left;
 }

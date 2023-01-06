@@ -49,15 +49,15 @@ li {
 }
 
 .subtitle {
-  font-size: 32px;
+  font-size: 2rem;
   font-weight: 700;
   color: #242222;
 }
 
 .paragraf {
   color: #686b68;
-  font-size: 24px;
-  line-height: 36px;
+  font-size: 1.5rem;
+  line-height: 2.3125rem;
   font-weight: 400;
   text-align: left;
 }
@@ -121,9 +121,7 @@ li {
 .content-header h1 {
   font-size: 64px;
   position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  padding-bottom: 38px;
 }
 .content-header h1:after {
   content: "";
@@ -131,8 +129,10 @@ li {
   width: 156px;
   height: 6px;
   background-color: #016956;
-  margin-top: 38px;
-  bottom: -28px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0 auto;
 }
 .content-header .paragraf {
   max-width: 50ch;
