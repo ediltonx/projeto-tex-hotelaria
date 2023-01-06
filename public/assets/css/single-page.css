@@ -186,24 +186,25 @@ div.oferta-detalhe {
   background-color: #b9ad81;
   width: 620px;
   height: 7px;
-  margin: 10px 0 70px 10px;
+  margin: 10px 0 50px 10px;
 }
 
 div.oferta-container {
   display: flex;
   flex-direction: column;
   width: 100%;
+  margin-top: 100px;
 }
 
 div.oferta-video {
   display: flex;
   flex-direction: row;
-  column-gap: 20px;
+  column-gap: 40px;
 }
 
 div.oferta-iframe {
-  width: 60vw;
-  height: 600px;
+  width: 700px;
+  height: 400px;
 }
 
 div.oferta-iframe > iframe {
@@ -216,7 +217,27 @@ div.oferta-info {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  width: 30vw;
+  width: 700px;
+}
+
+div.oferta-info h3 {
+  color: #b9ad81;
+  font-size: 2em;
+  font-family: "Merriweather", serif;
+}
+
+div.oferta-info p {
+  color: #686b68;
+  word-spacing: 10px;
+  line-height: 25px;
+  margin-top: 20px;
+  text-align: justify;
+}
+
+div.oferta-info p:nth-child(3) span.oferta-desconto {
+  font-size: 2em;
+  text-decoration-line: line-through;
+  text-decoration-color: red;
 }
 
 /*End CSS Oferta*/
