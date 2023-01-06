@@ -88,8 +88,7 @@
     &:hover {
       background-color: base.$primary-gold;
       color: #fff;
-      // opacity: 0.5;
-      transition: ease 0.2s;
+      transition: ease-in-out 0.2s;
       cursor: pointer;
     }
   }

@@ -1,11 +1,12 @@
-@use "reset";
-
 $primary-green: #558e60;
 $secondary-green: #016956;
 $secondary-white: #eff5f0;
 $primary-gold: #b9ad81;
 $titles-gray: #242222;
 $paragraf-gray: #686b68;
+
+@function rem($pixel, $context: 16) {
+}
 
 //textos
 .title {

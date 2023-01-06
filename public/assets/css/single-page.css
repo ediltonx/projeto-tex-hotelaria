@@ -151,7 +151,7 @@ li {
 .content-header button:hover {
   background-color: #b9ad81;
   color: #fff;
-  transition: ease 0.2s;
+  transition: ease-in-out 0.2s;
   cursor: pointer;
 }
 
