@@ -253,7 +253,7 @@ div.oferta-container {
   display: flex;
   flex-direction: column;
   width: 100%;
-  margin-top: 100px;
+  margin-top: 50px;
 }
 
 div.oferta-video {
@@ -294,10 +294,27 @@ div.oferta-info p {
   text-align: justify;
 }
 
-div.oferta-info p:nth-child(3) span.oferta-desconto {
-  font-size: 2em;
+div.oferta-info p:nth-child(3) span.oferta-valor-anterior {
+  font-size: 1.5em;
   text-decoration-line: line-through;
-  text-decoration-color: red;
+  text-decoration-color: #ff0000;
+}
+
+div.oferta-info p:nth-child(3) span.oferta-valor-atual {
+  font-size: 2.5em;
+  color: #b9ad81;
+}
+
+button.btn-oferta-reserva {
+  background-color: #558e60;
+  width: 200px;
+  height: 50px;
+  border-radius: 10px;
+  margin-top: 30px;
+  border: 0;
+  color: white;
+  cursor: pointer;
+  font-size: 1.5em;
 }
 
 /*End CSS Oferta*/

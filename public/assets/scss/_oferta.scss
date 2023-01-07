@@ -6,7 +6,8 @@ $width-oferta: 90%;
 $margin-oferta:0 auto;
 $video-width: 100%;
 $video-height: 100%;
-$texto-font-size: 2em;
+$texto-h3-font-size:2em;
+$texto-font-size: 1.5em;
 $mg-oferta-top: 20px;
 
 section.oferta {
@@ -16,7 +17,6 @@ section.oferta {
   height: 100vh;
   display: flex;
   align-items: center;
-//   background-color: aqua;
 }
 div.oferta-relogio {
   display: flex;
@@ -45,7 +45,7 @@ div.oferta-container{
     display: flex;
     flex-direction: column;
     width: 100%;
-    margin-top: 100px;
+    margin-top: 50px;
     // background-color: beige;
 }
 div.oferta-video{
@@ -74,7 +74,7 @@ div.oferta-info{
 div.oferta-info{
     h3{
         color: base.$primary-gold;
-        font-size: $texto-font-size;
+        font-size: $texto-h3-font-size;
         font-family: 'Merriweather', serif;
     }
 }
@@ -91,12 +91,31 @@ div.oferta-info{
 
 div.oferta-info {
     p:nth-child(3){
-        span.oferta-desconto{
+        span.oferta-valor-anterior{
             font-size: $texto-font-size;
             text-decoration-line: line-through;
-            text-decoration-color: red;
+            text-decoration-color: #ff0000;
         }
     }
+}
+div.oferta-info {
+    p:nth-child(3){
+        span.oferta-valor-atual{
+            font-size: 2.5em;
+            color: base.$primary-gold;
+        }
+    }
+}
+button.btn-oferta-reserva{
+    background-color: base.$primary-green;
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    margin-top: 30px;
+    border: 0;
+    color: white;
+    cursor: pointer;
+    font-size: $texto-font-size;
 }
 
 
