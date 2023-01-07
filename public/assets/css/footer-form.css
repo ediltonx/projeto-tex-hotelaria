@@ -1,0 +1,114 @@
+.interesse-main {
+  display: flex;
+  flex-direction: row;
+  height: 60vh;
+  background-image: url("../images/background-home.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.interesse-left {
+  justify-items: center;
+  justify-content: center;
+  margin-left: 20vh;
+}
+.interesse-left .container {
+  display: flex;
+  margin: 0 32px;
+  padding: 68px 0px;
+}
+.interesse-left h1 {
+  color: #eff5f0;
+  font-weight: bold;
+  margin: 0 0 -20px 250px;
+}
+.interesse-left .btn {
+  width: 140px;
+  height: auto;
+  border-radius: 9px;
+  border: none;
+  box-shadow: none;
+  margin-left: 20vw;
+  font-size: 20px;
+  padding: 12px 22px;
+  background-color: #558e60;
+  color: #eff5f0;
+}
+
+.interesse-right {
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  left: 20vw;
+}
+
+.itens-form {
+  width: 100%;
+  justify-content: left;
+  align-items: left;
+  flex-direction: column;
+  margin-right: 50%;
+  margin-bottom: 5vh;
+}
+
+.nomes {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  width: 100%;
+}
+
+.nome1 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+}
+.nome1 > label {
+  color: #000;
+  margin-bottom: 10px;
+}
+.nome1 > input {
+  width: 90%;
+  border: solid 1px #eff5f0;
+  padding: 12px 8px;
+  border-radius: 6px;
+}
+
+.nome2 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  margin: 0;
+}
+.nome2 > label {
+  color: #000;
+  margin-bottom: 10px;
+}
+.nome2 > input {
+  width: 100%;
+  border: solid 1px #eff5f0;
+  padding: 12px 8px;
+  border-radius: 6px;
+}
+
+.cells {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 20px 0px;
+}
+.cells > input {
+  width: 100%;
+  border: solid 1px #eff5f0;
+  padding: 10px 8px;
+  border-radius: 6px;
+}
+.cells > label {
+  color: #000;
+  margin-bottom: 10px;
+}
+
+/*# sourceMappingURL=footer-form.css.map */
