@@ -1,0 +1,64 @@
+@use "base" as v;
+
+
+/*Beneficios start*/
+.container-content{
+    background-color: v.$tertiary-green;
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem 0;
+
+    &__info{
+        color:v.$paragraf-gray;
+        font-size: 48px;
+        font-weight: 700;
+    }
+}
+
+.container-wrapper {
+    width: 100%;
+    padding: 3rem;
+    display: flex;
+    left: 20px;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    &__info {
+        width: 50%;
+        height: auto;
+        display: flex;
+        align-items: baseline;
+        flex-wrap: wrap;
+        flex-direction: row;
+        margin-left: 3rem;
+        margin-bottom: 2rem;
+    }
+
+    &__icon {
+        margin: 0 1rem 3rem 0;
+        width: 60px;
+    }
+}
+
+.content-text {
+    width: 50%;
+    padding: 5rem;
+    flex-wrap: nowrap
+}
+.text {
+    @include v.font-type(32);
+    color: v.$primary-gold;
+    margin: 0 0 3rem 1rem;
+    align-self: center;
+
+    &__info{
+        margin-top: 1.5rem;
+        width: 75%;
+        flex-wrap: wrap;
+        text-align: justify;
+    }
+}

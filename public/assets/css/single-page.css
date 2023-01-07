@@ -318,6 +318,66 @@ button.btn-oferta-reserva {
 }
 
 /*End CSS Oferta*/
+/*Beneficios start*/
+.container-content {
+  background-color: #EFF5F0;
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem 0;
+}
+.container-content__info {
+  color: #686b68;
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.container-wrapper {
+  width: 100%;
+  padding: 3rem;
+  display: flex;
+  left: 20px;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.container-wrapper__info {
+  width: 50%;
+  height: auto;
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-left: 3rem;
+  margin-bottom: 2rem;
+}
+.container-wrapper__icon {
+  margin: 0 1rem 3rem 0;
+  width: 60px;
+}
+
+.content-text {
+  width: 50%;
+  padding: 5rem;
+  flex-wrap: nowrap;
+}
+
+.text {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #b9ad81;
+  margin: 0 0 3rem 1rem;
+  align-self: center;
+}
+.text__info {
+  margin-top: 1.5rem;
+  width: 75%;
+  flex-wrap: wrap;
+  text-align: justify;
+}
+
 .interesse-main {
   display: flex;
   flex-direction: row;
