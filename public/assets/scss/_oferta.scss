@@ -3,9 +3,11 @@
 
 $pad-oferta: 0;
 $width-oferta: 90%;
-$margin-oferta: 0 auto;
+$margin-oferta:0 auto;
 $video-width: 100%;
 $video-height: 100%;
+$texto-font-size: 2em;
+$mg-oferta-top: 20px;
 
 section.oferta {
   padding: $pad-oferta;
@@ -36,23 +38,25 @@ div.oferta-detalhe{
     background-color: base.$primary-gold;
     width: 620px;
     height: 7px;
-    margin: 10px 0 70px 10px;
+    margin: 10px 0 50px 10px;
 }
 
 div.oferta-container{
     display: flex;
     flex-direction: column;
     width: 100%;
+    margin-top: 100px;
     // background-color: beige;
 }
 div.oferta-video{
     display: flex;
     flex-direction: row;
-    column-gap: 20px;
+    column-gap: 40px;
 }
 div.oferta-iframe{
-    width: 60vw;
-    height: 600px;
+    // width: 50vw;
+    width: 700px;
+    height: 400px;
 }
 div.oferta-iframe > iframe{
     width: $video-width;
@@ -64,7 +68,35 @@ div.oferta-info{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    width: 30vw;
+    width: 700px;
+}
+
+div.oferta-info{
+    h3{
+        color: base.$primary-gold;
+        font-size: $texto-font-size;
+        font-family: 'Merriweather', serif;
+    }
+}
+
+div.oferta-info{
+    p{
+        color: base.$paragraf-gray;
+        word-spacing: 10px;
+        line-height: 25px;
+        margin-top: $mg-oferta-top;
+        text-align: justify;
+    }
+}
+
+div.oferta-info {
+    p:nth-child(3){
+        span.oferta-desconto{
+            font-size: $texto-font-size;
+            text-decoration-line: line-through;
+            text-decoration-color: red;
+        }
+    }
 }
 
 
