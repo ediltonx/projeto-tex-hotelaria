@@ -358,10 +358,56 @@ button.btn-oferta-reserva {
   width: 60px;
 }
 
+.btn {
+  border: 3px solid #b9ad81;
+  background-color: transparent;
+  color: white;
+  padding: 15px 40px;
+  border-radius: 9px;
+  display: flex;
+  justify-content: center;
+}
+.btn:hover {
+  background-color: #b9ad81;
+  color: #fff;
+  transition: ease-in-out 0.2s;
+  cursor: pointer;
+}
+
 .content-text {
   width: 50%;
-  padding: 5rem;
+  padding: 6rem;
   flex-wrap: nowrap;
+  flex-direction: column;
+}
+.content-text__paragraf {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-direction: row;
+}
+.content-text__icon {
+  margin-right: 2rem;
+  margin-bottom: 2rem;
+}
+
+.content-text__container {
+  display: flex;
+  justify-content: flex-start;
+  margin: 3rem 0;
+}
+.content-text__btn {
+  font-size: 1.5rem;
+  line-height: 2.3125rem;
+  font-weight: 400;
+  width: 10vw;
+  border: none;
+  background-color: #558e60;
+  color: white;
+  padding: 15px 40px;
+  border-radius: 9px;
+  text-align: center;
+  cursor: pointer;
 }
 
 .text {
@@ -370,12 +416,15 @@ button.btn-oferta-reserva {
   color: #b9ad81;
   margin: 0 0 3rem 1rem;
   align-self: center;
+  justify-content: center;
 }
 .text__info {
   margin-top: 1.5rem;
   width: 75%;
+  display: flex;
   flex-wrap: wrap;
   text-align: justify;
+  justify-content: center;
 }
 
 .interesse-main {
