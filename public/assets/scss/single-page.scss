@@ -1,19 +1,21 @@
 //reset
 @use "reset";
+
 //pages
 
 @use "header";
 @use "oferta";
 @use "beneficios";
-@use "footer-form.scss";
-@use "footer-links.scss";
-@use "header.scss";
+@use "footer-form";
+@use "footer-links";
+
+// vars
 
 $primary-green: #558e60;
-$secondary-green: #eff5f0;
+$secondary-white: #eff5f0;
 $primary-gold: #b9ad81;
 $titles-gray: #242222;
-$paragraf-gray: #686b68;
+$paragraph-gray: #686b68;
 
 //textos
 .title {
@@ -21,7 +23,7 @@ $paragraf-gray: #686b68;
   align-items: center;
   justify-content: center;
   font-size: 48px;
-  color: #242222;
+  color: $titles-gray;
   font-weight: 700;
   padding: 28px 0;
   margin: 38px 0;
@@ -35,18 +37,18 @@ $paragraf-gray: #686b68;
   height: 12px;
   position: absolute;
   height: 5px;
-  background-color: #b9ad81;
+  background-color: $primary-gold;
   bottom: 0;
 }
 
 .subtitle {
   font-size: 32px;
   font-weight: 700;
-  color: #242222;
+  color: $titles-gray;
 }
 
-.paragraf {
-  color: $paragraf-gray;
+.paragraph {
+  color: $paragraph-gray;
   font-size: 24px;
   line-height: 36px;
   font-weight: 400px;

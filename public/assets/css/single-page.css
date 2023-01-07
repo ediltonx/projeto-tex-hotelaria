@@ -390,17 +390,14 @@ button.btn-oferta-reserva {
 .interesse-left {
   justify-items: center;
   justify-content: center;
-  margin-left: 20vh;
+  margin-left: 10vh;
 }
 .interesse-left .container {
-  display: flex;
   margin: 0 32px;
   padding: 68px 0px;
 }
-.interesse-left h1 {
-  color: #eff5f0;
-  font-weight: bold;
-  margin: 0 0 -20px 250px;
+.interesse-left > .subtitle {
+  margin: 5vh 0 0 4vw;
 }
 .interesse-left .btn {
   width: 140px;
@@ -445,12 +442,12 @@ button.btn-oferta-reserva {
   justify-items: center;
 }
 .nome1 > label {
-  color: #000;
+  color: #242222;
   margin-bottom: 10px;
 }
 .nome1 > input {
   width: 90%;
-  border: solid 1px #eff5f0;
+  border: solid 1px #b9ad81;
   padding: 12px 8px;
   border-radius: 6px;
 }
@@ -463,7 +460,7 @@ button.btn-oferta-reserva {
   margin: 0;
 }
 .nome2 > label {
-  color: #000;
+  color: #242222;
   margin-bottom: 10px;
 }
 .nome2 > input {
@@ -482,13 +479,50 @@ button.btn-oferta-reserva {
 }
 .cells > input {
   width: 100%;
-  border: solid 1px #eff5f0;
+  border: solid 1px #b9ad81;
   padding: 10px 8px;
   border-radius: 6px;
 }
 .cells > label {
-  color: #000;
+  color: #242222;
   margin-bottom: 10px;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 48px;
+  color: #242222;
+  font-weight: 700;
+  padding: 28px 0;
+  margin: 38px 0;
+  position: relative;
+  text-align: center;
+}
+
+.title::after {
+  content: "";
+  width: 268px;
+  height: 12px;
+  position: absolute;
+  height: 5px;
+  background-color: #b9ad81;
+  bottom: 0;
+}
+
+.subtitle {
+  font-size: 32px;
+  font-weight: 700;
+  color: #242222;
+}
+
+.paragraph {
+  color: #686b68;
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: 400px;
+  text-align: left;
 }
 
 /*# sourceMappingURL=single-page.css.map */
