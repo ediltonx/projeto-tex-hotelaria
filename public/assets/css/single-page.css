@@ -320,7 +320,7 @@ button.btn-oferta-reserva {
 /*End CSS Oferta*/
 /*Beneficios start*/
 .container-content {
-  background-color: #EFF5F0;
+  background-color: #eff5f0;
   width: 100%;
   height: 50vh;
   display: flex;
@@ -356,22 +356,6 @@ button.btn-oferta-reserva {
 .container-wrapper__icon {
   margin: 0 1rem 3rem 0;
   width: 60px;
-}
-
-.btn {
-  border: 3px solid #b9ad81;
-  background-color: transparent;
-  color: white;
-  padding: 15px 40px;
-  border-radius: 9px;
-  display: flex;
-  justify-content: center;
-}
-.btn:hover {
-  background-color: #b9ad81;
-  color: #fff;
-  transition: ease-in-out 0.2s;
-  cursor: pointer;
 }
 
 .content-text {
@@ -537,41 +521,87 @@ button.btn-oferta-reserva {
   margin-bottom: 10px;
 }
 
-.title {
+.footer {
   display: flex;
-  align-items: center;
   justify-content: center;
-  font-size: 48px;
-  color: #242222;
-  font-weight: 700;
-  padding: 28px 0;
-  margin: 38px 0;
-  position: relative;
-  text-align: center;
+  align-items: center;
+  flex-direction: row;
+  background-color: #eff5f0;
+  padding: 68px 0px;
+  margin: 0 32px;
 }
 
-.title::after {
-  content: "";
-  width: 268px;
-  height: 12px;
-  position: absolute;
-  height: 5px;
-  background-color: #b9ad81;
-  bottom: 0;
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 68px;
+  max-width: 1090px;
+  width: 100%;
+  padding: 68px 0px;
+  border-top: 3px solid #b9ad81;
 }
 
-.subtitle {
-  font-size: 32px;
-  font-weight: 700;
-  color: #242222;
+.footer-logo {
+  width: 257px;
 }
 
-.paragraph {
+.footer-item_container {
+  display: flex;
+  justify-content: center;
+  gap: 42px;
+}
+
+.footer-item {
+  margin: 3rem;
+}
+.footer-item > h3 {
+  margin: 0 0 2rem 0;
+}
+.footer-item > ul,
+.footer-item address,
+.footer-item a,
+.footer-item .footer-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  color: #000;
+}
+
+.footer-menu a {
+  font-size: 16px;
   color: #686b68;
-  font-size: 24px;
+}
+.footer-menu a:hover {
+  color: #b9ad81;
+}
+
+.copy {
+  text-align: center;
+  background-color: #eff5f0;
+  padding: 23px 0;
+  width: 100%;
+  margin: 0;
+}
+
+.footer-item_social {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.footer-item_social .paragraph {
+  color: #686b68;
+  font-size: 12pt;
   line-height: 36px;
-  font-weight: 400px;
+  font-weight: bold;
   text-align: left;
+}
+.footer-item_social a {
+  display: flex;
+  flex-direction: row;
+}
+
+.contact-image {
+  width: 2vw;
 }
 
 /*# sourceMappingURL=single-page.css.map */
