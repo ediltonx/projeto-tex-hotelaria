@@ -1,3 +1,5 @@
 /node_modules
 *.json
 package.json
+public/assets/css/test.css
+public/assets/css/test.css.map
