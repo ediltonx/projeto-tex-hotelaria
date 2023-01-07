@@ -1,5 +1,6 @@
 $primary-green: #558e60;
 $secondary-green: #016956;
+$tertiary-green: #EFF5F0;
 $secondary-white: #eff5f0;
 $primary-gold: #b9ad81;
 $titles-gray: #242222;
@@ -18,6 +19,9 @@ $paragraf-gray: #686b68;
   } @else if $size == 32 {
     font-size: toRem(32);
     font-weight: 700;
+  } @else if $size == 48 {
+    font-size: toRem(48);
+    font-weight: 1000;
   }
 }
 
