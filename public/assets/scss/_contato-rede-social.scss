@@ -1,0 +1,49 @@
+@use "base";
+
+/* start redes sociais */
+.redes-sociais {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  .card-seguir-redes {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+  }
+
+  height: 100vh;
+  margin: 1rem;
+
+  h2 {
+    font-size: 3rem;
+    margin-bottom: 5rem;
+  }
+
+  ul {
+    display: flex;
+    gap: 1rem;
+  }
+
+  li {
+    align-self: center;
+    color: base.$paragraf-gray;
+    font-weight: bold;
+  }
+
+  a:hover {
+    opacity: 0.5;
+  }
+
+  img {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 960px) {
+  .redes-sociais {
+    flex-flow: column;
+    text-align: center;
+  }
+}
+/* end redes sociais */
