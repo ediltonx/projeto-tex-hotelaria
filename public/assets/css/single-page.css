@@ -604,4 +604,27 @@ button.btn-oferta-reserva {
   width: 2vw;
 }
 
+@media (max-width: 750px) {
+  .footer {
+    padding: 22px 0px;
+  }
+  .footer-container {
+    gap: 42px;
+    padding: 42px 0px;
+    flex-direction: column;
+  }
+  .footer-item_container {
+    width: 100%;
+    flex-direction: column;
+  }
+  .footer-item {
+    width: 100%;
+    gap: 22px;
+  }
+  .footer-item > ul,
+  .footer-menu {
+    gap: 12px;
+  }
+}
+
 /*# sourceMappingURL=single-page.css.map */
