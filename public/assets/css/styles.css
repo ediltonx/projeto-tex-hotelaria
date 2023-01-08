@@ -24,7 +24,7 @@
 /* subtitulos-footer #242222 tamanho 24px */
 /* titulos #242222 tamanho 48px */
 /* subtitulos #242222 tamanho 32px */
-/* paragrafo #686B68 tamanho 24px */
+/* paragrapho #686B68 tamanho 24px */
 
 /* Tamanho do container principal */
 /* 1090px */
@@ -219,7 +219,7 @@ html {
 
 /* end Navbar */
 
-/* Titulos e paragrafo */
+/* Titulos e paragrapho */
 .hero-title {
   font-size: 86px;
   font-weight: 700;
@@ -258,7 +258,7 @@ html {
   color: #242222;
 }
 
-.paragraf {
+.paragraph {
   font-size: 24px;
   color: #686b68;
   line-height: 36px;
@@ -463,7 +463,7 @@ a,
     font-size: 28px;
   }
 
-  .paragraf {
+  .paragraph {
     font-size: 16px;
     line-height: 28px;
   }

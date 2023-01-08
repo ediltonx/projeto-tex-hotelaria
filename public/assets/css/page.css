@@ -188,7 +188,7 @@ html {
 
 /* end Navbar */
 
-/* Titulos e paragrafo */
+/* Titulos e paragrapho */
 .hero-title {
   font-size: 86px;
   font-weight: 700;
@@ -227,7 +227,7 @@ html {
   color: #242222;
 }
 
-.paragraf {
+.paragraph {
   font-size: 24px;
   color: #686b68;
   line-height: 36px;
@@ -543,7 +543,7 @@ input.btn {
     font-size: 28px;
   }
 
-  .paragraf {
+  .paragraph {
     font-size: 16px;
     line-height: 28px;
   }

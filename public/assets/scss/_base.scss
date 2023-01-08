@@ -1,27 +1,15 @@
+@use "mixin" as *;
+
 $primary-green: #558e60;
 $secondary-green: #016956;
 $secondary-white: #eff5f0;
 $primary-gold: #b9ad81;
 $titles-gray: #242222;
-$paragraf-gray: #686b68;
+$paragraph-gray: #686b68;
 
 @function toRem($pixel) {
   $remValue: calc($pixel / 16) + rem;
   @return $remValue;
-}
-
-@mixin font-type($size) {
-  @if $size == 24 {
-    font-size: toRem(24);
-    line-height: toRem(37);
-    font-weight: 400;
-  } @else if $size == 32 {
-    font-size: toRem(32);
-    font-weight: 700;
-  } @else if $size == 48 {
-    font-size: toRem(48);
-    font-weight: 1000;
-  }
 }
 
 //textos
@@ -53,8 +41,11 @@ $paragraf-gray: #686b68;
   color: #242222;
 }
 
-.paragraf {
-  color: $paragraf-gray;
+.paragraph {
+  color: $paragraph-gray;
   @include font-type(24);
   text-align: left;
+  @include responsive(mobile) {
+    font-size: toRem(16);
+  }
 }

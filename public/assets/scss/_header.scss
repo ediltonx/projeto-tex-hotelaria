@@ -1,4 +1,5 @@
-@use "base";
+@use "base" as *;
+@use "mixin" as *;
 
 /* Header */
 .header {
@@ -19,6 +20,9 @@
     display: flex;
     gap: 20px;
   }
+  @include responsive(tablet) {
+    display: none;
+  }
 }
 
 .menu {
@@ -26,7 +30,7 @@
   justify-content: space-between;
   align-items: center;
   gap: 36px;
-  background-color: base.$secondary-white;
+  background-color: $secondary-white;
   position: fixed;
   top: 0;
   left: 0;
@@ -39,7 +43,7 @@
     position: relative;
   }
   a:hover {
-    color: base.$primary-green;
+    color: $primary-green;
     font-weight: 700;
   }
 }
@@ -51,43 +55,50 @@
   gap: 48px;
   padding: 68px;
   width: 100%;
-  color: base.$secondary-white;
+  @include responsive(tablet) {
+    padding: toRem(28);
+    gap: toRem(28);
+  }
+  color: $secondary-white;
   span {
-    color: base.$primary-gold;
+    color: $primary-gold;
   }
   h1 {
-    font-size: 64px;
+    font-size: toRem(64);
     position: relative;
     text-align: center;
     padding-bottom: 38px;
+    @include responsive(tablet) {
+      font-size: toRem(48);
+    }
     &:after {
       content: "";
       position: absolute;
       width: 156px;
       height: 6px;
-      background-color: base.$secondary-green;
+      background-color: $secondary-green;
       left: 0;
       right: 0;
       bottom: 0;
       margin: 0 auto;
     }
   }
-  .paragraf {
+  .paragraph {
     max-width: 50ch;
-    color: base.$secondary-white;
+    color: $secondary-white;
     text-align: center;
     font-weight: 300;
     margin-bottom: 24px;
   }
 
   button {
-    border: 3px solid base.$primary-gold;
+    border: 3px solid $primary-gold;
     background-color: transparent;
     color: white;
     padding: 15px 40px;
     border-radius: 9px;
     &:hover {
-      background-color: base.$primary-gold;
+      background-color: $primary-gold;
       color: #fff;
       transition: ease-in-out 0.2s;
       cursor: pointer;
@@ -98,6 +109,9 @@
 // .navbar
 .mobile-nav {
   display: none;
+  @include responsive(tablet) {
+    display: block;
+  }
 }
 
 .menu-mobile {
@@ -126,7 +140,7 @@
   padding: 5px;
 }
 .menu-mobile li a {
-  color: #558e60;
+  color: $primary-green;
   padding: 15px;
 }
 
@@ -145,14 +159,4 @@
   flex-direction: column;
   gap: 16px;
 }
-
-@media (max-width: 960px) {
-  .navbar {
-    display: none;
-  }
-  .mobile-nav {
-    display: block;
-  }
-}
-
 /* end Header */
