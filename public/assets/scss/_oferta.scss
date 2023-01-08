@@ -1,6 +1,6 @@
 /*Start CSS Oferta*/
 @use "base";
-@use "mixins_oferta" as mxOf;
+@use "mixin" as mxOf;
 
 $video-width: 100%;
 $video-height: 100%;
@@ -56,7 +56,7 @@ div.oferta__container {
         font-family: "Merriweather", serif;
       }
       & p {
-        color: base.$paragraf-gray;
+        color: base.$paragraph-gray;
         word-spacing: 10px;
         line-height: 25px;
         margin-top: $mg-oferta-top;
@@ -142,7 +142,7 @@ div.oferta__container {
             padding: 10px;
           }
           & p {
-            color: base.$paragraf-gray;
+            color: base.$paragraph-gray;
             margin-top: 0;
             text-align: justify;
             padding: 10px;
@@ -193,7 +193,7 @@ div.oferta__container {
           font-family: "Merriweather", serif;
         }
         & p {
-          color: base.$paragraf-gray;
+          color: base.$paragraph-gray;
           margin-top: 10px;
           text-align: justify;
         }
@@ -258,7 +258,7 @@ div.oferta__container {
             padding: 10px;
           }
           & p {
-            color: base.$paragraf-gray;
+            color: base.$paragraph-gray;
             margin-top: 0;
             text-align: justify;
             padding: 10px;
