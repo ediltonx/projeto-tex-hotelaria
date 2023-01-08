@@ -1,0 +1,102 @@
+@use "base" as v;
+
+
+/*Beneficios start*/
+.container-content{
+    background-color: v.$secondary-white;
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem 0;
+
+    &__info{
+        color:v.$paragraf-gray;
+        font-size: 48px;
+        font-weight: 700;
+    }
+}
+
+.container-wrapper {
+    width: 100%;
+    padding: 3rem;
+    display: flex;
+    left: 20px;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    &__info {
+        width: 50%;
+        height: auto;
+        display: flex;
+        align-items: baseline;
+        flex-wrap: wrap;
+        flex-direction: row;
+        margin-left: 3rem;
+        margin-bottom: 2rem;
+    }
+
+    &__icon {
+        margin: 0 1rem 3rem 0;
+        width: 60px;
+    }
+}
+
+
+.content-text {
+    width: 50%;
+    padding: 6rem;
+    flex-wrap: nowrap;
+    flex-direction: column;
+
+    &__paragraf{
+        display: flex;
+        align-items: center;
+        flex-wrap: nowrap;
+        flex-direction: row;
+    }
+
+    &__icon {
+        margin-right: 2rem;
+        margin-bottom: 2rem;
+    }
+}
+
+.content-text{ 
+
+    &__container {
+    display: flex;
+    justify-content: flex-start;
+    margin: 3rem 0;
+}
+    &__btn {
+        @include v.font-type(24);
+        width: 10vw;
+        border: none;
+        background-color: v.$primary-green;
+        color: white;
+        padding: 15px 40px;
+        border-radius: 9px;
+        text-align: center;
+        cursor: pointer;
+        
+    }
+}
+.text {
+    @include v.font-type(32);
+    color: v.$primary-gold;
+    margin: 0 0 3rem 1rem;
+    align-self: center;
+    justify-content: center;
+
+    &__info{
+        margin-top: 1.5rem;
+        width: 75%;
+        display: flex;
+        flex-wrap: wrap;
+        text-align: justify;
+        justify-content: center;
+    }
+}

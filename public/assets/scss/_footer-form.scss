@@ -1,19 +1,11 @@
-// vars
-
-$df: flex;
-$color1: #eff5f0;
-$color2: #000;
-$w1: 100%;
-@mixin h1-style {
-  color: #eff5f0;
-  font-weight: bold;
-  margin: 0 0 -20px 250px;
-}
-
-//end vars
+$primary-white: #558e60;
+$secondary-white: #eff5f0;
+$primary-gold: #b9ad81;
+$titles-gray: #242222;
+$paragraph-gray: #686b68;
 
 .interesse-main {
-  display: $df;
+  display: flex;
   flex-direction: row;
   height: 60vh;
   background: {
@@ -26,14 +18,13 @@ $w1: 100%;
 .interesse-left {
   justify-items: center;
   justify-content: center;
-  margin-left: 20vh;
+  margin-left: 10vh;
   .container {
-    display: flex;
     margin: 0 32px;
     padding: 68px 0px;
   }
-  h1 {
-    @include h1-style();
+  & > .subtitle {
+    margin: 5vh 0 0 4vw;
   }
   .btn {
     width: 140px;
@@ -44,8 +35,8 @@ $w1: 100%;
     margin-left: 20vw;
     font-size: 20px;
     padding: 12px 22px;
-    background-color: #558e60;
-    color: $color1;
+    background-color: $primary-white;
+    color: $secondary-white;
   }
 }
 
@@ -68,61 +59,61 @@ $w1: 100%;
 }
 
 .nomes {
-  display: $df;
+  display: flex;
   flex-direction: row;
   gap: 1rem;
-  width: $w1;
+  width: 100%;
 }
 
 .nome1 {
-  width: $w1;
-  display: $df;
+  width: 100%;
+  display: flex;
   flex-direction: column;
   justify-items: center;
   & > label {
-    color: $color2;
+    color: $titles-gray;
     margin-bottom: 10px;
   }
   & > input {
     width: 90%;
-    border: solid 1px $color1;
+    border: solid 1px $primary-gold;
     padding: 12px 8px;
     border-radius: 6px;
   }
 }
 
 .nome2 {
-  width: $w1;
-  display: $df;
+  width: 100%;
+  display: flex;
   flex-direction: column;
   justify-items: center;
   margin: 0;
   & > label {
-    color: $color2;
+    color: $titles-gray;
     margin-bottom: 10px;
   }
   & > input {
-    width: $w1;
-    border: solid 1px $color1;
+    width: 100%;
+    border: solid 1px $secondary-white;
     padding: 12px 8px;
     border-radius: 6px;
   }
 }
 
 .cells {
-  width: $w1;
-  display: $df;
+  width: 100%;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   margin: 20px 0px;
   & > input {
-    width: $w1;
-    border: solid 1px $color1;
+    width: 100%;
+    border: solid 1px $primary-gold;
     padding: 10px 8px;
     border-radius: 6px;
   }
   & > label {
-    color: $color2;
+    color: $titles-gray;
     margin-bottom: 10px;
   }
 }

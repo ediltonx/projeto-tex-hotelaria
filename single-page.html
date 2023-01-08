@@ -8,31 +8,232 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap"
       rel="stylesheet"
     />
     <title>Chloe Gran Hotel</title>
   </head>
-<body>
-  <header>
-    
-  </header>
-  
-  <!-- oferta -->
-  <section>Oferta</section>
-  <!-- end oferta -->
-  
-  <!-- beneficios -->
-  <section>Beneficios</section>
-  <!-- end beneficios -->
-  
-  <!-- feedback e social-->
-  <section></section>
-  <!-- end feedback e social-->
-  
-  <!-- footer -->
-  <section>Footer</section>
-  <!-- end footer -->
+  <body>
+    <header class="header">
+      <div class="content-header">
+        <h1>Viva experiências <span>memoráveis</span></h1>
+        <p class="paragraph">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere,
+          aliquid reiciendis. Aliquam aliquid nulla animi deleniti veniam,
+          dolorem ab nobis tenetur, quo vitae iusto! Possimus doloremque
+          molestias ipsa unde autem!
+        </p>
+        <button>Reserve agora</button>
+      </div>
+    </header>
+    <div class="menu">
+      <div class="logo">
+        <img src="./public/assets/images/logo.svg" alt="Chloe Grand Hotel" />
+      </div>
+      <nav class="navbar">
+        <ul>
+          <li><a href="#ofertas">Ofertas</a></li>
+          <li><a href="#beneficios">Benefícios</a></li>
+          <li><a href="#feedback">Feedback</a></li>
+          <li><a href="#reservar">Reservar</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+      <nav class="mobile-nav">
+        <label class="menu-mobile-icon" for="menu-toggle">&#9776;</label>
+        <input type="checkbox" id="menu-toggle" />
+        <ul class="menu-mobile">
+          <li>
+            <a href="#ofertas">Ofertas</a>
+          </li>
+          <li>
+            <a href="#beneficios">Benefícios</a>
+          </li>
+          <li>
+            <a href="#feedback">Feedback</a>
+          </li>
+          <li>
+            <a href="#reservar">Reservar</a>
+          </li>
+          <li>
+            <a href="#contato">Contato</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <main>
+      <!-- oferta -->
+      <section class="oferta" id="ofertas">
+        <div class="oferta__container">
+          <div class="oferta__container__relogio">
+            <img src="public/assets/images/time.svg" alt="imagem relógio" />
+            <h3>Oferta Disponível</h3>
+          </div>
+          <div class="oferta__container__detalhe"></div>
+          <div class="oferta__container__video">
+            <div class="oferta__container__video__iframe">
+              <iframe
+                src="https://www.youtube.com/embed/BgXkYxz0dwc"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="oferta__container__video__info">
+              <h3>Venha conhecer, Chloe Gran Hotel.</h3>
+              <p>
+                O Chloe Gran Hotel está localizado a 4 km da Praia de Iracema e
+                do centro de Fortaleza, Você poderá desfrutar de acomodações com
+                ar-condicionado, piscina e serviço de quarto. O Wi-Fi e o
+                estacionamento são gratuitos na propriedade. O buffet de
+                café-da-manhã inclui uma variedade de frutas frescas, pães,
+                frios, e uma seleção de bebidas quentes e frias. Você pode
+                saborear sua refeição no salão de café-da-manhã ou no conforto
+                de sua acomodação.
+              </p>
+              <p>
+                De: <span class="oferta-valor-anterior">R$600,00</span> por
+                <span class="oferta-valor-atual">R$260,00</span> a diária.
+              </p>
+              <button type="submit" class="btn-oferta-reserva">Reservar</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end oferta -->
 
-</body>
+      <!-- beneficios -->
+      <section>Beneficios</section>
+      <!-- end beneficios -->
+
+      <!-- feedback e social-->
+      <section>
+        <section class="redes-sociais">
+          <div class="card-seguir-redes">
+            <h2>
+              Siga nossas redes e fique <br />
+              por dentro das promoções.
+            </h2>
+            <ul>
+              <li>
+                <a href="#">
+                  <img
+                    src="./public/assets/images/instagram.svg"
+                    alt="Rede Social Instagram"
+                  />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img
+                    src="./public/assets/images/twitter.svg"
+                    alt="Rede Social Twitter"
+                  />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img
+                    src="./public/assets/images/facebook.svg"
+                    alt="Rede Social Facebook"
+                  />
+                </a>
+              </li>
+              <li>@ChloeGranHotel</li>
+            </ul>
+          </div>
+          <img
+            src="/public/assets/images/woman-smartphone.png"
+            alt="Uma mulher sorrindo, deitada em uma rede e mexendo no celular"
+          />
+        </section>
+      </section>
+      <!-- end feedback e social-->
+
+      <!-- footer -->
+    <footer>
+      <div class="interesse-main">
+        <section class="interesse-left">
+          <div class="subtitle">Quero fazer minha reserva!</div>
+          <article class="container">
+            <div class="itens-form">
+              <div class="nomes">
+                <div class="nome1">
+                  <label for="Nome">Nome</label>
+                  <input type="text" />
+                </div>
+                <div class="nome2">
+                  <label for="Nome">Sobrenome</label>
+                  <input type="text" />
+                </div>
+              </div>
+              <div class="cells">
+                <label for="email">Melhor e-mail para retorno</label>
+                <input type="email" />
+              </div>
+            <div class="cells">
+                <label for="telefone">Telefone</label>
+                <input type="number" />
+              </div>
+              <input class="btn" type="submit" value="Enviar" />
+          </article>
+        </section>
+        <div class="interesse-right">
+          <img src="./public/assets/images/fundo-interesse.png" alt="hóspede">
+        </div>
+      </div>
+
+      <div class="footer-item_container">
+        <img src="./public/assets/images/logo.svg" alt="logo" class="footer-logo">
+          <div class="footer-item">
+            <h3>Links Úteis</h3>
+            <ul class="footer-menu">
+              <li>
+                <a href="#oferta">Ofertas</a>
+              </li>
+              <li>
+                <a href="#beneficios">Benefícios</a>
+              </li>
+              <li>
+                <a href="#feedback">Feedback</a>
+              </li>
+              <li>
+                <a href="#reservar">Reservar</a>
+              </li>
+            </ul>
+          </div>
+        
+          <div class="footer-item">
+            <h3>Onde estamos</h3>
+            <ul>
+              <li>R. Barão de Santo Ângelo, 100</li>
+              <li>Recife - Pernambuco - Brasil</li>
+            </ul>
+          </div>
+           <div class="footer-item">
+            <h3>Nossos Contatos</h3>
+            <ul>
+              <div class="footer-item_social">
+                <li>
+                  <a href="#">
+                    <img
+                      src="./public/assets/images/whatsapp.svg"
+                      alt="Telefone e WhatsApp" class="contact-image"
+                    /> <p class="paragraph">(81) 98218-1454 </p>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img
+                      src="./public/assets/images/mail.svg"
+                      alt="E-Mail" class="contact-image"
+                    /> <p class="paragraph"> chloegranhotel@hotmail.com </p>
+                  </a>
+                </li>
+            </ul>
+            </div>
+      </div>
+      </footer>
+  </body>
 </html>

@@ -1,47 +1,58 @@
-@use "footer-form.scss";
-@use "footer-links.scss";
-@use "header.scss";
+//reset
+@use "reset";
 
-$primary-green: #558e60;
-$secondary-green: #eff5f0;
-$primary-gold: #b9ad81;
-$titles-gray: #242222;
-$paragraf-gray: #686b68;
+//pages
+
+@use "header";
+@use "oferta";
+@use "beneficios";
+@use "contato-rede-social";
+@use "footer-form";
+@use "footer-links";
+
+// vars
+
+// $primary-green: #558e60;
+// $secondary-white: #eff5f0;
+// $primary-gold: #b9ad81;
+// $titles-gray: #242222;
+// $paragraph-gray: #686b68;
 
 //textos
-.title {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 48px;
-  color: #242222;
-  font-weight: 700;
-  padding: 28px 0;
-  margin: 38px 0;
-  position: relative;
-  text-align: center;
-}
+// .title {
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   font-size: 48px;
+//   color: $titles-gray;
+//   font-weight: 700;
+//   padding: 28px 0;
+//   margin: 38px 0;
+//   position: relative;
+//   text-align: center;
+// }
 
-.title::after {
-  content: "";
-  width: 268px;
-  height: 12px;
-  position: absolute;
-  height: 5px;
-  background-color: #b9ad81;
-  bottom: 0;
-}
+// .title::after {
+//   content: "";
+//   width: 268px;
+//   height: 12px;
+//   position: absolute;
+//   height: 5px;
+//   background-color: $primary-gold;
+//   bottom: 0;
+// }
 
-.subtitle {
-  font-size: 32px;
-  font-weight: 700;
-  color: #242222;
-}
+// .subtitle {
+//   font-size: 32px;
+//   font-weight: 700;
+//   color: $titles-gray;
+// }
 
-.paragraf {
-  color: $paragraf-gray;
-  font-size: 24px;
-  line-height: 36px;
-  font-weight: 400px;
-  text-align: left;
-}
+// .paragraph {
+//   color: $paragraph-gray;
+//   font-size: 24px;
+//   line-height: 36px;
+//   font-weight: 400px;
+//   text-align: left;
+// }
+//medias
