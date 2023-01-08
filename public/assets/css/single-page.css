@@ -49,17 +49,22 @@ li {
 }
 
 .subtitle {
-  font-size: 2rem;
+  font-size: toRem(32);
   font-weight: 700;
   color: #242222;
 }
 
-.paragraf {
+.paragraph {
   color: #686b68;
-  font-size: 1.5rem;
-  line-height: 2.3125rem;
+  font-size: toRem(24);
+  line-height: toRem(37);
   font-weight: 400;
   text-align: left;
+}
+@media (max-width: 750px) {
+  .paragraph {
+    font-size: 1rem;
+  }
 }
 
 /* Header */
@@ -81,6 +86,11 @@ li {
 .navbar ul {
   display: flex;
   gap: 20px;
+}
+@media (max-width: 960px) {
+  .navbar {
+    display: none;
+  }
 }
 
 .menu {
@@ -115,14 +125,25 @@ li {
   width: 100%;
   color: #eff5f0;
 }
+@media (max-width: 960px) {
+  .content-header {
+    padding: 1.75rem;
+    gap: 1.75rem;
+  }
+}
 .content-header span {
   color: #b9ad81;
 }
 .content-header h1 {
-  font-size: 64px;
+  font-size: 4rem;
   position: relative;
   text-align: center;
   padding-bottom: 38px;
+}
+@media (max-width: 960px) {
+  .content-header h1 {
+    font-size: 3rem;
+  }
 }
 .content-header h1:after {
   content: "";
@@ -135,7 +156,7 @@ li {
   bottom: 0;
   margin: 0 auto;
 }
-.content-header .paragraf {
+.content-header .paragraph {
   max-width: 50ch;
   color: #eff5f0;
   text-align: center;
@@ -158,6 +179,11 @@ li {
 
 .mobile-nav {
   display: none;
+}
+@media (max-width: 960px) {
+  .mobile-nav {
+    display: block;
+  }
 }
 
 .menu-mobile {
@@ -207,14 +233,6 @@ li {
   gap: 16px;
 }
 
-@media (max-width: 960px) {
-  .navbar {
-    display: none;
-  }
-  .mobile-nav {
-    display: block;
-  }
-}
 /* end Header */
 /*Start CSS Oferta*/
 section.oferta {
@@ -346,7 +364,7 @@ div.oferta__container__video__info button {
   flex-wrap: nowrap;
   flex-direction: column;
 }
-.content-text__paragraf {
+.content-text__paragraph {
   display: flex;
   align-items: center;
   flex-wrap: nowrap;
@@ -363,8 +381,8 @@ div.oferta__container__video__info button {
   margin: 3rem 0;
 }
 .content-text__btn {
-  font-size: 1.5rem;
-  line-height: 2.3125rem;
+  font-size: toRem(24);
+  line-height: toRem(37);
   font-weight: 400;
   width: 10vw;
   border: none;
@@ -377,7 +395,7 @@ div.oferta__container__video__info button {
 }
 
 .text {
-  font-size: 2rem;
+  font-size: toRem(32);
   font-weight: 700;
   color: #b9ad81;
   margin: 0 0 3rem 1rem;
