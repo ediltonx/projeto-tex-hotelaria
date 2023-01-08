@@ -393,6 +393,46 @@ div.oferta__container__video__info button {
   justify-content: center;
 }
 
+/* start redes sociais */
+.redes-sociais {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+  margin: 1rem;
+}
+.redes-sociais .card-seguir-redes {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+.redes-sociais h2 {
+  font-size: 3rem;
+  margin-bottom: 5rem;
+}
+.redes-sociais ul {
+  display: flex;
+  gap: 1rem;
+}
+.redes-sociais li {
+  align-self: center;
+  color: #686b68;
+  font-weight: bold;
+}
+.redes-sociais a:hover {
+  opacity: 0.5;
+}
+.redes-sociais img {
+  max-width: 100%;
+}
+
+@media (max-width: 960px) {
+  .redes-sociais {
+    flex-flow: column;
+    text-align: center;
+  }
+}
+/* end redes sociais */
 .interesse-main {
   display: flex;
   flex-direction: row;
