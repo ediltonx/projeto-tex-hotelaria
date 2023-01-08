@@ -1,5 +1,5 @@
-@use "base";
-@use 'oferta' as x;
+@use "base" as *;
+@use "oferta" as x;
 
 $fb-h3-font-size: 4rem;
 $fb-p-font-size: 24px;
@@ -10,17 +10,15 @@ $fb-cargo-fweight: 400;
 $fb-margin: 12px;
 $fb-pad: 94px 0 94px 0;
 
-
 /* start redes sociais */
 
 .fb__title {
-
   text-align: center;
   padding: $fb-pad;
 
   h3 {
       font-size: $fb-h3-font-size;
-      color: base.$paragraph-gray;
+      color: $paragraph-gray;
   }
 }
 
@@ -30,63 +28,62 @@ $fb-pad: 94px 0 94px 0;
   //border: 1px solid black;
 
   .fb__box {
-      width: 43%;
-      height: 380px;
-      background-color: base.$secondary-white;
-      box-shadow: 4px 4px 4px rgb(0, 0, 0, 0.25);
-      border-radius: 35px;
-      display: flex;
-      align-items: center;
+    width: 43%;
+    height: 380px;
+    background-color: $secondary-white;
+    box-shadow: 4px 4px 4px rgb(0, 0, 0, 0.25);
+    border-radius: 35px;
+    display: flex;
+    align-items: center;
 
-      p{
-          font-size: $fb-p-font-size;
-      }
+    p {
+      font-size: $fb-p-font-size;
+    }
   }
 
   .fb__box__comentario {
-      width: 100%;
-      height: 30vh;
-      padding: 0 60px 0 50px;
+    width: 100%;
+    height: 30vh;
+    padding: 0 60px 0 50px;
   }
 
   .fb__dados {
-      width: 100%;
-      display: flex;
-      padding: 0 0 30px 0;
+    width: 100%;
+    display: flex;
+    padding: 0 0 30px 0;
 
-      p {
-          font-size: $fb-nome;
-          font-weight: $fb-nome-fweight;
-          padding-top: 30px;
-          line-height: 19px;
-      }
+    p {
+      font-size: $fb-nome;
+      font-weight: $fb-nome-fweight;
+      padding-top: 30px;
+      line-height: 19px;
+    }
 
-      span {
-          font-size: $fb-cargo;
-          font-weight: $fb-cargo-fweight;
-      }
+    span {
+      font-size: $fb-cargo;
+      font-weight: $fb-cargo-fweight;
+    }
 
-      img {
-          margin: $fb-margin;
-      }
+    img {
+      margin: $fb-margin;
+    }
   }
 }
 
 .fb__button {
-
   padding: $fb-pad;
   display: flex;
   justify-content: center;
 
   button {
-      background-color: base.$primary-green;
-      width: 200px;
-      height: 50px;
-      border-radius: 10px;
-      border: 0;
-      color: white;
-      cursor: pointer;
-      font-size: x.$texto-font-size;
+    background-color: $primary-green;
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    border: 0;
+    color: white;
+    cursor: pointer;
+    font-size: x.$texto-font-size;
   }
 }
 
@@ -116,7 +113,7 @@ $fb-pad: 94px 0 94px 0;
 
   li {
     align-self: center;
-    color: base.$paragraph-gray;
+    color: $paragraph-gray;
     font-weight: bold;
   }
 
@@ -130,7 +127,8 @@ $fb-pad: 94px 0 94px 0;
 }
 
 @media (max-width: 960px) {
-  .redes-sociais, .fb__container {
+  .redes-sociais,
+  .fb__container {
     flex-flow: column;
     text-align: center;
   }

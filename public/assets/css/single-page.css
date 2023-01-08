@@ -110,10 +110,10 @@ li {
   color: #242222;
   padding: 28px 0;
   position: relative;
+  font-weight: 700;
 }
 .menu a:hover {
   color: #558e60;
-  font-weight: 700;
 }
 
 .content-header {
@@ -716,7 +716,8 @@ div.oferta__container__video__info button {
 }
 
 @media (max-width: 960px) {
-  .redes-sociais, .fb__container {
+  .redes-sociais,
+  .fb__container {
     flex-flow: column;
     text-align: center;
   }

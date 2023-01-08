@@ -1,5 +1,5 @@
 /*Start CSS Oferta*/
-@use "base";
+@use "base" as *;
 @use "mixin" as mxOf;
 
 $video-width: 100%;
@@ -22,12 +22,12 @@ div.oferta__container {
       width: 10vh;
     }
     & h3 {
-      color: base.$titles-gray;
+      color: $titles-gray;
       font-size: 3.5em;
     }
   }
   &__detalhe {
-    background-color: base.$primary-gold;
+    background-color: $primary-gold;
     width: 620px;
     height: 7px;
     margin: 10px 0 50px 10px;
@@ -51,12 +51,12 @@ div.oferta__container {
       width: 700px;
 
       & h3 {
-        color: base.$primary-gold;
+        color: $primary-gold;
         font-size: $texto-h3-font-size;
         font-family: "Merriweather", serif;
       }
       & p {
-        color: base.$paragraph-gray;
+        color: $paragraph-gray;
         word-spacing: 10px;
         line-height: 25px;
         margin-top: $mg-oferta-top;
@@ -70,10 +70,10 @@ div.oferta__container {
       }
       & span.oferta-valor-atual {
         font-size: 2.5em;
-        color: base.$primary-gold;
+        color: $primary-gold;
       }
       & button {
-        background-color: base.$primary-green;
+        background-color: $primary-green;
         width: 200px;
         height: 50px;
         border-radius: 10px;
@@ -107,11 +107,11 @@ div.oferta__container {
         width: 5vh;
       }
       & h3 {
-        color: base.$titles-gray;
+        color: $titles-gray;
         font-size: 2em;
       }
       &__detalhe {
-        background-color: base.$primary-gold;
+        background-color: $primary-gold;
         width: 350px;
         height: 7px;
         margin: 10px 0 20px 10px;
@@ -136,13 +136,13 @@ div.oferta__container {
           align-items: center;
           padding-bottom: 10px;
           & h3 {
-            color: base.$primary-gold;
+            color: $primary-gold;
             font-size: $texto-h3-font-size;
             font-family: "Merriweather", serif;
             padding: 10px;
           }
           & p {
-            color: base.$paragraph-gray;
+            color: $paragraph-gray;
             margin-top: 0;
             text-align: justify;
             padding: 10px;
@@ -167,11 +167,11 @@ div.oferta__container {
       width: 50px;
     }
     & h3 {
-      color: base.$titles-gray;
+      color: $titles-gray;
       font-size: 2em;
     }
     &__detalhe {
-      background-color: base.$primary-gold;
+      background-color: $primary-gold;
       width: 340px;
       height: 7px;
       margin: 10px 0 20px 10px;
@@ -188,12 +188,12 @@ div.oferta__container {
         padding: 10px;
 
         & h3 {
-          color: base.$primary-gold;
+          color: $primary-gold;
           font-size: $texto-h3-font-size;
           font-family: "Merriweather", serif;
         }
         & p {
-          color: base.$paragraph-gray;
+          color: $paragraph-gray;
           margin-top: 10px;
           text-align: justify;
         }
@@ -223,11 +223,11 @@ div.oferta__container {
         width: 10vw;
       }
       & h3 {
-        color: base.$titles-gray;
+        color: $titles-gray;
         font-size: 5vw;
       }
       &__detalhe {
-        background-color: base.$primary-gold;
+        background-color: $primary-gold;
         width: 52vw;
         height: 7px;
         margin: 10px 0 20px 10px;
@@ -252,13 +252,13 @@ div.oferta__container {
           align-items: center;
           padding: 10px;
           & h3 {
-            color: base.$primary-gold;
+            color: $primary-gold;
             font-size: $texto-h3-font-size;
             font-family: "Merriweather", serif;
             padding: 10px;
           }
           & p {
-            color: base.$paragraph-gray;
+            color: $paragraph-gray;
             margin-top: 0;
             text-align: justify;
             padding: 10px;
