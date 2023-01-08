@@ -218,94 +218,76 @@ li {
 /* end Header */
 /*Start CSS Oferta*/
 section.oferta {
-  padding: 0;
-  width: 90%;
+  min-width: 1170px;
   margin: 0 auto;
+  width: 90%;
   height: 100vh;
+  padding: 0;
   display: flex;
   align-items: center;
 }
 
-div.oferta-relogio {
+div.oferta__container__relogio {
   display: flex;
-  flex-direction: row;
   align-items: center;
+  flex-direction: row;
   column-gap: 20px;
 }
-
-div.oferta-relogio > img {
+div.oferta__container__relogio img {
   width: 10vh;
 }
-
-div.oferta-relogio > h3 {
+div.oferta__container__relogio h3 {
   color: #242222;
   font-size: 3.5em;
 }
-
-div.oferta-detalhe {
+div.oferta__container__detalhe {
   background-color: #b9ad81;
   width: 620px;
   height: 7px;
   margin: 10px 0 50px 10px;
 }
-
-div.oferta-container {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  margin-top: 50px;
-}
-
-div.oferta-video {
+div.oferta__container__video {
   display: flex;
   flex-direction: row;
   column-gap: 40px;
 }
-
-div.oferta-iframe {
+div.oferta__container__video__iframe {
   width: 700px;
   height: 400px;
 }
-
-div.oferta-iframe > iframe {
+div.oferta__container__video__iframe > iframe {
   width: 100%;
   height: 100%;
   border-radius: 20px;
 }
-
-div.oferta-info {
+div.oferta__container__video__info {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   width: 700px;
 }
-
-div.oferta-info h3 {
+div.oferta__container__video__info h3 {
   color: #b9ad81;
   font-size: 2em;
   font-family: "Merriweather", serif;
 }
-
-div.oferta-info p {
+div.oferta__container__video__info p {
   color: #686b68;
   word-spacing: 10px;
   line-height: 25px;
   margin-top: 20px;
   text-align: justify;
 }
-
-div.oferta-info p:nth-child(3) span.oferta-valor-anterior {
+div.oferta__container__video__info span.oferta-valor-anterior {
   font-size: 1.5em;
   text-decoration-line: line-through;
   text-decoration-color: #ff0000;
 }
-
-div.oferta-info p:nth-child(3) span.oferta-valor-atual {
+div.oferta__container__video__info span.oferta-valor-atual {
   font-size: 2.5em;
   color: #b9ad81;
 }
-
-button.btn-oferta-reserva {
+div.oferta__container__video__info button {
   background-color: #558e60;
   width: 200px;
   height: 50px;
