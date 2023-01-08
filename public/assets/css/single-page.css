@@ -110,17 +110,17 @@ li {
   color: #242222;
   padding: 28px 0;
   position: relative;
+  font-weight: 700;
 }
 .menu a:hover {
   color: #558e60;
-  font-weight: 700;
 }
 
 .content-header {
   display: flex;
   flex-direction: column;
   place-items: center;
-  gap: 48px;
+  gap: 32px;
   padding: 68px;
   width: 100%;
   color: #eff5f0;
@@ -129,6 +129,11 @@ li {
   .content-header {
     padding: 1.75rem;
     gap: 1.75rem;
+  }
+}
+@media (max-width: 750px) {
+  .content-header {
+    gap: 0.75rem;
   }
 }
 .content-header span {
@@ -510,7 +515,8 @@ div.oferta__container__video__info button {
 }
 
 @media (max-width: 960px) {
-  .redes-sociais, .fb__container {
+  .redes-sociais,
+  .fb__container {
     flex-flow: column;
     text-align: center;
   }
