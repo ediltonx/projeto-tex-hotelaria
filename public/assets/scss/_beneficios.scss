@@ -4,16 +4,18 @@
 /*Beneficios start*/
 .container-content{
     background-color: v.$secondary-white;
+    background-size: cover;
+    background-repeat: no-repeat;
     width: 100%;
     height: 50vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 3rem 0;
+    margin-bottom: 3rem ;
 
     &__info{
         color:v.$paragraf-gray;
-        font-size: 48px;
+        font-size: 52px;
         font-weight: 700;
     }
 }
@@ -28,26 +30,45 @@
     align-items: flex-start;
 
     &__info {
-        width: 50%;
-        height: auto;
+        width: 50vw;
         display: flex;
         align-items: baseline;
         flex-wrap: wrap;
-        flex-direction: row;
         margin-left: 3rem;
-        margin-bottom: 2rem;
+    }
+
+    &__text {
+        font-size: 2rem;
+        font-weight: 00;
+        color: v.$primary-gold;
+        display: flex;
+        align-items: center;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        gap: 5px;
     }
 
     &__icon {
-        margin: 0 1rem 3rem 0;
-        width: 60px;
+        margin-right: 1rem;
+    }
+
+    &__image {
+        margin-top: 1.5rem;
+    }
+
+    &__text-info {
+        margin-top: 1.5rem;
+        width: 70%;
+        display: flex;
+        text-align: left;
+        justify-content: center;
     }
 }
 
 
 .content-text {
-    width: 50%;
-    padding: 6rem;
+    width: 50vw;
+    padding: 2rem 0 0 4rem;
     flex-wrap: nowrap;
     flex-direction: column;
 
@@ -62,41 +83,123 @@
         margin-right: 2rem;
         margin-bottom: 2rem;
     }
-}
-
-.content-text{ 
-
     &__container {
-    display: flex;
-    justify-content: flex-start;
-    margin: 3rem 0;
-}
+        display: flex;
+        justify-content: flex-start;
+        margin: 3rem 0;
+    }
+
     &__btn {
-        @include v.font-type(24);
-        width: 10vw;
+        font-size: 20px;
+        width: 250px;
         border: none;
         background-color: v.$primary-green;
         color: white;
         padding: 15px 40px;
         border-radius: 9px;
-        text-align: center;
         cursor: pointer;
         
     }
 }
-.text {
-    @include v.font-type(32);
-    color: v.$primary-gold;
-    margin: 0 0 3rem 1rem;
-    align-self: center;
-    justify-content: center;
 
-    &__info{
-        margin-top: 1.5rem;
-        width: 75%;
+
+@media (max-width: 1450px) {
+    .container-wrapper{
+    
+        &__icon{
+        width: 3rem;
         display: flex;
-        flex-wrap: wrap;
-        text-align: justify;
-        justify-content: center;
+        justify-content: flex-start;
+        }
+
+        &__text {
+           font-size: 1.5rem; 
+        }
+
+        &__image {
+            width: 35vw;
+        }
+        &__text-info {
+            width: 35vw;
+            font-size: 20px;
+            padding-top: 0.5rem
+        }
+    }
+
+    .content-text {
+        padding: 0 2rem 0 2rem;
+
+        &__paragraf {
+            font-size: 1.5rem;
+        }
+        &__icon {
+            width: 3.5rem;
+        }
+    }
+
+    .content-text__btn {
+        width: 200px;
+    }
+    
+}
+
+
+@media (max-width: 950px) {
+   
+    .container-content {
+        background-size: cover;
+        width: 100%;
+        height: 40vh;
+
+        &__info {
+            font-size: 2rem;
+        }
+    }
+
+    .container-wrapper {
+        display: flex;
+        align-self: center;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+
+        &__icon {
+            display: none;
+        }
+
+        &__info {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        &__image {
+            width: 100%;
+        }
+
+        &__text-info {
+            width: 100%;
+            text-align: start;
+            padding-top: 1rem;
+        }
+    }
+
+    
+
+    .content-text {
+
+        padding-top: 2rem;
+        
+        &__paragraf {
+            font-size: 1.2rem;
+            font-weight: 500;
+            line-height: 1.5rem;
+            padding-bottom: 0.5rem;
+        }
+
+        &__btn {
+        width: 200px;
+        font-size: 20px;
+        }
     }
 }

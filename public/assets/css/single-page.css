@@ -303,16 +303,18 @@ div.oferta__container__video__info button {
 /*Beneficios start*/
 .container-content {
   background-color: #eff5f0;
+  background-size: cover;
+  background-repeat: no-repeat;
   width: 100%;
   height: 50vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 3rem 0;
+  margin-bottom: 3rem;
 }
 .container-content__info {
   color: #686b68;
-  font-size: 48px;
+  font-size: 52px;
   font-weight: 700;
 }
 
@@ -326,23 +328,39 @@ div.oferta__container__video__info button {
   align-items: flex-start;
 }
 .container-wrapper__info {
-  width: 50%;
-  height: auto;
+  width: 50vw;
   display: flex;
   align-items: baseline;
   flex-wrap: wrap;
-  flex-direction: row;
   margin-left: 3rem;
-  margin-bottom: 2rem;
+}
+.container-wrapper__text {
+  font-size: 2rem;
+  font-weight: 0;
+  color: #b9ad81;
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  gap: 5px;
 }
 .container-wrapper__icon {
-  margin: 0 1rem 3rem 0;
-  width: 60px;
+  margin-right: 1rem;
+}
+.container-wrapper__image {
+  margin-top: 1.5rem;
+}
+.container-wrapper__text-info {
+  margin-top: 1.5rem;
+  width: 70%;
+  display: flex;
+  text-align: left;
+  justify-content: center;
 }
 
 .content-text {
-  width: 50%;
-  padding: 6rem;
+  width: 50vw;
+  padding: 2rem 0 0 4rem;
   flex-wrap: nowrap;
   flex-direction: column;
 }
@@ -356,43 +374,98 @@ div.oferta__container__video__info button {
   margin-right: 2rem;
   margin-bottom: 2rem;
 }
-
 .content-text__container {
   display: flex;
   justify-content: flex-start;
   margin: 3rem 0;
 }
 .content-text__btn {
-  font-size: 1.5rem;
-  line-height: 2.3125rem;
-  font-weight: 400;
-  width: 10vw;
+  font-size: 20px;
+  width: 250px;
   border: none;
   background-color: #558e60;
   color: white;
   padding: 15px 40px;
   border-radius: 9px;
-  text-align: center;
   cursor: pointer;
 }
 
-.text {
-  font-size: 2rem;
-  font-weight: 700;
-  color: #b9ad81;
-  margin: 0 0 3rem 1rem;
-  align-self: center;
-  justify-content: center;
+@media (max-width: 1450px) {
+  .container-wrapper__icon {
+    width: 3rem;
+    display: flex;
+    justify-content: flex-start;
+  }
+  .container-wrapper__text {
+    font-size: 1.5rem;
+  }
+  .container-wrapper__image {
+    width: 35vw;
+  }
+  .container-wrapper__text-info {
+    width: 35vw;
+    font-size: 20px;
+    padding-top: 0.5rem;
+  }
+  .content-text {
+    padding: 0 2rem 0 2rem;
+  }
+  .content-text__paragraf {
+    font-size: 1.5rem;
+  }
+  .content-text__icon {
+    width: 3.5rem;
+  }
+  .content-text__btn {
+    width: 200px;
+  }
 }
-.text__info {
-  margin-top: 1.5rem;
-  width: 75%;
-  display: flex;
-  flex-wrap: wrap;
-  text-align: justify;
-  justify-content: center;
+@media (max-width: 950px) {
+  .container-content {
+    background-size: cover;
+    width: 100%;
+    height: 40vh;
+  }
+  .container-content__info {
+    font-size: 2rem;
+  }
+  .container-wrapper {
+    display: flex;
+    align-self: center;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+  .container-wrapper__icon {
+    display: none;
+  }
+  .container-wrapper__info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .container-wrapper__image {
+    width: 100%;
+  }
+  .container-wrapper__text-info {
+    width: 100%;
+    text-align: start;
+    padding-top: 1rem;
+  }
+  .content-text {
+    padding-top: 2rem;
+  }
+  .content-text__paragraf {
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+    padding-bottom: 0.5rem;
+  }
+  .content-text__btn {
+    width: 200px;
+    font-size: 20px;
+  }
 }
-
 /* start redes sociais */
 .redes-sociais {
   display: flex;
