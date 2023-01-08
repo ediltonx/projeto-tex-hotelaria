@@ -293,4 +293,21 @@ div.oferta__container {
   }
 }
 
+@media (min-width: 1440px) and (orientation: landscape) {
+  div.oferta {
+    &__container {
+      &__video {
+        padding: 10px;
+        &__iframe {
+          width: 900px;
+          height: 400px;
+        }
+        &__info {
+          width: 100%;
+          padding: 10px;
+        }
+      }
+    }
+  }
+}
 /*end media oferta*/

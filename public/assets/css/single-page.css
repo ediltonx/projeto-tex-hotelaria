@@ -510,6 +510,19 @@ div.oferta__container__video__info button {
     padding: 10px;
   }
 }
+@media (min-width: 1440px) and (orientation: landscape) {
+  div.oferta__container__video {
+    padding: 10px;
+  }
+  div.oferta__container__video__iframe {
+    width: 900px;
+    height: 400px;
+  }
+  div.oferta__container__video__info {
+    width: 100%;
+    padding: 10px;
+  }
+}
 /*end media oferta*/
 /*Beneficios start*/
 .container-content {
