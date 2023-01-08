@@ -1,146 +1,103 @@
-@use "base" as v;
-
+@use "base" as *;
+@use "mixin" as *;
+// @use "base" as v;
 
 /*Beneficios start*/
-.container-content{
-    background-color: v.$secondary-white;
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 50vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 3rem ;
+.container-content {
+  background-color: $secondary-white;
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem 0;
 
-    &__info{
-        color:v.$paragraf-gray;
-        font-size: 52px;
-        font-weight: 700;
-    }
+  &__info {
+    color: $paragraph-gray;
+    font-size: 48px;
+    font-weight: 700;
+  }
 }
 
 .container-wrapper {
-    width: 100%;
-    padding: 3rem;
+  width: 100%;
+  padding: 3rem;
+  display: flex;
+  left: 20px;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  &__info {
+    width: 50%;
+    height: auto;
     display: flex;
-    left: 20px;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-    align-items: flex-start;
+    align-items: baseline;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-left: 3rem;
+    margin-bottom: 2rem;
+  }
 
-    &__info {
-        width: 50vw;
-        display: flex;
-        align-items: baseline;
-        flex-wrap: wrap;
-        margin-left: 3rem;
-    }
-
-    &__text {
-        font-size: 2rem;
-        font-weight: 00;
-        color: v.$primary-gold;
-        display: flex;
-        align-items: center;
-        flex-wrap: nowrap;
-        flex-direction: row;
-        gap: 5px;
-    }
-
-    &__icon {
-        margin-right: 1rem;
-    }
-
-    &__image {
-        margin-top: 1.5rem;
-    }
-
-    &__text-info {
-        margin-top: 1.5rem;
-        width: 70%;
-        display: flex;
-        text-align: left;
-        justify-content: center;
-    }
+  &__icon {
+    margin: 0 1rem 3rem 0;
+    width: 60px;
+  }
 }
-
 
 .content-text {
-    width: 50vw;
-    padding: 2rem 0 0 4rem;
+  width: 50%;
+  padding: 6rem;
+  flex-wrap: nowrap;
+  flex-direction: column;
+
+  &__paragraph {
+    display: flex;
+    align-items: center;
     flex-wrap: nowrap;
-    flex-direction: column;
+    flex-direction: row;
+  }
 
-    &__paragraf{
-        display: flex;
-        align-items: center;
-        flex-wrap: nowrap;
-        flex-direction: row;
-    }
-
-    &__icon {
-        margin-right: 2rem;
-        margin-bottom: 2rem;
-    }
-    &__container {
-        display: flex;
-        justify-content: flex-start;
-        margin: 3rem 0;
-    }
-
-    &__btn {
-        font-size: 20px;
-        width: 250px;
-        border: none;
-        background-color: v.$primary-green;
-        color: white;
-        padding: 15px 40px;
-        border-radius: 9px;
-        cursor: pointer;
-        
-    }
+  &__icon {
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+  }
 }
 
+.content-text {
+  &__container {
+    display: flex;
+    justify-content: flex-start;
+    margin: 3rem 0;
+  }
+  &__btn {
+    @include font-type(24);
+    width: 10vw;
+    border: none;
+    background-color: $primary-green;
+    color: white;
+    padding: 15px 40px;
+    border-radius: 9px;
+    text-align: center;
+    cursor: pointer;
+  }
+}
+.text {
+  // @include font-type(32);
+  @include font-type(32);
+  color: $primary-gold;
+  margin: 0 0 3rem 1rem;
+  align-self: center;
+  justify-content: center;
 
-@media (max-width: 1450px) {
-    .container-wrapper{
-    
-        &__icon{
-        width: 3rem;
-        display: flex;
-        justify-content: flex-start;
-        }
-
-        &__text {
-           font-size: 1.5rem; 
-        }
-
-        &__image {
-            width: 35vw;
-        }
-        &__text-info {
-            width: 35vw;
-            font-size: 20px;
-            padding-top: 0.5rem
-        }
-    }
-
-    .content-text {
-        padding: 0 2rem 0 2rem;
-
-        &__paragraf {
-            font-size: 1.5rem;
-        }
-        &__icon {
-            width: 3.5rem;
-        }
-    }
-
-    .content-text__btn {
-        width: 200px;
-    }
-    
+  &__info {
+    margin-top: 1.5rem;
+    width: 75%;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: justify;
+    justify-content: center;
+  }
 }
 
 

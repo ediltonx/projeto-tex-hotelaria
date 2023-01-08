@@ -49,17 +49,22 @@ li {
 }
 
 .subtitle {
-  font-size: 2rem;
+  font-size: toRem(32);
   font-weight: 700;
   color: #242222;
 }
 
-.paragraf {
+.paragraph {
   color: #686b68;
-  font-size: 1.5rem;
-  line-height: 2.3125rem;
+  font-size: toRem(24);
+  line-height: toRem(37);
   font-weight: 400;
   text-align: left;
+}
+@media (max-width: 750px) {
+  .paragraph {
+    font-size: 1rem;
+  }
 }
 
 /* Header */
@@ -82,6 +87,11 @@ li {
   display: flex;
   gap: 20px;
 }
+@media (max-width: 960px) {
+  .navbar {
+    display: none;
+  }
+}
 
 .menu {
   display: flex;
@@ -100,29 +110,45 @@ li {
   color: #242222;
   padding: 28px 0;
   position: relative;
+  font-weight: 700;
 }
 .menu a:hover {
   color: #558e60;
-  font-weight: 700;
 }
 
 .content-header {
   display: flex;
   flex-direction: column;
   place-items: center;
-  gap: 48px;
+  gap: 32px;
   padding: 68px;
   width: 100%;
   color: #eff5f0;
+}
+@media (max-width: 960px) {
+  .content-header {
+    padding: 1.75rem;
+    gap: 1.75rem;
+  }
+}
+@media (max-width: 750px) {
+  .content-header {
+    gap: 0.75rem;
+  }
 }
 .content-header span {
   color: #b9ad81;
 }
 .content-header h1 {
-  font-size: 64px;
+  font-size: 4rem;
   position: relative;
   text-align: center;
   padding-bottom: 38px;
+}
+@media (max-width: 960px) {
+  .content-header h1 {
+    font-size: 3rem;
+  }
 }
 .content-header h1:after {
   content: "";
@@ -135,7 +161,7 @@ li {
   bottom: 0;
   margin: 0 auto;
 }
-.content-header .paragraf {
+.content-header .paragraph {
   max-width: 50ch;
   color: #eff5f0;
   text-align: center;
@@ -158,6 +184,11 @@ li {
 
 .mobile-nav {
   display: none;
+}
+@media (max-width: 960px) {
+  .mobile-nav {
+    display: block;
+  }
 }
 
 .menu-mobile {
@@ -207,14 +238,6 @@ li {
   gap: 16px;
 }
 
-@media (max-width: 960px) {
-  .navbar {
-    display: none;
-  }
-  .mobile-nav {
-    display: block;
-  }
-}
 /* end Header */
 /*Start CSS Oferta*/
 section.oferta {
@@ -364,7 +387,7 @@ div.oferta__container__video__info button {
   flex-wrap: nowrap;
   flex-direction: column;
 }
-.content-text__paragraf {
+.content-text__paragraph {
   display: flex;
   align-items: center;
   flex-wrap: nowrap;
@@ -380,8 +403,10 @@ div.oferta__container__video__info button {
   margin: 3rem 0;
 }
 .content-text__btn {
-  font-size: 20px;
-  width: 250px;
+  font-size: toRem(24);
+  line-height: toRem(37);
+  font-weight: 400;
+  width: 10vw;
   border: none;
   background-color: #558e60;
   color: white;
@@ -390,35 +415,13 @@ div.oferta__container__video__info button {
   cursor: pointer;
 }
 
-@media (max-width: 1450px) {
-  .container-wrapper__icon {
-    width: 3rem;
-    display: flex;
-    justify-content: flex-start;
-  }
-  .container-wrapper__text {
-    font-size: 1.5rem;
-  }
-  .container-wrapper__image {
-    width: 35vw;
-  }
-  .container-wrapper__text-info {
-    width: 35vw;
-    font-size: 20px;
-    padding-top: 0.5rem;
-  }
-  .content-text {
-    padding: 0 2rem 0 2rem;
-  }
-  .content-text__paragraf {
-    font-size: 1.5rem;
-  }
-  .content-text__icon {
-    width: 3.5rem;
-  }
-  .content-text__btn {
-    width: 200px;
-  }
+.text {
+  font-size: toRem(32);
+  font-weight: 700;
+  color: #b9ad81;
+  margin: 0 0 3rem 1rem;
+  align-self: center;
+  justify-content: center;
 }
 @media (max-width: 950px) {
   .container-content {
@@ -467,6 +470,71 @@ div.oferta__container__video__info button {
   }
 }
 /* start redes sociais */
+.fb__title {
+  text-align: center;
+  padding: 94px 0 94px 0;
+}
+.fb__title h3 {
+  font-size: 4rem;
+  color: #686b68;
+}
+
+.fb__container {
+  display: flex;
+  justify-content: space-around;
+}
+.fb__container .fb__box {
+  width: 43%;
+  height: 380px;
+  background-color: #eff5f0;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 35px;
+  display: flex;
+  align-items: center;
+}
+.fb__container .fb__box p {
+  font-size: 24px;
+}
+.fb__container .fb__box__comentario {
+  width: 100%;
+  height: 30vh;
+  padding: 0 60px 0 50px;
+}
+.fb__container .fb__dados {
+  width: 100%;
+  display: flex;
+  padding: 0 0 30px 0;
+}
+.fb__container .fb__dados p {
+  font-size: 20px;
+  font-weight: 700;
+  padding-top: 30px;
+  line-height: 19px;
+}
+.fb__container .fb__dados span {
+  font-size: 16px;
+  font-weight: 400;
+}
+.fb__container .fb__dados img {
+  margin: 12px;
+}
+
+.fb__button {
+  padding: 94px 0 94px 0;
+  display: flex;
+  justify-content: center;
+}
+.fb__button button {
+  background-color: #558e60;
+  width: 200px;
+  height: 50px;
+  border-radius: 10px;
+  border: 0;
+  color: white;
+  cursor: pointer;
+  font-size: 1.5em;
+}
+
 .redes-sociais {
   display: flex;
   justify-content: space-around;
@@ -500,7 +568,8 @@ div.oferta__container__video__info button {
 }
 
 @media (max-width: 960px) {
-  .redes-sociais {
+  .redes-sociais,
+  .fb__container {
     flex-flow: column;
     text-align: center;
   }
