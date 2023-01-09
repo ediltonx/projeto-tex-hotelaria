@@ -326,14 +326,12 @@ div.oferta__container__video__info button {
 /*Beneficios start*/
 .container-content {
   background-color: #eff5f0;
-  background-size: cover;
-  background-repeat: no-repeat;
   width: 100%;
   height: 50vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 3rem;
+  margin: 3rem 0;
 }
 .container-content__info {
   color: #686b68;
@@ -351,68 +349,71 @@ div.oferta__container__video__info button {
   align-items: flex-start;
 }
 .container-wrapper__info {
-  width: 50vw;
+  width: 50%;
+  height: auto;
   display: flex;
   align-items: baseline;
   flex-wrap: wrap;
-  margin-left: 3rem;
-}
-.container-wrapper__text {
-  font-size: 2rem;
-  font-weight: 0;
-  color: #b9ad81;
-  display: flex;
-  align-items: center;
-  flex-wrap: nowrap;
   flex-direction: row;
-  gap: 5px;
+  margin-left: 3rem;
+  margin-bottom: 2rem;
 }
 .container-wrapper__icon {
-  margin-right: 1rem;
+  margin: 0 3rem 3rem 0;
+  width: 80px;
+}
+.container-wrapper__text {
+  color: #b9ad81;
+  font-size: 40px;
+  display: flex;
+  align-items: flex-start;
 }
 .container-wrapper__image {
-  margin-top: 1.5rem;
+  width: 90%;
 }
 .container-wrapper__text-info {
-  margin-top: 1.5rem;
-  width: 70%;
-  display: flex;
+  font-size: toRem(24);
+  line-height: toRem(37);
+  font-weight: 400;
+  font-size: 25px;
+  width: 90%;
   text-align: left;
-  justify-content: center;
+  margin-top: 2rem;
 }
 
 .content-text {
-  width: 50vw;
-  padding: 2rem 0 0 4rem;
+  width: 50%;
+  padding: 6rem;
   flex-wrap: nowrap;
   flex-direction: column;
 }
 .content-text__paragraph {
+  font-size: 30px;
   display: flex;
   align-items: center;
   flex-wrap: nowrap;
   flex-direction: row;
 }
 .content-text__icon {
-  margin-right: 2rem;
-  margin-bottom: 2rem;
+  margin: 0 2rem 2rem 4rem;
+  width: 100px;
 }
+
 .content-text__container {
   display: flex;
   justify-content: flex-start;
   margin: 3rem 0;
 }
 .content-text__btn {
-  font-size: toRem(24);
-  line-height: toRem(37);
-  font-weight: 400;
-  width: 10vw;
-  border: none;
   background-color: #558e60;
+  width: 200px;
+  height: 50px;
+  border-radius: 10px;
+  margin-left: 3rem;
+  border: 0;
   color: white;
-  padding: 15px 40px;
-  border-radius: 9px;
   cursor: pointer;
+  font-size: 1.5rem;
 }
 
 .text {
@@ -423,14 +424,23 @@ div.oferta__container__video__info button {
   align-self: center;
   justify-content: center;
 }
-@media (max-width: 950px) {
+.text__info {
+  margin-top: 1.5rem;
+  width: 75%;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: justify;
+  justify-content: center;
+}
+
+@media (max-width: 960px) {
   .container-content {
     background-size: cover;
     width: 100%;
     height: 40vh;
   }
   .container-content__info {
-    font-size: 2rem;
+    font-size: 2.2rem;
   }
   .container-wrapper {
     display: flex;
@@ -447,6 +457,9 @@ div.oferta__container__video__info button {
     align-items: center;
     justify-content: center;
   }
+  .container-wrapper__text {
+    margin-bottom: 1rem;
+  }
   .container-wrapper__image {
     width: 100%;
   }
@@ -458,17 +471,21 @@ div.oferta__container__video__info button {
   .content-text {
     padding-top: 2rem;
   }
-  .content-text__paragraf {
+  .content-text__paragraph {
     font-size: 1.2rem;
     font-weight: 500;
     line-height: 1.5rem;
     padding-bottom: 0.5rem;
+  }
+  .content-text__icon {
+    width: 100px;
   }
   .content-text__btn {
     width: 200px;
     font-size: 20px;
   }
 }
+/*Beneficios End*/
 /* start redes sociais */
 .fb__title {
   text-align: center;
