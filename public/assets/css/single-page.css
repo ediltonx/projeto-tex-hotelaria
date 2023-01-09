@@ -787,11 +787,29 @@ div.oferta__container__video__info button {
   max-width: 100%;
 }
 
-@media (max-width: 960px) {
-  .redes-sociais,
+@media (max-width: 1200px) {
   .fb__container {
     flex-flow: column;
+    align-items: center;
+  }
+  .fb__container .fb__box {
+    margin-top: 30px;
+    width: 60%;
+  }
+}
+@media (max-width: 960px) {
+  .redes-sociais {
+    flex-flow: column;
     text-align: center;
+  }
+  .fb__container {
+    flex-flow: column;
+    align-items: center;
+  }
+  .fb__container .fb__box {
+    width: 80%;
+    margin-top: 30px;
+    overflow: hidden;
   }
 }
 /* end redes sociais */
