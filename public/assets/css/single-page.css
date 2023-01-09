@@ -565,7 +565,7 @@ div.oferta__container__video__info button {
 }
 .container-wrapper__text {
   color: #b9ad81;
-  font-size: 40px;
+  font-size: 35px;
   display: flex;
   align-items: flex-start;
 }
@@ -660,6 +660,7 @@ div.oferta__container__video__info button {
   }
   .container-wrapper__text {
     margin-bottom: 1rem;
+    font-size: 28px;
   }
   .container-wrapper__image {
     width: 100%;

@@ -46,7 +46,7 @@
 
   &__text {
     color: $primary-gold;
-    font-size: 40px;
+    font-size: 35px;
     display: flex;
     align-items: flex-start;
   }
@@ -152,6 +152,7 @@
 
         &__text {
             margin-bottom: 1rem;
+            font-size: 28px;
         }
 
         &__image {
