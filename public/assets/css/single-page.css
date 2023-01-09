@@ -568,6 +568,7 @@ div.oferta__container__video__info button {
   font-size: 35px;
   display: flex;
   align-items: flex-start;
+  margin-top: 90px;
 }
 .container-wrapper__image {
   width: 90%;
