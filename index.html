@@ -7,11 +7,20 @@
     <link rel="stylesheet" href="./public/assets/css/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    
+
     <script src="/public/assets/js/validaForm.js" async></script>
     <title>Chloe Gran Hotel</title>
   </head>
   <body>
+    <script>
+      if (localStorage.length > 0) {
+        for (let i = 0; i < localStorage.length; i++){
+          let key = localStorage.key(i);
+          let value = localStorage.getItem(key);
+          console.log(key, value);
+        }
+      } 
+    </script>
     <header class="header">
       <div class="header-container">
         <div class="logo">
