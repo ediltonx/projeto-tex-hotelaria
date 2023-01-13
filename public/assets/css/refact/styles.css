@@ -413,7 +413,6 @@ html {
   background: url("../../images/background-home.png") no-repeat;
   background-size: cover;
 }
-
 .home-acomodacoes {
   display: flex;
   justify-content: center;
@@ -423,14 +422,18 @@ html {
   padding: 68px 0;
   margin: 0 32px;
 }
-
 .home-acomodacoes-images {
   display: flex;
   max-width: 1090px;
   gap: 32px;
 }
-
 .home-acomodacoes-images img {
+  flex: 0 1 300px;
+  border-radius: 6px;
+  width: min(300px, 30%);
+}
+
+.home-acomodacoes-images .home-acomodacoes-images img {
   flex: 0 1 300px;
   border-radius: 6px;
   width: min(300px, 30%);
