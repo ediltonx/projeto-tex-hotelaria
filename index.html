@@ -8,19 +8,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-    <script src="/public/assets/js/validaForm.js" async></script>
+    <!-- <script src="/public/assets/js/validaForm.js" async></script> -->
     <title>Chloe Gran Hotel</title>
   </head>
-  <body>
-    <script>
-      if (localStorage.length > 0) {
-        for (let i = 0; i < localStorage.length; i++){
-          let key = localStorage.key(i);
-          let value = localStorage.getItem(key);
-          console.log(key, value);
-        }
-      } 
-    </script>
+  <body onload="saudacao()">
     <header class="header">
       <div class="header-container">
         <div class="logo">
@@ -253,5 +244,6 @@
       </div>
     </footer>
     <p class="copy">&copy; 2022 - Todos os direitos reservados</p>
+    <script src="/public/assets/js/validaForm.js" async></script>
   </body>
 </html>
