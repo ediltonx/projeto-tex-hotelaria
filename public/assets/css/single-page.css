@@ -49,17 +49,22 @@ li {
 }
 
 .subtitle {
-  font-size: 2rem;
+  font-size: toRem(32);
   font-weight: 700;
   color: #242222;
 }
 
-.paragraf {
+.paragraph {
   color: #686b68;
-  font-size: 1.5rem;
-  line-height: 2.3125rem;
+  font-size: toRem(24);
+  line-height: toRem(37);
   font-weight: 400;
   text-align: left;
+}
+@media (max-width: 750px) {
+  .paragraph {
+    font-size: 1rem;
+  }
 }
 
 /* Header */
@@ -82,6 +87,11 @@ li {
   display: flex;
   gap: 20px;
 }
+@media (max-width: 960px) {
+  .navbar {
+    display: none;
+  }
+}
 
 .menu {
   display: flex;
@@ -100,29 +110,45 @@ li {
   color: #242222;
   padding: 28px 0;
   position: relative;
+  font-weight: 700;
 }
 .menu a:hover {
   color: #558e60;
-  font-weight: 700;
 }
 
 .content-header {
   display: flex;
   flex-direction: column;
   place-items: center;
-  gap: 48px;
+  gap: 32px;
   padding: 68px;
   width: 100%;
   color: #eff5f0;
+}
+@media (max-width: 960px) {
+  .content-header {
+    padding: 1.75rem;
+    gap: 1.75rem;
+  }
+}
+@media (max-width: 750px) {
+  .content-header {
+    gap: 0.75rem;
+  }
 }
 .content-header span {
   color: #b9ad81;
 }
 .content-header h1 {
-  font-size: 64px;
+  font-size: 4rem;
   position: relative;
   text-align: center;
   padding-bottom: 38px;
+}
+@media (max-width: 960px) {
+  .content-header h1 {
+    font-size: 3rem;
+  }
 }
 .content-header h1:after {
   content: "";
@@ -135,7 +161,7 @@ li {
   bottom: 0;
   margin: 0 auto;
 }
-.content-header .paragraf {
+.content-header .paragraph {
   max-width: 50ch;
   color: #eff5f0;
   text-align: center;
@@ -158,6 +184,11 @@ li {
 
 .mobile-nav {
   display: none;
+}
+@media (max-width: 960px) {
+  .mobile-nav {
+    display: block;
+  }
 }
 
 .menu-mobile {
@@ -207,18 +238,9 @@ li {
   gap: 16px;
 }
 
-@media (max-width: 960px) {
-  .navbar {
-    display: none;
-  }
-  .mobile-nav {
-    display: block;
-  }
-}
 /* end Header */
 /*Start CSS Oferta*/
 section.oferta {
-  min-width: 1170px;
   margin: 0 auto;
   width: 90%;
   height: 100vh;
@@ -300,6 +322,208 @@ div.oferta__container__video__info button {
 }
 
 /*End CSS Oferta*/
+/*start media oferta*/
+@media (max-width: 416px) and (orientation: portrait) {
+  section.oferta {
+    min-width: 416px;
+    margin: 40px 0 0 0;
+  }
+  div.oferta__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  div.oferta__container__relogio {
+    column-gap: 10px;
+  }
+  div.oferta__container img {
+    width: 5vh;
+  }
+  div.oferta__container h3 {
+    color: #242222;
+    font-size: 2em;
+  }
+  div.oferta__container__detalhe {
+    background-color: #b9ad81;
+    width: 350px;
+    height: 7px;
+    margin: 10px 0 20px 10px;
+  }
+  div.oferta__container__video {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  div.oferta__container__video__iframe {
+    width: 350px;
+    height: 200px;
+  }
+  div.oferta__container__video__iframe > iframe {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+  }
+  div.oferta__container__video__info {
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+    padding-bottom: 10px;
+  }
+  div.oferta__container__video__info h3 {
+    color: #b9ad81;
+    font-size: 2em;
+    font-family: "Merriweather", serif;
+    padding: 10px;
+  }
+  div.oferta__container__video__info p {
+    color: #686b68;
+    margin-top: 0;
+    text-align: justify;
+    padding: 10px;
+  }
+  div.oferta__container__video__info button {
+    margin: 0;
+  }
+}
+@media (max-width: 916px) and (orientation: landscape) {
+  section.oferta {
+    min-width: 100%;
+    margin: 120px 0 400px 0;
+    padding: 10px;
+  }
+  div.oferta__container img {
+    width: 50px;
+  }
+  div.oferta__container h3 {
+    color: #242222;
+    font-size: 2em;
+  }
+  div.oferta__container__detalhe {
+    background-color: #b9ad81;
+    width: 340px;
+    height: 7px;
+    margin: 10px 0 20px 10px;
+  }
+  div.oferta__container__video {
+    column-gap: 15px;
+  }
+  div.oferta__container__video__iframe {
+    width: 350px;
+    height: 300px;
+  }
+  div.oferta__container__video__info {
+    width: 500px;
+    align-items: center;
+    padding: 10px;
+  }
+  div.oferta__container__video__info h3 {
+    color: #b9ad81;
+    font-size: 2em;
+    font-family: "Merriweather", serif;
+  }
+  div.oferta__container__video__info p {
+    color: #686b68;
+    margin-top: 10px;
+    text-align: justify;
+  }
+  div.oferta__container__video__info button {
+    margin: 15px 0 0 0;
+  }
+}
+@media (min-width: 416px) and (max-width: 916px) and (orientation: portrait) {
+  section.oferta {
+    min-width: 100%;
+    margin: 30px 0 0 0;
+    display: flex;
+    align-items: center;
+  }
+  div.oferta__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  div.oferta__container__relogio {
+    column-gap: 10px;
+  }
+  div.oferta__container img {
+    width: 10vw;
+  }
+  div.oferta__container h3 {
+    color: #242222;
+    font-size: 5vw;
+  }
+  div.oferta__container__detalhe {
+    background-color: #b9ad81;
+    width: 52vw;
+    height: 7px;
+    margin: 10px 0 20px 10px;
+  }
+  div.oferta__container__video {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  div.oferta__container__video__iframe {
+    width: 70vw;
+    height: 350px;
+  }
+  div.oferta__container__video__iframe > iframe {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+  }
+  div.oferta__container__video__info {
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+    padding: 10px;
+  }
+  div.oferta__container__video__info h3 {
+    color: #b9ad81;
+    font-size: 2em;
+    font-family: "Merriweather", serif;
+    padding: 10px;
+  }
+  div.oferta__container__video__info p {
+    color: #686b68;
+    margin-top: 0;
+    text-align: justify;
+    padding: 10px;
+  }
+  div.oferta__container__video__info button {
+    margin: 15px 0 0 0;
+  }
+}
+@media (min-width: 916px) and (max-width: 1440px) and (orientation: landscape) {
+  section.oferta {
+    min-width: 100%;
+  }
+  div.oferta__container__video {
+    padding: 10px;
+  }
+  div.oferta__container__video__iframe {
+    width: 100%;
+    height: 350px;
+  }
+  div.oferta__container__video__info {
+    width: 100%;
+    padding: 10px;
+  }
+}
+@media (min-width: 1440px) and (orientation: landscape) {
+  div.oferta__container__video {
+    padding: 10px;
+  }
+  div.oferta__container__video__iframe {
+    width: 900px;
+    height: 400px;
+  }
+  div.oferta__container__video__info {
+    width: 100%;
+    padding: 10px;
+  }
+}
+/*end media oferta*/
 /*Beneficios start*/
 .container-content {
   background-color: #eff5f0;
@@ -312,7 +536,7 @@ div.oferta__container__video__info button {
 }
 .container-content__info {
   color: #686b68;
-  font-size: 48px;
+  font-size: 52px;
   font-weight: 700;
 }
 
@@ -336,8 +560,27 @@ div.oferta__container__video__info button {
   margin-bottom: 2rem;
 }
 .container-wrapper__icon {
-  margin: 0 1rem 3rem 0;
-  width: 60px;
+  margin: 0 3rem 3rem 0;
+  width: 80px;
+}
+.container-wrapper__text {
+  color: #b9ad81;
+  font-size: 35px;
+  display: flex;
+  align-items: flex-start;
+  margin-top: 90px;
+}
+.container-wrapper__image {
+  width: 90%;
+}
+.container-wrapper__text-info {
+  font-size: toRem(24);
+  line-height: toRem(37);
+  font-weight: 400;
+  font-size: 25px;
+  width: 90%;
+  text-align: left;
+  margin-top: 2rem;
 }
 
 .content-text {
@@ -346,15 +589,16 @@ div.oferta__container__video__info button {
   flex-wrap: nowrap;
   flex-direction: column;
 }
-.content-text__paragraf {
+.content-text__paragraph {
+  font-size: 30px;
   display: flex;
   align-items: center;
   flex-wrap: nowrap;
   flex-direction: row;
 }
 .content-text__icon {
-  margin-right: 2rem;
-  margin-bottom: 2rem;
+  margin: 0 2rem 2rem 4rem;
+  width: 100px;
 }
 
 .content-text__container {
@@ -363,21 +607,19 @@ div.oferta__container__video__info button {
   margin: 3rem 0;
 }
 .content-text__btn {
-  font-size: 1.5rem;
-  line-height: 2.3125rem;
-  font-weight: 400;
-  width: 10vw;
-  border: none;
   background-color: #558e60;
+  width: 200px;
+  height: 50px;
+  border-radius: 10px;
+  margin-left: 3rem;
+  border: 0;
   color: white;
-  padding: 15px 40px;
-  border-radius: 9px;
-  text-align: center;
   cursor: pointer;
+  font-size: 1.5rem;
 }
 
 .text {
-  font-size: 2rem;
+  font-size: toRem(32);
   font-weight: 700;
   color: #b9ad81;
   margin: 0 0 3rem 1rem;
@@ -393,7 +635,126 @@ div.oferta__container__video__info button {
   justify-content: center;
 }
 
+@media (max-width: 960px) {
+  .container-content {
+    background-size: cover;
+    width: 100%;
+    height: 40vh;
+  }
+  .container-content__info {
+    font-size: 2.2rem;
+  }
+  .container-wrapper {
+    display: flex;
+    align-self: center;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+  .container-wrapper__icon {
+    display: none;
+  }
+  .container-wrapper__info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .container-wrapper__text {
+    margin-bottom: 1rem;
+    font-size: 28px;
+  }
+  .container-wrapper__image {
+    width: 100%;
+  }
+  .container-wrapper__text-info {
+    width: 100%;
+    text-align: start;
+    padding-top: 1rem;
+  }
+  .content-text {
+    padding-top: 2rem;
+  }
+  .content-text__paragraph {
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+    padding-bottom: 0.5rem;
+  }
+  .content-text__icon {
+    width: 100px;
+  }
+  .content-text__btn {
+    width: 200px;
+    font-size: 20px;
+  }
+}
+/*Beneficios End*/
 /* start redes sociais */
+.fb__title {
+  text-align: center;
+  padding: 94px 0 94px 0;
+}
+.fb__title h3 {
+  font-size: 4rem;
+  color: #686b68;
+}
+
+.fb__container {
+  display: flex;
+  justify-content: space-around;
+}
+.fb__container .fb__box {
+  width: 43%;
+  height: 380px;
+  background-color: #eff5f0;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 35px;
+  display: flex;
+  align-items: center;
+}
+.fb__container .fb__box p {
+  font-size: 24px;
+}
+.fb__container .fb__box__comentario {
+  width: 100%;
+  height: 30vh;
+  padding: 0 60px 0 50px;
+}
+.fb__container .fb__dados {
+  width: 100%;
+  display: flex;
+  padding: 0 0 30px 0;
+}
+.fb__container .fb__dados p {
+  font-size: 20px;
+  font-weight: 700;
+  padding-top: 30px;
+  line-height: 19px;
+}
+.fb__container .fb__dados span {
+  font-size: 16px;
+  font-weight: 400;
+}
+.fb__container .fb__dados img {
+  margin: 12px;
+}
+
+.fb__button {
+  padding: 94px 0 94px 0;
+  display: flex;
+  justify-content: center;
+}
+.fb__button button {
+  background-color: #558e60;
+  width: 200px;
+  height: 50px;
+  border-radius: 10px;
+  border: 0;
+  color: white;
+  cursor: pointer;
+  font-size: 1.5em;
+}
+
 .redes-sociais {
   display: flex;
   justify-content: space-around;
@@ -426,10 +787,29 @@ div.oferta__container__video__info button {
   max-width: 100%;
 }
 
+@media (max-width: 1200px) {
+  .fb__container {
+    flex-flow: column;
+    align-items: center;
+  }
+  .fb__container .fb__box {
+    margin-top: 30px;
+    width: 60%;
+  }
+}
 @media (max-width: 960px) {
   .redes-sociais {
     flex-flow: column;
     text-align: center;
+  }
+  .fb__container {
+    flex-flow: column;
+    align-items: center;
+  }
+  .fb__container .fb__box {
+    width: 80%;
+    margin-top: 30px;
+    overflow: hidden;
   }
 }
 /* end redes sociais */
