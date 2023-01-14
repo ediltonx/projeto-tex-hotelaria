@@ -2,7 +2,7 @@ const password = "123456";
 const email = "edmar.ade@gmail.com";
 
 function validarFormulario() {
-    var login = document.querySelector("#login").value;
+    let login = document.querySelector("#login").value;
     let senha = document.querySelector("#senha").value;
     login = login.replace(/"|\s|'/g, "").trim();
 
