@@ -14,3 +14,5 @@ const changeBackground = () => {
     const lengthArray = generateRandomNumber(images.length);
     banner.style.backgroundImage = `url(${images[lengthArray]})`;
 };
+
+changeBackground();
